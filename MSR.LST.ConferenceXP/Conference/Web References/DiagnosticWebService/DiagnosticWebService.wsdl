@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://diagnostics.cxp.cct.cs.washington.edu/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://diagnostics.cxp.cct.cs.washington.edu/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://diagnostics.cxp.cct.cs.washington.edu/">
+      <s:element name="GetVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatrix">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="venue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatrixResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMatrixResult" type="tns:ConnectivityMatrix" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ConnectivityMatrix">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Rows" type="tns:ArrayOfRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Row" nillable="true" type="tns:Row" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Row">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SenderPacketRate" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="SenderCname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cells" type="tns:ArrayOfCell" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCell">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cell" nillable="true" type="tns:Cell" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cell">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReceiverCname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ThroughputDifferential" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMatrixSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatrix" />
+  </wsdl:message>
+  <wsdl:message name="GetMatrixSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatrixResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DiagnosticWebServiceSoap">
+    <wsdl:operation name="GetVersion">
+      <wsdl:input message="tns:GetVersionSoapIn" />
+      <wsdl:output message="tns:GetVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMatrix">
+      <wsdl:input message="tns:GetMatrixSoapIn" />
+      <wsdl:output message="tns:GetMatrixSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DiagnosticWebServiceSoap" type="tns:DiagnosticWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVersion">
+      <soap:operation soapAction="http://diagnostics.cxp.cct.cs.washington.edu/GetVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatrix">
+      <soap:operation soapAction="http://diagnostics.cxp.cct.cs.washington.edu/GetMatrix" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DiagnosticWebServiceSoap12" type="tns:DiagnosticWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVersion">
+      <soap12:operation soapAction="http://diagnostics.cxp.cct.cs.washington.edu/GetVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatrix">
+      <soap12:operation soapAction="http://diagnostics.cxp.cct.cs.washington.edu/GetMatrix" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiagnosticWebService">
+    <wsdl:port name="DiagnosticWebServiceSoap" binding="tns:DiagnosticWebServiceSoap">
+      <soap:address location="http://localhost:3727/DiagnosticService/DiagnosticWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DiagnosticWebServiceSoap12" binding="tns:DiagnosticWebServiceSoap12">
+      <soap12:address location="http://localhost:3727/DiagnosticService/DiagnosticWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

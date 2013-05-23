@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActualPacketsDifferFromExpected" xml:space="preserve">
+    <value>Se esperaba pRtcpPacketExceptionacket {0}: {1}, Recibido: {2}</value>
+  </data>
+  <data name="AdministratorPrivilegesRequired" xml:space="preserve">
+    <value>Privilegios de administrador necesarios</value>
+  </data>
+  <data name="ArraySizesMustAgree" xml:space="preserve">
+    <value>Tamaños de matriz deben ponerse de acuerdo</value>
+  </data>
+  <data name="BufferMustEndOnBoundary" xml:space="preserve">
+    <value>El búfer no termina en un límite de 32 bits, tamaño de búfer: {0}, tamaño % 4: {1}</value>
+  </data>
+  <data name="BYEPacketMayContainMoreThan1SSRC" xml:space="preserve">
+    <value>Un paquete BYE puede contener más de un SSRC. Consulte Utilizar los métodos que proporciona para manipular SSRCs de forma adecuada.</value>
+  </data>
+  <data name="BYEReasonBytesExceeded" xml:space="preserve">
+    <value>BYE razón debe ser &lt; = {0} bytes UTF8</value>
+  </data>
+  <data name="CallingANextFrameMethod" xml:space="preserve">
+    <value>Llamar a un método NextFrame sin Primera llamada IsUsingNextFrame = true</value>
+  </data>
+  <data name="CallMovenextBeforeCallingCurrent" xml:space="preserve">
+    <value>Llame MoveNext() antes de llamar a Current()</value>
+  </data>
+  <data name="CannotAccessRtpMethods" xml:space="preserve">
+    <value>No puede tener acceso a los métodos RTP DE LA RtpSession si no tráfico RTP de supervisión!</value>
+  </data>
+  <data name="CantCreateAStreamNoParticipant" xml:space="preserve">
+    <value>No se puede crear una secuencia si no hay ningún participante para asociarlo con!</value>
+  </data>
+  <data name="CNameConflictDetectedRemoteMachines" xml:space="preserve">
+    <value>Conflicto CName detectado entre dos equipos remotos. Direcciones IP en conflicto son {0} {1}, CName en conflicto es {2}</value>
+  </data>
+  <data name="cNameMustBeAValidString" xml:space="preserve">
+    <value>cNombre debe ser una cadena válida, preferrably algo único, como una dirección de correo electrónico</value>
+  </data>
+  <data name="CompoundPacketsMustEndOnBoundary" xml:space="preserve">
+    <value>Paquetes compuestos deben terminar en un límite de 32 bits</value>
+  </data>
+  <data name="ConferencexpNodesDetected" xml:space="preserve">
+    <value>ConferenceXP de los nodos se han detectado:</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Datos</value>
+  </data>
+  <data name="DataLengthIncorrect" xml:space="preserve">
+    <value>Longitud de datos debe ser &lt; = RTP.MAX_PACKET_SIZE ({0}) - RtcpHeader.SIZE({1}) - RTP.SSRC_SIZE({2}) - NAME_SIZE({3})</value>
+  </data>
+  <data name="DroppingDataPacket" xml:space="preserve">
+    <value>Eliminación de los paquetes de datos: {0}, FecIndex: {1}, FrameIndex: {2}, TS: {3}</value>
+  </data>
+  <data name="DroppingFecPacket" xml:space="preserve">
+    <value>Quitando FEC paquetes: {0}, FecIndex: {1}, DataRangeMin: {2}</value>
+  </data>
+  <data name="DuplicateCNameDetected" xml:space="preserve">
+    <value>DuplicateCNameDetectedEvent - un duplicado de la CName local se ha detectado en la red entre {0} {1}, RtpListener apagar</value>
+  </data>
+  <data name="DuplicateCnameWasDetected" xml:space="preserve">
+    <value>Se detectó un CNAME duplicado entre {0} y {1}.  Conectividad pruebas terminar.</value>
+  </data>
+  <data name="DuplicatePacketReceived" xml:space="preserve">
+    <value>Duplicar paquete recibido!</value>
+  </data>
+  <data name="DuplicatePacketReceivedInRtpStream" xml:space="preserve">
+    <value>Duplicar paquete recibido en RtpStream - {0}</value>
+  </data>
+  <data name="ErrorCallingAnEventDelegate" xml:space="preserve">
+    <value>Error al llamar a un delegado de eventos - {0}</value>
+  </data>
+  <data name="ErrorDisposingConnectivityDetector" xml:space="preserve">
+    <value>Error disposing ConnectivityDetector.
+{0}</value>
+  </data>
+  <data name="EventNotHookedParticipantRemoved" xml:space="preserve">
+    <value>Evento no enlazado - ParticipantRemovedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedParticipantTimeout" xml:space="preserve">
+    <value>Evento no enlazado - ParticipantTimeoutEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpParticipantAdded" xml:space="preserve">
+    <value>Evento no enlazado - RtpParticipantAddedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpStreamAdded" xml:space="preserve">
+    <value>Evento no enlazado - RtpStreamAddedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpStreamRemoved" xml:space="preserve">
+    <value>Evento no enlazado - RtpStreamRemovedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpStreamTimeout" xml:space="preserve">
+    <value>Evento no enlazado - RtpStreamTimeoutEvent - {0}</value>
+  </data>
+  <data name="FirstPacketMustBeSROrRR" xml:space="preserve">
+    <value>El primer paquete en un paquete RTCP compuesto debe ser un SR: {0} o registro de recursos: {1}, real: {2}</value>
+  </data>
+  <data name="FrameLengthShouldBePositive" xml:space="preserve">
+    <value>frame.Length debería ser &gt; 0, de lo contrario se desea enviar un paquete con no hay datos.</value>
+  </data>
+  <data name="FrameOutOfSequenceEvent" xml:space="preserve">
+    <value>FrameOutOfSequenceEvent - RtpStream: {0}, LostFrames: {1}, Message: {2}</value>
+  </data>
+  <data name="FrameReceivedEvent" xml:space="preserve">
+    <value>FrameReceivedEvent - {0}</value>
+  </data>
+  <data name="HeaderLengthAndItemCountDisagree" xml:space="preserve">
+    <value>Encabezado de longitud y elemento recuento desacuerdo!</value>
+  </data>
+  <data name="IncompatibleArgumentsMessageLong" xml:space="preserve">
+    <value>Argumentos incompatibles; se debe especificar un participante y pretende enviar tráfico RTP si no recibe datos.  Enviar RTCP datos sólo no es un uso válido caso.</value>
+  </data>
+  <data name="IncompatibleArgumentsMessageShort" xml:space="preserve">
+    <value>Argumentos incompatibles; se debe especificar un participante y pretende enviar tráfico RTP si no recibe datos.</value>
+  </data>
+  <data name="IncompatibleArgumentsStatus" xml:space="preserve">
+    <value>Argumentos incompatibles - participant(null), rtpTraffic(true)</value>
+  </data>
+  <data name="IncompleteFrameReceived" xml:space="preserve">
+    <value>Marco incompleta recibido--marco perdidos</value>
+  </data>
+  <data name="IncorrectNumberOfNullObjects" xml:space="preserve">
+    <value>Número incorrecto de objetos null, se esperaba: {0}, real: {1}</value>
+  </data>
+  <data name="InvalidBufferLength" xml:space="preserve">
+    <value>Longitud del búfer no válido: {0}, debe ser: {1}</value>
+  </data>
+  <data name="InvalidItemCount" xml:space="preserve">
+    <value>ItemCount no válido: {0}, debe ser &gt; = 0 o &lt; = 31</value>
+  </data>
+  <data name="InvalidLength" xml:space="preserve">
+    <value>Longitud no válida: {0}, debe ser &gt; = 0 o &lt; = {1}</value>
+  </data>
+  <data name="InvalidPacketEvent" xml:space="preserve">
+    <value>InvalidPacketEvent - {0}</value>
+  </data>
+  <data name="InvalidPacketInFrameEvent" xml:space="preserve">
+    <value>InvalidPacketInFrameEvent - RtpStream: {0}, motivo: {1}</value>
+  </data>
+  <data name="InvalidVersion" xml:space="preserve">
+    <value>Versión no válida: {0}, Actual: {1}</value>
+  </data>
+  <data name="IPAddressTryingToRemoveString" xml:space="preserve">
+    <value>DirecciónIP: {0} está intentando quitar secuencia (ssrc: {1}), con propietario por direcciónIP: {2}</value>
+  </data>
+  <data name="JoinRequestToServerFailed" xml:space="preserve">
+    <value>Solicitud de combinación a servidor {0}: {1} para {2} Error. 
+{3}</value>
+  </data>
+  <data name="LeaveRequestToServerFailed" xml:space="preserve">
+    <value>Deje solicitud al servidor {0}: {1} para {2} Error. 
+{3}</value>
+  </data>
+  <data name="LengthOfDataMustBePositive" xml:space="preserve">
+    <value>Longitud de datos debe ser &gt; = 0</value>
+  </data>
+  <data name="MethodMeantToBeOverridden" xml:space="preserve">
+    <value>Este método está pensado que va a ser reemplazado en una clase derivada</value>
+  </data>
+  <data name="MustBePositive" xml:space="preserve">
+    <value>Debe ser &gt; = 1</value>
+  </data>
+  <data name="MustContainMoreThan1Packet" xml:space="preserve">
+    <value>Un paquete RTCP compuesto debe contener más de 1 paquete, recuento real: {0}</value>
+  </data>
+  <data name="NameIsRequired" xml:space="preserve">
+    <value>Nombre es necesario y debe ser {0} caracteres ASCII largas</value>
+  </data>
+  <data name="NameLengthIncorrect" xml:space="preserve">
+    <value>Nombre debe ser {0} caracteres ASCII</value>
+  </data>
+  <data name="NeedARealSenderReport" xml:space="preserve">
+    <value>Es necesario un SenderReport real, no NULL</value>
+  </data>
+  <data name="NextFrameCallHasBeenUnblocked" xml:space="preserve">
+    <value>Llamada NextFrame se ha desbloqueado, ya sea manualmente o mediante el método Dispose</value>
+  </data>
+  <data name="NoPivotRowFound" xml:space="preserve">
+    <value>Ninguna fila dinámica encuentra!</value>
+  </data>
+  <data name="NullObjectsAreNotAccepted" xml:space="preserve">
+    <value>No se aceptan objetos NULL</value>
+  </data>
+  <data name="OnBehalfOf" xml:space="preserve">
+    <value>En Nombre de {0}, {1}</value>
+  </data>
+  <data name="PacketIsNotAnFECPacket" xml:space="preserve">
+    <value>El paquete proporcionado es No un paquete FEC!</value>
+  </data>
+  <data name="PaddingBytesDiscrepancy" xml:space="preserve">
+    <value>Hay una discrepancia entre el número de bytes de relleno - reales: {0}, se esperaba: {1}</value>
+  </data>
+  <data name="ParticipantRemovedEvent" xml:space="preserve">
+    <value>ParticipantRemovedEvent - {0}</value>
+  </data>
+  <data name="ParticipantStatusChangedEvent" xml:space="preserve">
+    <value>ParticipantStatusChangedEvent - participante: {0}</value>
+  </data>
+  <data name="ParticipantTimeoutEvent" xml:space="preserve">
+    <value>ParticipantTimeoutEvent - {0}</value>
+  </data>
+  <data name="PayloadTypeIsASevenBitStructure" xml:space="preserve">
+    <value>MSR.LST.RTP.RtpPacketBase.PayloadType es una estructura siete bits y puede contener valores entre 0 y 127</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Prefijo</value>
+  </data>
+  <data name="PrefixAndDataBytesExceeded" xml:space="preserve">
+    <value>Prefijo de un elemento PRIV + datos no pueden superar {0} bytes UTF8</value>
+  </data>
+  <data name="ReceivedAnUnhandledRtcpType" xml:space="preserve">
+    <value>Recibió un tipo RTCP no controlado, {0}</value>
+  </data>
+  <data name="ReflectorEPNotSetProperly" xml:space="preserve">
+    <value>ReflectorEP no se establecido correctamente</value>
+  </data>
+  <data name="RtpListenerBufferPoolGrowing" xml:space="preserve">
+    <value>El grupo de búferes RtpListener se crecimiento sin delimitar.  Se han detenido los subprocesos de recepción / distribuir para evitar consuma todo la cantidad de RAM</value>
+  </data>
+  <data name="RtpPacketFecDoesNotSupportTimestamp" xml:space="preserve">
+    <value>RtpPacketFec no es compatible con la propiedad timestamp.</value>
+  </data>
+  <data name="RtpParticipantAddedEvent" xml:space="preserve">
+    <value>RtpParticipantAddedEvent - {0}</value>
+  </data>
+  <data name="RtpSenderAlreadyDisposed" xml:space="preserve">
+    <value>RtpSender ya eliminado</value>
+  </data>
+  <data name="RtpSessionDoesNotContainASender" xml:space="preserve">
+    <value>RtpSession no contiene un remitente para el SSRC determinado - {0}</value>
+  </data>
+  <data name="RtpStreamAddedEvent" xml:space="preserve">
+    <value>RtpStreamAddedEvent - {0}</value>
+  </data>
+  <data name="RtpStreamRemovedEvent" xml:space="preserve">
+    <value>RtpStreamRemovedEvent - {0}</value>
+  </data>
+  <data name="RtpStreamTimeoutEvent" xml:space="preserve">
+    <value>RtpStreamTimeoutEvent - {0}</value>
+  </data>
+  <data name="SDESItemDataBytesExceeded" xml:space="preserve">
+    <value>Datos un SDES del elemento no pueden superar {0} bytes UTF8: {1}, {2}</value>
+  </data>
+  <data name="SDESPacketMayContainMoreThan1SSRC" xml:space="preserve">
+    <value>Un paquete SDES puede contener más de un SSRC. Consulte Utilizar los métodos que proporciona para manipular SSRCs de forma adecuada.</value>
+  </data>
+  <data name="SendAppPacketNotAllowed" xml:space="preserve">
+    <value>SendAppPacket no permite en escucha sólo modo RTCP.</value>
+  </data>
+  <data name="SSRCConflictDetectedLocalSender" xml:space="preserve">
+    <value>Conflicto SSRC detectado entre remitente local y un remitente en {0}.  Cambiar remitente local ssrc.</value>
+  </data>
+  <data name="SSRCConflictDetectedLocalSession" xml:space="preserve">
+    <value>Conflicto SSRC detectado entre un remitente en {0} y de sesión local.  Cambiar de sesión ssrc.</value>
+  </data>
+  <data name="SSRCConflictDetectedRemoteMachines" xml:space="preserve">
+    <value>Conflicto SSRC detectado entre dos equipos remotos, dirección IP en conflicto es {0}</value>
+  </data>
+  <data name="SwapRowNotFound" xml:space="preserve">
+    <value>Intercambiar fila no se encuentra!</value>
+  </data>
+  <data name="ThereMustBeAtLeastOneIntPtr" xml:space="preserve">
+    <value>Debe haber al menos un IntPtr de datos para enviar</value>
+  </data>
+  <data name="TimeToLiveShouldBePositive" xml:space="preserve">
+    <value>TimeToLive debería ser &gt; 0</value>
+  </data>
+  <data name="TooManyItems" xml:space="preserve">
+    <value>No puede tener más de 31 elementos en un RtcpPacket</value>
+  </data>
+  <data name="UnexpectedPayloadType" xml:space="preserve">
+    <value>Tipo inesperado carga!</value>
+  </data>
+  <data name="UnexpectedSDESType" xml:space="preserve">
+    <value>Tipo inesperado SDES: {0}</value>
+  </data>
+  <data name="UnsupportedRole" xml:space="preserve">
+    <value>Función no admitida: {0}</value>
+  </data>
+  <data name="ValueMaximumPayload" xml:space="preserve">
+    <value>El valor {0} es la carga máxima para este paquete: {1}</value>
+  </data>
+  <data name="XORCanOnlyProduce1Checksum" xml:space="preserve">
+    <value>XOR sólo puede producir 1 paquetes de suma de comprobación</value>
+  </data>
+  <data name="YouCantSetThePaddingBit" xml:space="preserve">
+    <value>No se puede establecer el bit de relleno en el primer paquete</value>
+  </data>
+  <data name="YouMustBeAnAdministratorToInstall" xml:space="preserve">
+    <value>Debe ser un administrador para instalar RTP o ejecutarlo por primera vez.</value>
+  </data>
+  <data name="ErrorDuringRtpSenderSend" xml:space="preserve">
+    <value>Error durante RtpSender.Send {0}</value>
+  </data>
+  <data name="ErrorDisposingRtpListener" xml:space="preserve">
+    <value>Error eliminación RtpListener {0}</value>
+  </data>
+  <data name="TryingToGrowTheBufferPool" xml:space="preserve">
+    <value>Intentando crecer el grupo de búferes después PoolMaxGrows ha alcanzado</value>
+  </data>
+  <data name="ErrorWhileDisposingRtpSender" xml:space="preserve">
+    <value>Error al disposing RtpSender: {0}</value>
+  </data>
+</root>

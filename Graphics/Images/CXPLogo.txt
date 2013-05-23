@@ -1,0 +1,1 @@
+Although CXPLogo.bmp is not used in the ConferenceXP projects, it should not be deleted since it is the basis for the ConferenceXP icon, and since it is used as the logo in the ConferenceXP web site documentation.

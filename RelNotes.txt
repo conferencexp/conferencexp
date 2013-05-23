@@ -1,0 +1,32 @@
+=============================================================
+ConferenceXP, VERSION 5.3 -- RELEASE NOTES
+=============================================================
+
+
+This document describes the changes in the software since ConferenceXP
+5.2.
+
+For the latest information about building ConferenceXP, please visit
+
+http://cct.cs.washington.edu/project-wiki/index.php/Building_ConferenceXP
+
+----------------------------------------------
+NEW FEATURES for ConferenceXP 5.3
+----------------------------------------------
+* Changed all projects to target .Net framework v4.0 Client Profile, except the web services which need to target the full v4.0. 
+* Converted the source to Visual Studio 2010. Cleaned up and simplified the build process. 
+* Updated the UW Classroom Presenter capability to the latest code. 
+* Updated the TabletPC components to the latest version. 
+* Removed a number of line breaks from strings to make dialogs look better on Windows 7, though some will now be rather wide on XP. 
+* Added new ways to escape out of full screen mode with mouse click or any keyboard button press in response to feedback that the escape key wasn't obvious enough. 
+* Hid the reflector service ForceLeave feature in the UI since it isn't currently working. 
+* Made the Diagnostic Service installer automatically create/remove its firewall exception. 
+* Fixed a Windows Vista issue concerning the automatic creation of firewall exceptions during setup. 
+* Fixed tool tips and an error message to make error conditions involving bad reflectors more comprehensible. 
+* Added SubType Guid for WVC1 to facilitate VC-1 compression experiments. 
+* Made the Rtp MTU configurable to facilitate testing with larger frames. 
+* Modifications to the RtpSource filter to make it work with the VMR to render uncompressed HD video. 
+* Fixed a bug concerning uninstalling CXPClient on Windows XP with a disabled firewall. 
+
+
+Please see http://cct.cs.washington.edu for more information

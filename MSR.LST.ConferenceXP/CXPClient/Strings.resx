@@ -1,0 +1,1099 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutConferenceXPClientHotkey" xml:space="preserve">
+    <value>&amp;About ConferenceXP Client</value>
+  </data>
+  <data name="AboutCXPClientText" xml:space="preserve">
+    <value>ConferenceXP Client
+Microsoft Research &amp; UW Center for Collaborative Technologies
+
+Acknowledgements:
+Jay Beavers, Patrick Bristow, Tim Chou, Sauleh Eetemadi, Chris Moffatt, Michel Pahud, Lynn Powers, Jason Van Eaton, Andrew Whitaker, Luo Jie, Fred Videon, José Feghali
+
+CXP Client: {0}
+{1}
+
+For more information, see http://cct.cs.washington.edu/downloads/CXP</value>
+  </data>
+  <data name="AboutCXPClientTitle" xml:space="preserve">
+    <value>About ConferenceXP Client</value>
+  </data>
+  <data name="AboutInternet2AndMulticast" xml:space="preserve">
+    <value>About Internet2 and Multicast Connectivity</value>
+  </data>
+  <data name="ActionsHotkey" xml:space="preserve">
+    <value>&amp;Actions</value>
+  </data>
+  <data name="ActiveVenueCapabilitiesHotkey" xml:space="preserve">
+    <value>&amp;Active Venue Capabilities</value>
+  </data>
+  <data name="AddHotkey" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="AdditionalCameraConfiguration" xml:space="preserve">
+    <value>Additional camera configuration options (if available)</value>
+  </data>
+  <data name="AddressProtocolError" xml:space="preserve">
+    <value>Address Protocol Error</value>
+  </data>
+  <data name="AdvancedAudioSettings" xml:space="preserve">
+    <value>Advanced Audio Settings: {0}</value>
+  </data>
+  <data name="AdvancedSettings" xml:space="preserve">
+    <value>Advanced Settings...</value>
+  </data>
+  <data name="AdvancedVideoSettings" xml:space="preserve">
+    <value>Advanced Video Settings: {0}</value>
+  </data>
+  <data name="AdvancedVideoSettingsStatus" xml:space="preserve">
+    <value>{0}Resolution: {1}x{2}
+{0}Frame rate: {3} fps 
+{0}Color space: {4} ({5} bit)
+{0}Uncompressed bit rate: {6} Kbps</value>
+  </data>
+  <data name="AppConfigHotkey" xml:space="preserve">
+    <value>App &amp;Config...</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="ArchivePlayBackText" xml:space="preserve">
+    <value>ConferenceXP encountered an unknown problem in the playback.  Close the Conference Playback dialog box and try playback again.
+
+Exception: {0}</value>
+  </data>
+  <data name="ArchivePlayBackTitle" xml:space="preserve">
+    <value>Archive Play Back</value>
+  </data>
+  <data name="ArchiveService" xml:space="preserve">
+    <value>Archive Service</value>
+  </data>
+  <data name="ArchiveServiceErrorText" xml:space="preserve">
+    <value>The Archive Service is currently unavailable or may have encountered an unexpected error. For further assistance contact your server's administrator.
+
+Exception:
+{0}</value>
+  </data>
+  <data name="ArchiveServiceErrorTitle" xml:space="preserve">
+    <value>Archive Service Error</value>
+  </data>
+  <data name="ArchiveServiceHostName" xml:space="preserve">
+    <value>Archive Service Host Name:</value>
+  </data>
+  <data name="ArchiveServiceUnavailableText" xml:space="preserve">
+    <value>The Archive Service did not respond. Make sure the Archive Service you specified in ConferenceXP is correct and that server is online.  For further assistance, contact your server's administrator.
+
+Exception Message: {0}</value>
+  </data>
+  <data name="ArchiveServiceUnavailableTitle" xml:space="preserve">
+    <value>Archive Service Unavailable</value>
+  </data>
+  <data name="ArchiveServiceURL" xml:space="preserve">
+    <value>www.conferencexp.net/archiveservice.htm</value>
+  </data>
+  <data name="AudioFormat" xml:space="preserve">
+    <value>Uncompressed Audio Format...</value>
+  </data>
+  <data name="AudioFormatSettings" xml:space="preserve">
+    <value>Audio format
+{0}Channels: {1} 
+{0}Bits per sample: {2}
+{0}Frequency: {3}
+{0}Kbps: {4}</value>
+  </data>
+  <data name="AudioSettings" xml:space="preserve">
+    <value>Audio Settings</value>
+  </data>
+  <data name="AudioVideoHotkey" xml:space="preserve">
+    <value>&amp;Audio/Video...</value>
+  </data>
+  <data name="AudioVideoSettings" xml:space="preserve">
+    <value>Audio/Video Settings</value>
+  </data>
+  <data name="AudioVideoTroubleshooting" xml:space="preserve">
+    <value>Audio/Video Troubleshooting</value>
+  </data>
+  <data name="AutoPlay" xml:space="preserve">
+    <value>Auto-play</value>
+  </data>
+  <data name="AvailableOtherCapabilitySenders" xml:space="preserve">
+    <value>Available OtherCapabilitySenders are:</value>
+  </data>
+  <data name="AvailableVenues" xml:space="preserve">
+    <value>Available venues are:</value>
+  </data>
+  <data name="BitRateKbps" xml:space="preserve">
+    <value>Bit rate: {0} Kbps</value>
+  </data>
+  <data name="BitsPerSample" xml:space="preserve">
+    <value>Bits per sample</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="CameraEllipsis" xml:space="preserve">
+    <value>Camera...</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelHotkey" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="CantRenderAudioGraph" xml:space="preserve">
+    <value>Can't render an audio graph without an audio capture device</value>
+  </data>
+  <data name="CapabilityError" xml:space="preserve">
+    <value>If you specify the -capability parameter, you must also specify the -venue parameter.</value>
+  </data>
+  <data name="CapabilitySenderNotFound" xml:space="preserve">
+    <value>CapabilitySender '{0}' not found.</value>
+  </data>
+  <data name="CaseSensitiveReminder" xml:space="preserve">
+    <value>Note that Capability names are case sensitive.</value>
+  </data>
+  <data name="Channels" xml:space="preserve">
+    <value>Channels</value>
+  </data>
+  <data name="ChooseAudioFormat" xml:space="preserve">
+    <value>Choose an audio format for - {0}</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CmdLineParametersInstructions" xml:space="preserve">
+    <value>By using one or more command line parameters, you can specify or change ConferenceXP configuration options. The name of venues and capabilities are case sensitive. For a venue or capability name that includes a space, use quotation marks around the name.
+
+{0} View help
+
+{1} Join a venue
+{2}
+
+{3} Start a capability
+{4}
+
+{5} Specify a different Venue Service
+{6}
+
+{7} Use no Venue Service
+{8}
+
+{9} Join a custom venue
+
+{10} Disable Recording Notification
+{11} 
+
+{12} Specify a different identifier
+{13}
+
+{14} Specify a passord for a venue
+{15}</value>
+  </data>
+  <data name="CmdLineParametersTitle" xml:space="preserve">
+    <value>ConferenceXP Command Line Parameters</value>
+  </data>
+  <data name="CommunitySiteHotkey" xml:space="preserve">
+    <value>Community &amp;Site</value>
+  </data>
+  <data name="CompressedBitRate" xml:space="preserve">
+    <value>Compressed bit rate: {0} Kbps</value>
+  </data>
+  <data name="CompressorDisabled" xml:space="preserve">
+    <value>Compressor: Disabled</value>
+  </data>
+  <data name="CompressorDisabled2" xml:space="preserve">
+    <value>Compressor 
+{0}Disabled</value>
+  </data>
+  <data name="CompressorStatus" xml:space="preserve">
+    <value>Compressor
+{0}Name: {1} 
+{0}Media sub-type: {2}
+{0}Compressed bit rate: {3} Kbps
+{0}{4}</value>
+  </data>
+  <data name="Conference" xml:space="preserve">
+    <value>Conference:</value>
+  </data>
+  <data name="ConferencePlayback" xml:space="preserve">
+    <value>Conference Playback</value>
+  </data>
+  <data name="Conferences" xml:space="preserve">
+    <value>Conferences</value>
+  </data>
+  <data name="ConferenceXP" xml:space="preserve">
+    <value>ConferenceXP</value>
+  </data>
+  <data name="ConferenceXPHelpHotkey" xml:space="preserve">
+    <value>&amp;ConferenceXP Help</value>
+  </data>
+  <data name="Configure" xml:space="preserve">
+    <value>Configure </value>
+    <comment>Note: space at the end of the line</comment>
+  </data>
+  <data name="ConfigureArchiveServices" xml:space="preserve">
+    <value>Configure Archive Services</value>
+  </data>
+  <data name="ConfigureArchiveServicesEllipsis" xml:space="preserve">
+    <value>Configure Archive Services...</value>
+  </data>
+  <data name="ConfigureCameraAndVideo" xml:space="preserve">
+    <value>Configure Camera and Video Stream</value>
+  </data>
+  <data name="ConfigureMicrophone" xml:space="preserve">
+    <value>Configure Microphone and Audio Stream</value>
+  </data>
+  <data name="ConfigureReflectorServices" xml:space="preserve">
+    <value>Configure Reflector Services...</value>
+  </data>
+  <data name="ConfigureVenueServices" xml:space="preserve">
+    <value>Configure Venue Services...</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Confirm Delete</value>
+  </data>
+  <data name="ConfirmDeleteServiceHost" xml:space="preserve">
+    <value>Are you sure you want to delete the service host
+"{0}"?</value>
+  </data>
+  <data name="ConfirmReplace" xml:space="preserve">
+    <value>Confirm Replace</value>
+  </data>
+  <data name="ConfirmReplaceServiceHost" xml:space="preserve">
+    <value>Are you sure you want to replace the service host
+"{0}" with
+"{1}"?</value>
+  </data>
+  <data name="ConnectivityDetector" xml:space="preserve">
+    <value>Connectivity Detector</value>
+  </data>
+  <data name="ContactServersAdministrator" xml:space="preserve">
+    <value>Please contact your server's administrator.</value>
+  </data>
+  <data name="CPU" xml:space="preserve">
+    <value>{0} %</value>
+  </data>
+  <data name="CurrentSettings" xml:space="preserve">
+    <value>Current Settings</value>
+  </data>
+  <data name="CXPRecordingNotification" xml:space="preserve">
+    <value>ConferenceXP Recording Notification</value>
+  </data>
+  <data name="CXPServices" xml:space="preserve">
+    <value>ConferenceXP Services</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DeleteHotkey" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="DeterminingStatus" xml:space="preserve">
+    <value>Determining status...</value>
+  </data>
+  <data name="DuplicateHostNameText" xml:space="preserve">
+    <value>Please enter a {0} not already in the list.</value>
+  </data>
+  <data name="DuplicateHostNameTitle" xml:space="preserve">
+    <value>Duplicate Host Name</value>
+  </data>
+  <data name="DuplicateIdentityDetected" xml:space="preserve">
+    <value>Duplicate Identity Detected</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="EnableArchiveServiceHotkey" xml:space="preserve">
+    <value>Enable &amp;Archive Service</value>
+  </data>
+  <data name="EnableAudioCompression" xml:space="preserve">
+    <value>Enable audio compression</value>
+  </data>
+  <data name="EnableReflectorServiceHotkey" xml:space="preserve">
+    <value>Enable &amp;Reflector Service</value>
+  </data>
+  <data name="EnableVideoCompression" xml:space="preserve">
+    <value>Enable Video Compression</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>&lt;&lt; End Time &gt;&gt;</value>
+  </data>
+  <data name="EnterAVenue" xml:space="preserve">
+    <value>Enter the {0} Venue
+
+Identifier: {1}
+IP Address: {2}
+Port: {3}</value>
+  </data>
+  <data name="EnterValidConnectionType" xml:space="preserve">
+    <value>Please enter a valid {0}</value>
+  </data>
+  <data name="ExampleArchiveHostName" xml:space="preserve">
+    <value>For example: my.archiveservice.com</value>
+  </data>
+  <data name="ExampleArchiveHostNameIP" xml:space="preserve">
+    <value>For example: my.archiveservice.com or 192.168.0.1</value>
+  </data>
+  <data name="ExampleReflectorHostNameIP" xml:space="preserve">
+    <value>For example: my.reflectorservice.com, 192.168.0.1, or 2000::1:212:79ff:fed2:f77</value>
+  </data>
+  <data name="ExampleURL" xml:space="preserve">
+    <value>For example: http://my.venueservice.com/venueservice</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>Exception:</value>
+  </data>
+  <data name="ExchangeIPAddresses" xml:space="preserve">
+    <value>Exchange IP addresses</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="ExitedVenueSameName" xml:space="preserve">
+    <value>You exited the venue because a participant with your same name joined the venue from a different IP address - {0}, {1}</value>
+  </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>Firewall</value>
+  </data>
+  <data name="FirewallNotFound" xml:space="preserve">
+    <value>Firewall Not Found</value>
+  </data>
+  <data name="FirewallNotFoundText" xml:space="preserve">
+    <value>If your computer has a firewall enabled, it could not be found.  You must add an exception for ConferenceXP to your firewall's exception list to allow it to work properly.</value>
+  </data>
+  <data name="FMainActiveVenue" xml:space="preserve">
+    <value>{0} - ConferenceXP</value>
+  </data>
+  <data name="FourWay" xml:space="preserve">
+    <value>Four-way</value>
+  </data>
+  <data name="Frames" xml:space="preserve">
+    <value>Frames</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Frequency (Hz)</value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>Full screen</value>
+  </data>
+  <data name="GiveIPAddress" xml:space="preserve">
+    <value>Give the remote participant the IP address of your computer:</value>
+  </data>
+  <data name="HelpHotkey" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="HelpURLArchiveInfo" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide#Recording_and_playing_back_ConferenceXP_sessions</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLCommunity" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/community/</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLConferenceXP" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/downloads/CXP/</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLConnectivity" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/About_Multicast</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLNotification" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Archive_Service</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLReflectorInfo" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide#Connecting_as_a_unicast_client_to_a_multicast_network</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLServices" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Venue_Service</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLStudentEdition" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HelpURLVenuesInfo" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide#Managing_Venue_Services</value>
+    <comment>DO NOT TRANSLATE</comment>
+  </data>
+  <data name="HostNameOrIPAddress" xml:space="preserve">
+    <value> host name or IP address</value>
+    <comment>Note: space at the begining of the line</comment>
+  </data>
+  <data name="InitializingAVDevices" xml:space="preserve">
+    <value>Audio/Video Settings - Initializing devices...</value>
+  </data>
+  <data name="InstallationThroughFirewall" xml:space="preserve">
+    <value>Installation will now set this application to work through your Windows XP firewall.</value>
+  </data>
+  <data name="Internet2Functional" xml:space="preserve">
+    <value>Internet2 functional.</value>
+  </data>
+  <data name="InvalidConnectionType" xml:space="preserve">
+    <value>Invalid {0}</value>
+  </data>
+  <data name="InvalidURIText" xml:space="preserve">
+    <value>The Universal Resource Identifier supplied for the Venue Service is improperly formatted.
+
+One example of such a formatting error is trying to connect to an IPv6 address without enabling IPv6 support on the local machine.
+
+The address you supplied is: {0}</value>
+  </data>
+  <data name="InvalidURITitle" xml:space="preserve">
+    <value>Invalid Venue Service URI</value>
+  </data>
+  <data name="IPParameterError" xml:space="preserve">
+    <value>If you specify the -ip parameter, you must also specify the -port parameter.</value>
+  </data>
+  <data name="JoiningVenue" xml:space="preserve">
+    <value>Joining venue.</value>
+  </data>
+  <data name="JoiningVenueError" xml:space="preserve">
+    <value>Error occured joining venue</value>
+  </data>
+  <data name="Kbps" xml:space="preserve">
+    <value>Kbps</value>
+  </data>
+  <data name="KeyFrameRate" xml:space="preserve">
+    <value>Key frame every {0} seconds</value>
+  </data>
+  <data name="LeaveVenue" xml:space="preserve">
+    <value>Leave Venue</value>
+  </data>
+  <data name="LeavingConference" xml:space="preserve">
+    <value>Leaving conference.</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="LoadingConferenceAPI" xml:space="preserve">
+    <value>Loading ConferenceAPI.</value>
+  </data>
+  <data name="LoadingVenues" xml:space="preserve">
+    <value>Loading Venues.</value>
+  </data>
+  <data name="MemoryCPUStatus" xml:space="preserve">
+    <value>Machine CPU: {0}     ConferenceXP memory: {1} MB</value>
+  </data>
+  <data name="MicrophoneInputSource" xml:space="preserve">
+    <value>Choose microphone's input source</value>
+  </data>
+  <data name="MoreInformation" xml:space="preserve">
+    <value>More Information</value>
+  </data>
+  <data name="MulticastFunctional" xml:space="preserve">
+    <value>Multicast functional.</value>
+  </data>
+  <data name="MulticastIPStatus" xml:space="preserve">
+    <value>Multicast IPAddress: {0},
+
+Network Receive: {1},
+Network Send: {2},
+Multicast Functional: {3},
+Internet2 Functional: {4},
+
+Time Since IGMP Join: {5}:{6},
+
+Details: {7}</value>
+  </data>
+  <data name="MulticastNonfunctional" xml:space="preserve">
+    <value>Multicast non-functional. Right-click for details.</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value>My </value>
+    <comment>Note: space at the end of line</comment>
+  </data>
+  <data name="MyArchiveServices" xml:space="preserve">
+    <value>My Archive Services:</value>
+  </data>
+  <data name="MyVideoStreams" xml:space="preserve">
+    <value>My video stream(s)</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameColon" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="NameIdentifierIPEMail" xml:space="preserve">
+    <value>Name: {0}
+Identifier: {1}
+IP Address: {2}
+Email Address: {3}
+
+CapabilityViewers:</value>
+  </data>
+  <data name="NameLowerCase" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="NetworkConfigErrorText" xml:space="preserve">
+    <value>Address Family mismatch: IP addresses should be either both IPv6 or both IPv4.</value>
+  </data>
+  <data name="NetworkConfigErrorTitle" xml:space="preserve">
+    <value>Network Configuration Error</value>
+  </data>
+  <data name="NoConferenceSelected" xml:space="preserve">
+    <value>&lt;&lt; No conference selected &gt;&gt;</value>
+  </data>
+  <data name="NoDetails" xml:space="preserve">
+    <value>&lt;&lt; No details &gt;&gt;</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>&lt;none&gt;</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OKHotkey" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="OthersAudioStreams" xml:space="preserve">
+    <value>Others' audio streams</value>
+  </data>
+  <data name="OthersVideoStreams" xml:space="preserve">
+    <value>Others' video streams</value>
+  </data>
+  <data name="Participant" xml:space="preserve">
+    <value>Participant</value>
+  </data>
+  <data name="Participants" xml:space="preserve">
+    <value>Participants: {0}</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="PlaybackConference" xml:space="preserve">
+    <value>Playback of conference: {0}</value>
+  </data>
+  <data name="PlaybackErrorText" xml:space="preserve">
+    <value>You cannot play back a recorded conference at this time. Make sure there currently is no recording or playback in this venue.
+
+Exception Message: {0}</value>
+  </data>
+  <data name="PlaybackErrorTitle" xml:space="preserve">
+    <value>Playback Error</value>
+  </data>
+  <data name="Playing" xml:space="preserve">
+    <value>  Playing</value>
+    <comment>Note: there are two spaces before this line</comment>
+  </data>
+  <data name="PlayNamePayloadType" xml:space="preserve">
+    <value>Play {0} {1}</value>
+  </data>
+  <data name="PlayRecordedConferenceHotkey" xml:space="preserve">
+    <value>&amp;Play a Previously Recorded Conference...</value>
+  </data>
+  <data name="PresentationHelpHotkey" xml:space="preserve">
+    <value>&amp;Presentation Help</value>
+  </data>
+  <data name="PresentationViewerChangeText" xml:space="preserve">
+    <value>You have selected {0}. This change will take effect the next time you start ConferenceXP.</value>
+  </data>
+  <data name="PresentationViewerChangeTitle" xml:space="preserve">
+    <value>Presentation Viewer Change</value>
+  </data>
+  <data name="PresentationViewerHotkey" xml:space="preserve">
+    <value>&amp;Presentation Viewer</value>
+  </data>
+  <data name="ProfileHotkey" xml:space="preserve">
+    <value>&amp;Profile...</value>
+  </data>
+  <data name="ReceiveOnlyNotification" xml:space="preserve">
+    <value>Receive only. Right-click for details.</value>
+  </data>
+  <data name="RecommendedIPAddress" xml:space="preserve">
+    <value>Note: If your computer has more than one network card, it may have more than one IP address. The IP address that appears above is the recommended IP address for two-way conferencing.</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>Record</value>
+  </data>
+  <data name="RecordConferenceHotkey" xml:space="preserve">
+    <value>&amp;Record This Conference...</value>
+  </data>
+  <data name="RecordedConferences" xml:space="preserve">
+    <value>Recorded Conferences</value>
+  </data>
+  <data name="RecordedDateTime" xml:space="preserve">
+    <value>Recorded: {0} at {1}</value>
+  </data>
+  <data name="RecordingFunctionInformation" xml:space="preserve">
+    <value>For more information about the ConferenceXP Archive Service and its recording function, see:</value>
+  </data>
+  <data name="RecordingNotStoppedText" xml:space="preserve">
+    <value>Recording will continue, as other participants have requested this recording as well.  When the recording participant leaves, recording will stop.</value>
+  </data>
+  <data name="RecordingNotStoppedTitle" xml:space="preserve">
+    <value>Recording not stopped.</value>
+  </data>
+  <data name="RecordingStoppedPrematurelyText" xml:space="preserve">
+    <value>Warning: Recording was already stopped!  Either there was an error on the server, or the venue had been empty for some amount of time and recording automatically stopped.</value>
+  </data>
+  <data name="RecordingStoppedPrematurelyTitle" xml:space="preserve">
+    <value>Recording stopped prematurely.</value>
+  </data>
+  <data name="RecordingStoppedText" xml:space="preserve">
+    <value>Recording has stopped. To ensure proper playback after the initial recording, make sure all participants leave the venue before choosing to play back the recording.</value>
+  </data>
+  <data name="RecordingStoppedTitle" xml:space="preserve">
+    <value>Recording Stopped</value>
+  </data>
+  <data name="RecordingUserAgreement" xml:space="preserve">
+    <value>By using the ConferenceXP Client application, you agree that at any time during a conference any participant may initiate the ConferenceXP Archive Service, which will result in your conversation and communications being recorded.  When a conference is being recorded, an Archive Service participant appears in the conference venue.  Recorded conversations may be accessed by other ConferenceXP users with access to the Archive Service.  We recommend that you inform other participants if you record a conference.  If you do not agree to a recording, please exit ConferenceXP.</value>
+  </data>
+  <data name="RecordThisConference" xml:space="preserve">
+    <value>Record This Conference</value>
+  </data>
+  <data name="ReflectorEnabled" xml:space="preserve">
+    <value>Reflector enabled (Unicast Mode): {0}</value>
+  </data>
+  <data name="ReflectorService" xml:space="preserve">
+    <value>Reflector Service</value>
+  </data>
+  <data name="ReplaceHotkey" xml:space="preserve">
+    <value>&amp;Replace</value>
+  </data>
+  <data name="ResolutionHeading" xml:space="preserve">
+    <value>Resolution:
+Frame rate:
+Compressor:</value>
+  </data>
+  <data name="ResolutionStatus" xml:space="preserve">
+    <value>Resolution: {0}x{1}
+Frame rate: {2} fps</value>
+  </data>
+  <data name="ResourceUtilization" xml:space="preserve">
+    <value>Resource Utilization</value>
+  </data>
+  <data name="RestoreDefaults" xml:space="preserve">
+    <value>Restore Defaults</value>
+  </data>
+  <data name="ScrollToEnd" xml:space="preserve">
+    <value>Scroll to end</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SelectCamera" xml:space="preserve">
+    <value>Select a camera to associate with your microphone</value>
+  </data>
+  <data name="SelectCameras" xml:space="preserve">
+    <value>Select camera(s):</value>
+  </data>
+  <data name="SelectConference" xml:space="preserve">
+    <value>Select the conference you want to play back:</value>
+  </data>
+  <data name="SelectStreams" xml:space="preserve">
+    <value>Select the streams you want to play back:</value>
+  </data>
+  <data name="SendAudioErrorText" xml:space="preserve">
+    <value>ConferenceXP was unable to send audio from the device - {0}. See the ConferenceAPI Event Log for details.</value>
+  </data>
+  <data name="SendAudioErrorTitle" xml:space="preserve">
+    <value>Unable to send audio</value>
+  </data>
+  <data name="SendVideoErrorText" xml:space="preserve">
+    <value>ConferenceXP was unable to send video from the device - {0}. See the ConferenceAPI Event Log for details.</value>
+  </data>
+  <data name="SendVideoErrorTitle" xml:space="preserve">
+    <value>Unable to send video</value>
+  </data>
+  <data name="ServicesHotkey" xml:space="preserve">
+    <value>&amp;Services...</value>
+  </data>
+  <data name="SettingsHotkey" xml:space="preserve">
+    <value>&amp;Settings</value>
+  </data>
+  <data name="SocketExceptionText" xml:space="preserve">
+    <value>A network problem occurred.  If you are using a reflector, please check the reflector address.  Otherwise please check your internet connection.</value>
+  </data>
+  <data name="SocketExceptionTitle" xml:space="preserve">
+    <value>Socket Exception</value>
+  </data>
+  <data name="SoundPlayback" xml:space="preserve">
+    <value>Sound playback:</value>
+  </data>
+  <data name="SoundRecording" xml:space="preserve">
+    <value>Sound recording:</value>
+  </data>
+  <data name="StartCapabilityMenuItems" xml:space="preserve">
+    <value>Start {0}...</value>
+  </data>
+  <data name="StartChatHotkey" xml:space="preserve">
+    <value>Start &amp;Chat...</value>
+  </data>
+  <data name="StartConnectivityHotkey" xml:space="preserve">
+    <value>Start &amp;Connectivity Detector</value>
+  </data>
+  <data name="StartOtherCapabilitiesHotkey" xml:space="preserve">
+    <value>Start &amp;Other Capabilities</value>
+  </data>
+  <data name="StartPresentationHotkey" xml:space="preserve">
+    <value>Start &amp;Presentation...</value>
+  </data>
+  <data name="StartScreenStreaming" xml:space="preserve">
+    <value>Start &amp;Local Screen Streaming...</value>
+  </data>
+  <data name="StartSharedBrowser" xml:space="preserve">
+    <value>Start &amp;Shared Browser...</value>
+  </data>
+  <data name="StartUnicastConference" xml:space="preserve">
+    <value>Start a Two-Way Unicast Conference...</value>
+  </data>
+  <data name="StartUWPresenter" xml:space="preserve">
+    <value>Start UW Classroom Presenter 3...</value>
+  </data>
+  <data name="StartWindowsMedia" xml:space="preserve">
+    <value>Start &amp;Windows Media Playback...</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="StopAudio" xml:space="preserve">
+    <value>Stop Audio</value>
+  </data>
+  <data name="StopNamePayloadType" xml:space="preserve">
+    <value>Stop {0} {1}</value>
+  </data>
+  <data name="StopVideo" xml:space="preserve">
+    <value>Stop Video</value>
+  </data>
+  <data name="Stream" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="StreamID" xml:space="preserve">
+    <value>Stream ID</value>
+  </data>
+  <data name="Streams" xml:space="preserve">
+    <value>Streams</value>
+  </data>
+  <data name="TestAudio" xml:space="preserve">
+    <value>Test Audio</value>
+  </data>
+  <data name="TestingAudioWarning" xml:space="preserve">
+    <value>Warning: Depending on your configuration, testing audio may create an audio feedback loop.</value>
+  </data>
+  <data name="TestingNetworkConnection" xml:space="preserve">
+    <value>Testing network connection</value>
+  </data>
+  <data name="TestVideo" xml:space="preserve">
+    <value>Test Video</value>
+  </data>
+  <data name="ThisUtilityDetects" xml:space="preserve">
+    <value>This utility detects whether your computer is connected to Internet2 and to a multicast network. If your computer is not connected to a multicast network, you can participate in ConferenceXP conferences over unicast or by using the ConferenceXP Reflector Service.</value>
+  </data>
+  <data name="Tiled" xml:space="preserve">
+    <value>Tiled</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TroubleshootingLog" xml:space="preserve">
+    <value>Troubleshooting Log...</value>
+  </data>
+  <data name="TwoWayUnicastConference" xml:space="preserve">
+    <value>Two-Way Conference Over Unicast</value>
+  </data>
+  <data name="TwoWayUnicastConferencing" xml:space="preserve">
+    <value>Two-way conferencing over unicast is typically used when you are having trouble with multicast connectivity and cannot access a ConferenceXP Reflector Service.</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TypeIPAddress" xml:space="preserve">
+    <value>Type the IP address of the remote participant's computer:</value>
+  </data>
+  <data name="UnableToJoinUnicastVenue" xml:space="preserve">
+    <value>Unable To Join Unicast Venue</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value> URL</value>
+    <comment>Note: space at the begining of the line</comment>
+  </data>
+  <data name="Venue_Service" xml:space="preserve">
+    <value>Venue Service</value>
+  </data>
+  <data name="VenueJoinErrorText" xml:space="preserve">
+    <value>This computer does not support the address protocol of this venue.  To join an IPv6 venue, see ConferenceXP Help.</value>
+  </data>
+  <data name="VenueJoinErrorTitle" xml:space="preserve">
+    <value>Venue Join Error</value>
+  </data>
+  <data name="VenueNotAvailable" xml:space="preserve">
+    <value>Venue Not Available</value>
+  </data>
+  <data name="VenueNotFound" xml:space="preserve">
+    <value>Venue '{0}' not found.</value>
+  </data>
+  <data name="VenueServiceBaseURL" xml:space="preserve">
+    <value>Venue Service: {0}</value>
+  </data>
+  <data name="VenueServiceNone" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="VersionIncompatible" xml:space="preserve">
+    <value>Version Incompatible</value>
+  </data>
+  <data name="VideoFormat" xml:space="preserve">
+    <value>Video Format...</value>
+  </data>
+  <data name="VideoSettings" xml:space="preserve">
+    <value>Video Settings</value>
+  </data>
+  <data name="VideoSource" xml:space="preserve">
+    <value>{0}Video source: {1}</value>
+  </data>
+  <data name="VideoStandard" xml:space="preserve">
+    <value>{0}Video standard: {1}</value>
+  </data>
+  <data name="VideoStream" xml:space="preserve">
+    <value>Video stream</value>
+  </data>
+  <data name="ViewHostedServices" xml:space="preserve">
+    <value>View hosted services</value>
+  </data>
+  <data name="WindowLayout" xml:space="preserve">
+    <value>Window Layout</value>
+  </data>
+  <data name="BitRateLabel" xml:space="preserve">
+    <value>Bit Rate</value>
+  </data>
+  <data name="KeyFrameRateLabel" xml:space="preserve">
+    <value>Key frame rate</value>
+  </data>
+  <data name="PlaybackOngoingError" xml:space="preserve">
+    <value>A playback is ongoing in this venue.  Please choose another venue in which to record.</value>
+  </data>
+  <data name="VenueInUseError" xml:space="preserve">
+    <value>A playback or recording is ongoing in this venue.  Please choose another venue in which to playback.</value>
+  </data>
+  <data name="VenueServiceVersionErrorText" xml:space="preserve">
+    <value>The version of the application you are running is less than the expected version.  Please upgrade to at least this version: {0}.</value>
+  </data>
+  <data name="PersistWindowPositions" xml:space="preserve">
+    <value>Persist Window Positions</value>
+  </data>
+  <data name="ArchiveServices" xml:space="preserve">
+    <value>Archive Services</value>
+  </data>
+  <data name="ReflectorServices" xml:space="preserve">
+    <value>Reflector Services</value>
+  </data>
+  <data name="Venue_Services" xml:space="preserve">
+    <value>Venue Services</value>
+  </data>
+  <data name="Colon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="DiagnosticService" xml:space="preserve">
+    <value>Diagnostic Service</value>
+  </data>
+  <data name="DiagnosticServices" xml:space="preserve">
+    <value>Diagnostic Services</value>
+  </data>
+  <data name="ExampleDiagnosticService" xml:space="preserve">
+    <value>For example: http://my.server.edu/diagnosticservice</value>
+  </data>
+  <data name="VenueServiceVersionErrorText2" xml:space="preserve">
+    <value>The version of the application you are running is beyond the supported range for this Venue Service.  The maxumum supported version is  {0}.  Please select a Venue Service that supports your client version.</value>
+  </data>
+  <data name="ViewConferenceDiagnostics" xml:space="preserve">
+    <value>View Conference &amp;Diagnostics...</value>
+  </data>
+  <data name="UseUncompressedAudio" xml:space="preserve">
+    <value>Use Uncompressed Audio</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Invalid Password</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>Password Error</value>
+  </data>
+  <data name="VenueRequiresPassword" xml:space="preserve">
+    <value>Venue Requires a Password</value>
+  </data>
+  <data name="SelectAudioCompressionFormat" xml:space="preserve">
+    <value>Select Audio Compression Format</value>
+  </data>
+  <data name="AudioBufferCount" xml:space="preserve">
+    <value>Audio Buffer Count</value>
+  </data>
+  <data name="AudioBufferSize" xml:space="preserve">
+    <value>Audio Buffer Size</value>
+  </data>
+  <data name="ConfigureDiagnosticServices" xml:space="preserve">
+    <value>Configure Diagnostics Services...</value>
+  </data>
+  <data name="DisableAudioForwardErrorCorrection" xml:space="preserve">
+    <value>Disable Forward Error Correction (Recommended for Uncompressed Audio)</value>
+  </data>
+  <data name="DisableVideoForwardErrorCorrection" xml:space="preserve">
+    <value>Disable Forward Error Correction (Recommended for Uncompressed Video)</value>
+  </data>
+  <data name="EnableDiagnosticServiceHotkey" xml:space="preserve">
+    <value>Enable &amp;Diagnostic Service</value>
+  </data>
+  <data name="NoArchivingEncryptedVenues" xml:space="preserve">
+    <value>ConferenceXP does not support archiving of encrypted venues</value>
+  </data>
+  <data name="RecordingError" xml:space="preserve">
+    <value>Recording error</value>
+  </data>
+  <data name="FriendlySocketInUseErrorMessage" xml:space="preserve">
+    <value>Note: The venue join failed because the required network endpoint is already in use by another application or service on your system.  One common cause of this problem is attempting to run the ConferenceXP client and the ConferenceXP Reflector Service on the same system.  This is not a supported configuration.  Another possible cause is running two instances of the ConferenceXP client at the same time.  Please exit other ConferenceXP applications or services that may be using the network, then try again.</value>
+  </data>
+  <data name="DoesNotUseEncryption" xml:space="preserve">
+    <value>No Encryption</value>
+  </data>
+  <data name="UsesEncryption" xml:space="preserve">
+    <value>Uses Encryption</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>A Venue Password is Required</value>
+  </data>
+  <data name="ArchiveServiceUserGuide" xml:space="preserve">
+    <value>ConferenceXP Archive Service User Guide</value>
+  </data>
+  <data name="HelpURLDiagnosticInfo" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Diagnostic_Service</value>
+  </data>
+  <data name="MulticastDetected" xml:space="preserve">
+    <value>Multicast detected</value>
+  </data>
+  <data name="MulticastNotDetected" xml:space="preserve">
+    <value>Multicast not detected</value>
+  </data>
+  <data name="ReflectorDetected" xml:space="preserve">
+    <value>Reflector detected</value>
+  </data>
+  <data name="ReflectorNotDetected" xml:space="preserve">
+    <value>Reflector not detected</value>
+  </data>
+</root>

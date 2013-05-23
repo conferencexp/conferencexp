@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkingBasics", "..\..\MSR.LST.Net.Rtp\NetworkingBasics\NetworkingBasics.csproj", "{4BE105C2-FD43-4651-9F7E-2A02253A2EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartbeatService", "HeartbeatService\HeartbeatService.csproj", "{F11B179F-B4C0-4751-AFC5-12B298CBDCEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartbeatConsole", "HeartbeatServiceConsole\HeartbeatConsole.csproj", "{67F0F631-5C65-469A-A811-E0E051EE8BD8}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HeartbeatServiceSetup", "HeartbeatServiceSetup\HeartbeatServiceSetup.vdproj", "{D80B2D3A-C914-4FA4-9412-73830D944EB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BE105C2-FD43-4651-9F7E-2A02253A2EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE105C2-FD43-4651-9F7E-2A02253A2EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE105C2-FD43-4651-9F7E-2A02253A2EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE105C2-FD43-4651-9F7E-2A02253A2EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11B179F-B4C0-4751-AFC5-12B298CBDCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11B179F-B4C0-4751-AFC5-12B298CBDCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11B179F-B4C0-4751-AFC5-12B298CBDCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11B179F-B4C0-4751-AFC5-12B298CBDCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F0F631-5C65-469A-A811-E0E051EE8BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F0F631-5C65-469A-A811-E0E051EE8BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F0F631-5C65-469A-A811-E0E051EE8BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F0F631-5C65-469A-A811-E0E051EE8BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D80B2D3A-C914-4FA4-9412-73830D944EB7}.Debug|Any CPU.ActiveCfg = Debug
+		{D80B2D3A-C914-4FA4-9412-73830D944EB7}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

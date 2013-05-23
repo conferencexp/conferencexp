@@ -1,0 +1,72 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenueService_Sample", "..\..\MSR.LST.VenueService\VenueService_Sample\VenueService_Sample.csproj", "{8B567FA0-9CB7-4DEF-8389-D22692D84343}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58} = {A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenueServiceAdministration", "..\..\MSR.LST.VenueService\AdminUI\VenueServiceAdministration.csproj", "{ADE31676-6505-46B8-A969-BF33F86D046E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58} = {A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\..\Setup\VenueService\VenueService_Setup.vdproj", "{872F05F9-4A93-43A5-ABC4-7D3D45600FBD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{35013F5A-79F1-4D39-9649-F1B2EE0BB71D} = {35013F5A-79F1-4D39-9649-F1B2EE0BB71D}
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58} = {A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "..\..\MSR.LST.VenueService\Storage\Storage.csproj", "{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseToFilestore", "..\..\MSR.LST.VenueService\DatabaseToFilestore\DatabaseToFilestore.csproj", "{35013F5A-79F1-4D39-9649-F1B2EE0BB71D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58} = {A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_x64", "..\..\Setup\VenueService\VenueService_Setup_x64.vdproj", "{91D4559D-DD8D-4344-86E3-3CB9D55D9923}"
+	ProjectSection(ProjectDependencies) = postProject
+		{35013F5A-79F1-4D39-9649-F1B2EE0BB71D} = {35013F5A-79F1-4D39-9649-F1B2EE0BB71D}
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58} = {A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenueServiceWebService", "..\..\MSR.LST.VenueService\VenueServiceWebService\VenueServiceWebService.csproj", "{20E48368-09ED-4EDD-A5C9-18009214DD7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B567FA0-9CB7-4DEF-8389-D22692D84343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B567FA0-9CB7-4DEF-8389-D22692D84343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B567FA0-9CB7-4DEF-8389-D22692D84343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B567FA0-9CB7-4DEF-8389-D22692D84343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE31676-6505-46B8-A969-BF33F86D046E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE31676-6505-46B8-A969-BF33F86D046E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE31676-6505-46B8-A969-BF33F86D046E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE31676-6505-46B8-A969-BF33F86D046E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{872F05F9-4A93-43A5-ABC4-7D3D45600FBD}.Debug|Any CPU.ActiveCfg = Debug
+		{872F05F9-4A93-43A5-ABC4-7D3D45600FBD}.Debug|Any CPU.Build.0 = Debug
+		{872F05F9-4A93-43A5-ABC4-7D3D45600FBD}.Release|Any CPU.ActiveCfg = Release
+		{872F05F9-4A93-43A5-ABC4-7D3D45600FBD}.Release|Any CPU.Build.0 = Release
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A072D17D-2EB3-42D9-BC13-5D4BB33B4D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35013F5A-79F1-4D39-9649-F1B2EE0BB71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35013F5A-79F1-4D39-9649-F1B2EE0BB71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35013F5A-79F1-4D39-9649-F1B2EE0BB71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35013F5A-79F1-4D39-9649-F1B2EE0BB71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D4559D-DD8D-4344-86E3-3CB9D55D9923}.Debug|Any CPU.ActiveCfg = Debug
+		{91D4559D-DD8D-4344-86E3-3CB9D55D9923}.Debug|Any CPU.Build.0 = Debug
+		{91D4559D-DD8D-4344-86E3-3CB9D55D9923}.Release|Any CPU.ActiveCfg = Release
+		{91D4559D-DD8D-4344-86E3-3CB9D55D9923}.Release|Any CPU.Build.0 = Release
+		{20E48368-09ED-4EDD-A5C9-18009214DD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E48368-09ED-4EDD-A5C9-18009214DD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E48368-09ED-4EDD-A5C9-18009214DD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E48368-09ED-4EDD-A5C9-18009214DD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

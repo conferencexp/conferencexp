@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Added" xml:space="preserve">
+    <value>{0} Added {1}</value>
+  </data>
+  <data name="AvailableVenues" xml:space="preserve">
+    <value>Available Venues:</value>
+  </data>
+  <data name="CapabilitySenderDoesNotImplementICapabilityWindow" xml:space="preserve">
+    <value>CapabilitySender, {0}, does not implement ICapabilityWindow</value>
+  </data>
+  <data name="CapabilityViewerDoesNotImplementICapabilityWindow" xml:space="preserve">
+    <value>Primeira CapabilityViewer localizado, {0} não implementa ICapabilityWindow</value>
+  </data>
+  <data name="CyclePlayCapabilityViewersTestRun" xml:space="preserve">
+    <value>CyclePlayCapabilityViewers Test Run # {0}:</value>
+  </data>
+  <data name="CycleSendVideoTestRun" xml:space="preserve">
+    <value>CycleSendVideo Test Run #{0}:</value>
+  </data>
+  <data name="HelloConferencexp" xml:space="preserve">
+    <value>Hello ConferenceXP</value>
+  </data>
+  <data name="InAndOutTestRun" xml:space="preserve">
+    <value>InAndOut Test Run #{0}:</value>
+  </data>
+  <data name="JoinedVenue0As1" xml:space="preserve">
+    <value>Associados Venue {0} como {1}</value>
+  </data>
+  <data name="JoiningVenue" xml:space="preserve">
+    <value>Joining Venue {0}</value>
+  </data>
+  <data name="LeavingVenue" xml:space="preserve">
+    <value>Leaving Venue {0}</value>
+  </data>
+  <data name="MemoryUsed" xml:space="preserve">
+    <value>Memória usada: {0}, diferenças: {1}</value>
+  </data>
+  <data name="MustSpecifyAnOtherCapabilityName" xml:space="preserve">
+    <value>Você deve especificar um OtherCapabilityName em app.config usando MSR.LST.ConferenceXP.PartSim.JoinAndSend.OtherCapabilityName</value>
+  </data>
+  <data name="NoCapabilityViewerFound" xml:space="preserve">
+    <value>Nenhuma CapabilityViewer encontrado.  Não é possível salvar janela posição.</value>
+  </data>
+  <data name="ParticipantAdded" xml:space="preserve">
+    <value>ParticipantAdded: {0}</value>
+  </data>
+  <data name="ParticipantRemoved" xml:space="preserve">
+    <value>ParticipantRemoved: {0}</value>
+  </data>
+  <data name="Played" xml:space="preserve">
+    <value>Played {0} {1}</value>
+  </data>
+  <data name="PressEnterToSavePlayingWindowPosition" xml:space="preserve">
+    <value>Pressione ENTER para salvar a janela Posição do Primeira a capacidade de execução</value>
+  </data>
+  <data name="PressEnterToSaveSendingWindowPosition" xml:space="preserve">
+    <value>Pressione ENTER para salvar a janela posição do recurso de envio</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>{0} Removed {1}</value>
+  </data>
+  <data name="SavingWindowPosition" xml:space="preserve">
+    <value>Salvando janela posição para {0}</value>
+  </data>
+  <data name="StartedOtherCapabilitySender" xml:space="preserve">
+    <value>Iniciado OtherCapabilitySender {0}</value>
+  </data>
+  <data name="StartingJoinAndPlay" xml:space="preserve">
+    <value>Starting JoinAndPlay</value>
+  </data>
+  <data name="StartingJoinAndSend" xml:space="preserve">
+    <value>Starting JoinAndSend</value>
+  </data>
+  <data name="StoppedPlaying" xml:space="preserve">
+    <value>{0} Interrompido execução {1}</value>
+  </data>
+  <data name="TestRun" xml:space="preserve">
+    <value>Test Run #{0}:</value>
+  </data>
+  <data name="UnableToFindOtherCapabilitySender" xml:space="preserve">
+    <value>Não é possível localizar que um OtherCapabilitySender chamado '{0}'.</value>
+  </data>
+  <data name="UnableToFindVenue" xml:space="preserve">
+    <value>Não é possível encontrar Venue {0}</value>
+  </data>
+  <data name="ValidOtherCapabilitySenders" xml:space="preserve">
+    <value>Valid OtherCapabilitySenders:</value>
+  </data>
+</root>

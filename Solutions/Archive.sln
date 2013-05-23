@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archiver", "..\MSR.LST.ArchiveService\ARCHIVER\Archiver.csproj", "{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A} = {30E6C8D6-0A41-47B4-9C45-BE856E586D5A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiveServiceConsole", "..\MSR.LST.ArchiveService\ARCHIVESERVERCONSOLE\ArchiveServiceConsole.csproj", "{700E31DA-9850-49C9-8F88-1E44F66396B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA} = {1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A} = {30E6C8D6-0A41-47B4-9C45-BE856E586D5A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiveWindowsService", "..\MSR.LST.ArchiveService\ARCHIVEWINDOWSSERVICE\ArchiveWindowsService.csproj", "{E76E390F-C7D4-453C-95FD-FE9EE1491BB4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA} = {1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A} = {30E6C8D6-0A41-47B4-9C45-BE856E586D5A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiveAdmin", "..\MSR.LST.ArchiveService\ArchiveAdmin\ArchiveAdmin.csproj", "{805E0FBA-B2C9-4DB3-A559-9F3A9D713417}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA} = {1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A} = {30E6C8D6-0A41-47B4-9C45-BE856E586D5A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiveWrapper", "..\MSR.LST.ArchiveService\ArchiveWrapper\ArchiveWrapper.csproj", "{30E6C8D6-0A41-47B4-9C45-BE856E586D5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7C632D-23E2-4E65-A1FE-F104CB37FBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700E31DA-9850-49C9-8F88-1E44F66396B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700E31DA-9850-49C9-8F88-1E44F66396B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700E31DA-9850-49C9-8F88-1E44F66396B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700E31DA-9850-49C9-8F88-1E44F66396B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76E390F-C7D4-453C-95FD-FE9EE1491BB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76E390F-C7D4-453C-95FD-FE9EE1491BB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76E390F-C7D4-453C-95FD-FE9EE1491BB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76E390F-C7D4-453C-95FD-FE9EE1491BB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805E0FBA-B2C9-4DB3-A559-9F3A9D713417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805E0FBA-B2C9-4DB3-A559-9F3A9D713417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805E0FBA-B2C9-4DB3-A559-9F3A9D713417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805E0FBA-B2C9-4DB3-A559-9F3A9D713417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E6C8D6-0A41-47B4-9C45-BE856E586D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

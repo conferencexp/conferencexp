@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutConferenceXPClientHotkey" xml:space="preserve">
+    <value>关于 ConferenceXP 客户端(&amp;A)</value>
+  </data>
+  <data name="AboutCXPClientText" xml:space="preserve">
+    <value>ConferenceXP 客户端
+Microsoft Research &amp; UW Center for Collaborative Technologies
+	   
+致谢： 
+Jay Beavers, Patrick Bristow, Tim Chou, Sauleh Eetemadi,
+Chris Moffatt, Michel Pahud, Lynn Powers, Jason Van Eaton,
+Andrew Whitaker, Luo Jie, Fred Videon, José Feghali
+
+CXP 客户端：{0}
+{1}
+	   
+更多的信息，请参阅 http://cct.cs.washington.edu/downloads/CXP</value>
+  </data>
+  <data name="AboutCXPClientTitle" xml:space="preserve">
+    <value>关于 ConferenceXP 客户端</value>
+  </data>
+  <data name="AboutInternet2AndMulticast" xml:space="preserve">
+    <value>关于 Internet2 和多播连通性</value>
+  </data>
+  <data name="ActionsHotkey" xml:space="preserve">
+    <value>操作(&amp;A)</value>
+  </data>
+  <data name="ActiveVenueCapabilitiesHotkey" xml:space="preserve">
+    <value>激活会场功能(&amp;A)</value>
+  </data>
+  <data name="AddHotkey" xml:space="preserve">
+    <value>添加(&amp;A)</value>
+  </data>
+  <data name="AdditionalCameraConfiguration" xml:space="preserve">
+    <value>其他照相机配置选项（如果可用）</value>
+  </data>
+  <data name="AddressProtocolError" xml:space="preserve">
+    <value>地址协议错误</value>
+  </data>
+  <data name="AdvancedAudioSettings" xml:space="preserve">
+    <value>高级音频设置：{0}</value>
+  </data>
+  <data name="AdvancedSettings" xml:space="preserve">
+    <value>高级设置 ...</value>
+  </data>
+  <data name="AdvancedVideoSettings" xml:space="preserve">
+    <value>高级视频设置：{0}</value>
+  </data>
+  <data name="AdvancedVideoSettingsStatus" xml:space="preserve">
+    <value>{0}分辨率：{1}x{2}
+{0}帧速率：{3} fps
+{0}颜色空间：{4}（{5} 位）
+{0}压缩前比特率：{6} Kbps</value>
+  </data>
+  <data name="AppConfigHotkey" xml:space="preserve">
+    <value>应用程序配置(&amp;C) ...</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="ArchivePlayBackText" xml:space="preserve">
+    <value>ConferenceXP 在播放中遇到一个未知问题。
+请关闭会议播放对话框后重新播放。
+
+异常：{0}</value>
+  </data>
+  <data name="ArchivePlayBackTitle" xml:space="preserve">
+    <value>存档播放</value>
+  </data>
+  <data name="ArchiveService" xml:space="preserve">
+    <value>存档服务</value>
+  </data>
+  <data name="ArchiveServiceErrorText" xml:space="preserve">
+    <value>存档服务当前不可用或者可能遇到预计外的错误。请与服务器的管理员联系，以获得进一步的帮助。
+
+异常：{0}</value>
+  </data>
+  <data name="ArchiveServiceErrorTitle" xml:space="preserve">
+    <value>存档服务错误</value>
+  </data>
+  <data name="ArchiveServiceHostName" xml:space="preserve">
+    <value>存档服务主机名：</value>
+  </data>
+  <data name="ArchiveServiceUnavailableText" xml:space="preserve">
+    <value>存档服务没有响应。请确保您在 ConferenceXP 中指定的存档服务是正确的并且该服务器处于联机状态。请与服务器的管理员联系，以获得进一步的帮助。
+
+异常消息：{0}</value>
+  </data>
+  <data name="ArchiveServiceUnavailableTitle" xml:space="preserve">
+    <value>存档服务不可用</value>
+  </data>
+  <data name="ArchiveServiceURL" xml:space="preserve">
+    <value>www.conferencexp.net/archiveservice.htm</value>
+  </data>
+  <data name="AudioFormat" xml:space="preserve">
+    <value>未压缩音频格式 ...</value>
+  </data>
+  <data name="AudioFormatSettings" xml:space="preserve">
+    <value>音频格式
+{0}声道：{1}
+{0}采样位数：{2}
+{0}频率：{3} 
+{0}Kbps：{4}</value>
+  </data>
+  <data name="AudioSettings" xml:space="preserve">
+    <value>音频设置</value>
+  </data>
+  <data name="AudioVideoHotkey" xml:space="preserve">
+    <value>音频/视频(&amp;A) ...</value>
+  </data>
+  <data name="AudioVideoSettings" xml:space="preserve">
+    <value>音频/视频设置</value>
+  </data>
+  <data name="AudioVideoTroubleshooting" xml:space="preserve">
+    <value>音频/视频疑难解答</value>
+  </data>
+  <data name="AutoPlay" xml:space="preserve">
+    <value>自动播放</value>
+  </data>
+  <data name="AvailableOtherCapabilitySenders" xml:space="preserve">
+    <value>可用的 OtherCapabilitySenders 有：</value>
+  </data>
+  <data name="AvailableVenues" xml:space="preserve">
+    <value>可用的会场有：</value>
+  </data>
+  <data name="BitRateKbps" xml:space="preserve">
+    <value>比特率：{0} Kbps</value>
+  </data>
+  <data name="BitsPerSample" xml:space="preserve">
+    <value>采样位数</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>照相机</value>
+  </data>
+  <data name="CameraEllipsis" xml:space="preserve">
+    <value>照相机 ...</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CancelHotkey" xml:space="preserve">
+    <value>取消(&amp;C)</value>
+  </data>
+  <data name="CantRenderAudioGraph" xml:space="preserve">
+    <value>缺少音频捕获设备，不能呈现音频图形</value>
+  </data>
+  <data name="CapabilityError" xml:space="preserve">
+    <value>如果指定了 -capability 参数，您必须同时指定 -venue 参数。</value>
+  </data>
+  <data name="CapabilitySenderNotFound" xml:space="preserve">
+    <value>找不到 CapabilitySender ‘{0}’。</value>
+  </data>
+  <data name="CaseSensitiveReminder" xml:space="preserve">
+    <value>请注意，功能名称是区分大小写的。</value>
+  </data>
+  <data name="Channels" xml:space="preserve">
+    <value>声道</value>
+  </data>
+  <data name="ChooseAudioFormat" xml:space="preserve">
+    <value>为 {0} 选择一个音频格式</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="CmdLineParametersInstructions" xml:space="preserve">
+    <value>通过使用一个或多个命令行参数，可以指定或更改 ConferenceXP 的配置。会场和功能的名称是区分大小写的。请在包含空格的会场或功能名称前后添加引号。
+
+{0} 查看帮助
+
+{1} 联接一个会场
+{2}
+
+{3} 启动一个功能
+{4}
+
+{5} 指定一个不同的会场服务
+{6}
+
+{7} 不使用会场服务
+{8}
+
+{9} 联接一个自定义的会场
+
+{10} 禁用录制通知
+{11}
+
+{12} 指定一个不同的标识符
+{13}
+
+{14}
+{15}</value>
+  </data>
+  <data name="CmdLineParametersTitle" xml:space="preserve">
+    <value>ConferenceXP 命令行参数</value>
+  </data>
+  <data name="CommunitySiteHotkey" xml:space="preserve">
+    <value>社区站点(&amp;S)</value>
+  </data>
+  <data name="CompressedBitRate" xml:space="preserve">
+    <value>压缩后的比特率：{0} Kbps</value>
+  </data>
+  <data name="CompressorDisabled" xml:space="preserve">
+    <value>压缩器：禁用</value>
+  </data>
+  <data name="CompressorDisabled2" xml:space="preserve">
+    <value>禁用压缩器 {0}</value>
+  </data>
+  <data name="CompressorStatus" xml:space="preserve">
+    <value>压缩器
+{0}名称：{1}
+{0}媒体子类型：{2}
+{0}压缩后的比特率：{3} Kbps
+{0}{4}</value>
+  </data>
+  <data name="Conference" xml:space="preserve">
+    <value>会议：</value>
+  </data>
+  <data name="ConferencePlayback" xml:space="preserve">
+    <value>会议播放</value>
+  </data>
+  <data name="Conferences" xml:space="preserve">
+    <value>会议</value>
+  </data>
+  <data name="ConferenceXP" xml:space="preserve">
+    <value>ConferenceXP</value>
+  </data>
+  <data name="ConferenceXPHelpHotkey" xml:space="preserve">
+    <value>ConferenceXP 帮助(&amp;C)</value>
+  </data>
+  <data name="Configure" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="ConfigureArchiveServices" xml:space="preserve">
+    <value>配置存档服务</value>
+  </data>
+  <data name="ConfigureArchiveServicesEllipsis" xml:space="preserve">
+    <value>配置存档服务 ...</value>
+  </data>
+  <data name="ConfigureCameraAndVideo" xml:space="preserve">
+    <value>配置照相机和视频流</value>
+  </data>
+  <data name="ConfigureMicrophone" xml:space="preserve">
+    <value>配置麦克风和音频流</value>
+  </data>
+  <data name="ConfigureReflectorServices" xml:space="preserve">
+    <value>配置反射器服务 ...</value>
+  </data>
+  <data name="ConfigureVenueServices" xml:space="preserve">
+    <value>配置会场服务 ...</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>确认删除</value>
+  </data>
+  <data name="ConfirmDeleteServiceHost" xml:space="preserve">
+    <value>您想要删除服务主机
+“{0}”吗？</value>
+  </data>
+  <data name="ConfirmReplace" xml:space="preserve">
+    <value>确认替换</value>
+  </data>
+  <data name="ConfirmReplaceServiceHost" xml:space="preserve">
+    <value>是否要用服务主机
+“{1}”来替换
+“{0}”？</value>
+  </data>
+  <data name="ConnectivityDetector" xml:space="preserve">
+    <value>连通性检测程序</value>
+  </data>
+  <data name="ContactServersAdministrator" xml:space="preserve">
+    <value>请与服务器的管理员联系。</value>
+  </data>
+  <data name="CPU" xml:space="preserve">
+    <value>{0} %</value>
+  </data>
+  <data name="CurrentSettings" xml:space="preserve">
+    <value>当前设置</value>
+  </data>
+  <data name="CXPRecordingNotification" xml:space="preserve">
+    <value>ConferenceXP 录制通知</value>
+  </data>
+  <data name="CXPServices" xml:space="preserve">
+    <value>ConferenceXP 服务</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DeleteHotkey" xml:space="preserve">
+    <value>删除(&amp;D)</value>
+  </data>
+  <data name="DeterminingStatus" xml:space="preserve">
+    <value>正在确定状态</value>
+  </data>
+  <data name="DuplicateHostNameText" xml:space="preserve">
+    <value>请输入一个列表外的 {0}。</value>
+  </data>
+  <data name="DuplicateHostNameTitle" xml:space="preserve">
+    <value>主机名称重复</value>
+  </data>
+  <data name="DuplicateIdentityDetected" xml:space="preserve">
+    <value>检测到重复的标识</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="EnableArchiveServiceHotkey" xml:space="preserve">
+    <value>启用存档服务(&amp;A)</value>
+  </data>
+  <data name="EnableAudioCompression" xml:space="preserve">
+    <value>启用音频压缩</value>
+  </data>
+  <data name="EnableReflectorServiceHotkey" xml:space="preserve">
+    <value>启用反射器服务(&amp;R)</value>
+  </data>
+  <data name="EnableVideoCompression" xml:space="preserve">
+    <value>启用视频压缩</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>&lt;&lt; 结束时间 &gt;&gt;</value>
+  </data>
+  <data name="EnterAVenue" xml:space="preserve">
+    <value>进入会场 {0}
+
+标识符：{1}
+IP 地址：{2}
+端口：{3}</value>
+  </data>
+  <data name="EnterValidConnectionType" xml:space="preserve">
+    <value>请输入一个有效的 {0}</value>
+  </data>
+  <data name="ExampleArchiveHostName" xml:space="preserve">
+    <value>例如：my.archiveservice.com</value>
+  </data>
+  <data name="ExampleArchiveHostNameIP" xml:space="preserve">
+    <value>例如：my.archiveservice.com 或 192.168.0.1</value>
+  </data>
+  <data name="ExampleReflectorHostNameIP" xml:space="preserve">
+    <value>例如：my.reflectorservice.com，192.168.0.1 或 2000::1:212:79ff:fed2:f77</value>
+  </data>
+  <data name="ExampleURL" xml:space="preserve">
+    <value>例如：http://my.venueservice.com/venueservice</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>异常：</value>
+  </data>
+  <data name="ExchangeIPAddresses" xml:space="preserve">
+    <value>交换 IP 地址</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="ExitedVenueSameName" xml:space="preserve">
+    <value>您退出会场，因为与您名称相同的参与者已经从一个不同的 IP 地址加入了会场 - {0}, {1}</value>
+  </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>防火墙</value>
+  </data>
+  <data name="FirewallNotFound" xml:space="preserve">
+    <value>找不到防火墙</value>
+  </data>
+  <data name="FirewallNotFoundText" xml:space="preserve">
+    <value>如果您的计算机有一个已启用的防火墙，那么它未被找到。您必须把 ConferenceXP 添加到您的防火墙例外列表中，以使其能够正常工作。</value>
+  </data>
+  <data name="FMainActiveVenue" xml:space="preserve">
+    <value>{0} - ConferenceXP</value>
+  </data>
+  <data name="FourWay" xml:space="preserve">
+    <value>四路</value>
+  </data>
+  <data name="Frames" xml:space="preserve">
+    <value>框架</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>频率（赫兹）</value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>全屏显示</value>
+  </data>
+  <data name="GiveIPAddress" xml:space="preserve">
+    <value>向远程参与者提供您计算机的 IP 地址：</value>
+  </data>
+  <data name="HelpHotkey" xml:space="preserve">
+    <value>帮助(&amp;H)</value>
+  </data>
+  <data name="HelpURLArchiveInfo" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide#Recording_and_playing_back_ConferenceXP_sessions</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLCommunity" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/community/</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLConferenceXP" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/downloads/CXP/</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLConnectivity" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/About_Multicast</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLNotification" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Archive_Service</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLReflectorInfo" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide#Connecting_as_a_unicast_client_to_a_multicast_network</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLServices" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Venue_Service</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLStudentEdition" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HelpURLVenuesInfo" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Client_User_Guide#Managing_Venue_Services</value>
+    <comment>不翻译</comment>
+  </data>
+  <data name="HostNameOrIPAddress" xml:space="preserve">
+    <value>主机名或 IP 地址</value>
+  </data>
+  <data name="InitializingAVDevices" xml:space="preserve">
+    <value>音频/视频设置 - 初始化设备</value>
+  </data>
+  <data name="InstallationThroughFirewall" xml:space="preserve">
+    <value>安装程序现在将设置该应用程序，使它能够在您的 WindowsXP 防火墙下正常工作。</value>
+  </data>
+  <data name="Internet2Functional" xml:space="preserve">
+    <value>Internet2 功能。</value>
+  </data>
+  <data name="InvalidConnectionType" xml:space="preserve">
+    <value>无效的 {0}</value>
+  </data>
+  <data name="InvalidURIText" xml:space="preserve">
+    <value>指定的会场服务通用资源标识符格式错误。
+
+一种可能的情况是，试图从未启用 IPv6 支持本地计算机上连接到 IPv6 地址。
+
+您提供的地址是：{0}</value>
+  </data>
+  <data name="InvalidURITitle" xml:space="preserve">
+    <value>无效的会场服务 URI</value>
+  </data>
+  <data name="IPParameterError" xml:space="preserve">
+    <value>如果指定了 -ip 参数，您必须同时指定 -port 参数。</value>
+  </data>
+  <data name="JoiningVenue" xml:space="preserve">
+    <value>加入会场。</value>
+  </data>
+  <data name="JoiningVenueError" xml:space="preserve">
+    <value>加入会场时发生错误</value>
+  </data>
+  <data name="Kbps" xml:space="preserve">
+    <value>Kbps</value>
+  </data>
+  <data name="KeyFrameRate" xml:space="preserve">
+    <value>每秒 {0} 关键帧</value>
+  </data>
+  <data name="LeaveVenue" xml:space="preserve">
+    <value>离开会场</value>
+  </data>
+  <data name="LeavingConference" xml:space="preserve">
+    <value>离开会议。</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>正在加载</value>
+  </data>
+  <data name="LoadingConferenceAPI" xml:space="preserve">
+    <value>加载 ConferenceAPI。</value>
+  </data>
+  <data name="LoadingVenues" xml:space="preserve">
+    <value>加载会场。</value>
+  </data>
+  <data name="MemoryCPUStatus" xml:space="preserve">
+    <value>计算机 CPU：{0}    ConferenceXP 内存：{1} MB</value>
+  </data>
+  <data name="MicrophoneInputSource" xml:space="preserve">
+    <value>选择麦克风的输入源</value>
+  </data>
+  <data name="MoreInformation" xml:space="preserve">
+    <value>详细信息</value>
+  </data>
+  <data name="MulticastFunctional" xml:space="preserve">
+    <value>多播功能。</value>
+  </data>
+  <data name="MulticastIPStatus" xml:space="preserve">
+    <value>多播 IP 地址：{0}，
+		  
+网络接收：{1}，
+网络发送：{2}，
+多路广播功能：{3}，
+Internet2 功能：{4}，
+
+加入 IGMP 后经过时间：{5}:{6}，
+
+详细信息：{7}</value>
+  </data>
+  <data name="MulticastNonfunctional" xml:space="preserve">
+    <value>多播功能无效。单击右键获取详细信息。</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value>我的</value>
+  </data>
+  <data name="MyArchiveServices" xml:space="preserve">
+    <value>我的存档服务：</value>
+  </data>
+  <data name="MyVideoStreams" xml:space="preserve">
+    <value>我的视频流</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="NameColon" xml:space="preserve">
+    <value>名称:</value>
+  </data>
+  <data name="NameIdentifierIPEMail" xml:space="preserve">
+    <value>名称：{0}
+标识符：{1}
+IP 地址：{2}
+电子邮件地址：{3}
+
+CapabilityViewers：</value>
+  </data>
+  <data name="NameLowerCase" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="NetworkConfigErrorText" xml:space="preserve">
+    <value>地址家族不匹配：IP 地址应该都是 IPv6 或者都是 IPv4。</value>
+  </data>
+  <data name="NetworkConfigErrorTitle" xml:space="preserve">
+    <value>网络配置错误</value>
+  </data>
+  <data name="NoConferenceSelected" xml:space="preserve">
+    <value>&lt;&lt; 没有选择任何会议 &gt;&gt;</value>
+  </data>
+  <data name="NoDetails" xml:space="preserve">
+    <value>&lt;&lt; 没有详细信息 &gt;&gt;</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>&lt;none&gt;</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="OKHotkey" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="OthersAudioStreams" xml:space="preserve">
+    <value>其他人的音频流</value>
+  </data>
+  <data name="OthersVideoStreams" xml:space="preserve">
+    <value>其他人的视频流</value>
+  </data>
+  <data name="Participant" xml:space="preserve">
+    <value>参与者</value>
+  </data>
+  <data name="Participants" xml:space="preserve">
+    <value>参与者：{0}</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>播放</value>
+  </data>
+  <data name="PlaybackConference" xml:space="preserve">
+    <value>播放会议：{0}</value>
+  </data>
+  <data name="PlaybackErrorText" xml:space="preserve">
+    <value>您不能播放录制的会议。请确保此会场中当前没有任何录制或播放。
+
+异常消息：{0}</value>
+  </data>
+  <data name="PlaybackErrorTitle" xml:space="preserve">
+    <value>播放错误</value>
+  </data>
+  <data name="Playing" xml:space="preserve">
+    <value>  播放</value>
+    <comment>注意：该行之前有两个空格</comment>
+  </data>
+  <data name="PlayNamePayloadType" xml:space="preserve">
+    <value>播放 {0} {1}</value>
+  </data>
+  <data name="PlayRecordedConferenceHotkey" xml:space="preserve">
+    <value>播放一个以前录制的会议(&amp;P) ...</value>
+  </data>
+  <data name="PresentationHelpHotkey" xml:space="preserve">
+    <value>演示文稿帮助(&amp;P)</value>
+  </data>
+  <data name="PresentationViewerChangeText" xml:space="preserve">
+    <value>您已选择了 {0}。下次您启动 ConferenceXP 这一更改将生效。</value>
+  </data>
+  <data name="PresentationViewerChangeTitle" xml:space="preserve">
+    <value>演示文稿查看器更改</value>
+  </data>
+  <data name="PresentationViewerHotkey" xml:space="preserve">
+    <value>演示文稿查看器(&amp;P)</value>
+  </data>
+  <data name="ProfileHotkey" xml:space="preserve">
+    <value>配置文件(&amp;P) ...</value>
+  </data>
+  <data name="ReceiveOnlyNotification" xml:space="preserve">
+    <value>只允许接收。单击右键获取详细信息。</value>
+  </data>
+  <data name="RecommendedIPAddress" xml:space="preserve">
+    <value>注意：如果您的计算机有多个网卡，那么它可能有不止一个 IP 地址。推荐使用上面显示的 IP 地址进行双向会议。</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>录制</value>
+  </data>
+  <data name="RecordConferenceHotkey" xml:space="preserve">
+    <value>录制此会议 ...</value>
+  </data>
+  <data name="RecordedConferences" xml:space="preserve">
+    <value>录制的会议</value>
+  </data>
+  <data name="RecordedDateTime" xml:space="preserve">
+    <value>录制于：{1}  {0}</value>
+  </data>
+  <data name="RecordingFunctionInformation" xml:space="preserve">
+    <value>有关 ConferenceXP 存档服务和其录制功能的更多信息，请参阅：</value>
+  </data>
+  <data name="RecordingNotStoppedText" xml:space="preserve">
+    <value>由于还有其他参与者提交了录制请求，录制将继续。
+当所有请求录制的参与者都离开时，录制将停止。</value>
+  </data>
+  <data name="RecordingNotStoppedTitle" xml:space="preserve">
+    <value>记录不停止。</value>
+  </data>
+  <data name="RecordingStoppedPrematurelyText" xml:space="preserve">
+    <value>警告：已经停止录制！服务器出错或者会场已经空闲了一段时间，使得录制自动停止。</value>
+  </data>
+  <data name="RecordingStoppedPrematurelyTitle" xml:space="preserve">
+    <value>过早停止录制。</value>
+  </data>
+  <data name="RecordingStoppedText" xml:space="preserve">
+    <value>录制已停止。若要保证初始录制后的正确播放，请确保播放前所有参与者都已经离开了会场。</value>
+  </data>
+  <data name="RecordingStoppedTitle" xml:space="preserve">
+    <value>录制停止</value>
+  </data>
+  <data name="RecordingUserAgreement" xml:space="preserve">
+    <value>要使用 ConferenceXP 客户端应用程序，您必须同意下列条款。任何时候任何参与者都可能会启动 ConferenceXP 存档服务，这将导致您的会话和通信被录制。录制会议时，存档服务参与者将被显示在会议会场中。录制的会话可以被其他具有对存档服务访问的权限的 ConferenceXP 用户所访问。我们建议您在录制会议前通知其他参与者。如果您不同意录制，请退出 ConferenceXP。</value>
+  </data>
+  <data name="RecordThisConference" xml:space="preserve">
+    <value>录制此会议</value>
+  </data>
+  <data name="ReflectorEnabled" xml:space="preserve">
+    <value>启用反射器（单播模式）：{0}</value>
+  </data>
+  <data name="ReflectorService" xml:space="preserve">
+    <value>反射器服务</value>
+  </data>
+  <data name="ReplaceHotkey" xml:space="preserve">
+    <value>替换(&amp;R)</value>
+  </data>
+  <data name="ResolutionHeading" xml:space="preserve">
+    <value>分辨率: 
+帧速率：
+压缩器：</value>
+  </data>
+  <data name="ResolutionStatus" xml:space="preserve">
+    <value>分辨率：{0}x{1}
+帧速率：{2} fps</value>
+  </data>
+  <data name="ResourceUtilization" xml:space="preserve">
+    <value>资源使用率</value>
+  </data>
+  <data name="RestoreDefaults" xml:space="preserve">
+    <value>还原默认值</value>
+  </data>
+  <data name="ScrollToEnd" xml:space="preserve">
+    <value>滚动到末尾</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="SelectCamera" xml:space="preserve">
+    <value>请选择一个摄像机与您的麦克风相关联</value>
+  </data>
+  <data name="SelectCameras" xml:space="preserve">
+    <value>选择摄像机：</value>
+  </data>
+  <data name="SelectConference" xml:space="preserve">
+    <value>请选择您要播放的会议：</value>
+  </data>
+  <data name="SelectStreams" xml:space="preserve">
+    <value>请选择您要播放的流：</value>
+  </data>
+  <data name="SendAudioErrorText" xml:space="preserve">
+    <value>ConferenceXP 不能从设备 {0} 发送音频。请参阅 ConferenceAPI 事件日志中的详细信息。</value>
+  </data>
+  <data name="SendAudioErrorTitle" xml:space="preserve">
+    <value>无法发送音频</value>
+  </data>
+  <data name="SendVideoErrorText" xml:space="preserve">
+    <value>ConferenceXP 不能从设备 {0} 发送视频。请参阅 ConferenceAPI 事件日志中的详细信息。</value>
+  </data>
+  <data name="SendVideoErrorTitle" xml:space="preserve">
+    <value>无法发送视频</value>
+  </data>
+  <data name="ServicesHotkey" xml:space="preserve">
+    <value>服务(&amp;S) ...</value>
+  </data>
+  <data name="SettingsHotkey" xml:space="preserve">
+    <value>设置(&amp;S)</value>
+  </data>
+  <data name="SocketExceptionText" xml:space="preserve">
+    <value>您的 Internet 连接无法正常工作。请检查您的 Internet 连接。</value>
+  </data>
+  <data name="SocketExceptionTitle" xml:space="preserve">
+    <value>SocketException</value>
+  </data>
+  <data name="SoundPlayback" xml:space="preserve">
+    <value>声音播放：</value>
+  </data>
+  <data name="SoundRecording" xml:space="preserve">
+    <value>录音：</value>
+  </data>
+  <data name="StartCapabilityMenuItems" xml:space="preserve">
+    <value>开始 {0}</value>
+  </data>
+  <data name="StartChatHotkey" xml:space="preserve">
+    <value>启动聊天(&amp;C)</value>
+  </data>
+  <data name="StartConnectivityHotkey" xml:space="preserve">
+    <value>启动连通性探测器(&amp;C)</value>
+  </data>
+  <data name="StartOtherCapabilitiesHotkey" xml:space="preserve">
+    <value>启动其他功能(&amp;O)</value>
+  </data>
+  <data name="StartPresentationHotkey" xml:space="preserve">
+    <value>开始演示文稿(&amp;P)</value>
+  </data>
+  <data name="StartScreenStreaming" xml:space="preserve">
+    <value>开始本地屏幕流(&amp;L)</value>
+  </data>
+  <data name="StartSharedBrowser" xml:space="preserve">
+    <value>开始共享浏览器(&amp;S)</value>
+  </data>
+  <data name="StartUnicastConference" xml:space="preserve">
+    <value>开始一个双向单播会议</value>
+  </data>
+  <data name="StartUWPresenter" xml:space="preserve">
+    <value>开始 UW Classroom Presenter 3...</value>
+  </data>
+  <data name="StartWindowsMedia" xml:space="preserve">
+    <value>启动 &amp;Windows 媒体播放 ...</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="StopAudio" xml:space="preserve">
+    <value>停止音频</value>
+  </data>
+  <data name="StopNamePayloadType" xml:space="preserve">
+    <value>停止 {0} {1}</value>
+  </data>
+  <data name="StopVideo" xml:space="preserve">
+    <value>停止视频</value>
+  </data>
+  <data name="Stream" xml:space="preserve">
+    <value>流</value>
+  </data>
+  <data name="StreamID" xml:space="preserve">
+    <value>流 ID</value>
+  </data>
+  <data name="Streams" xml:space="preserve">
+    <value>流</value>
+  </data>
+  <data name="TestAudio" xml:space="preserve">
+    <value>测试音频</value>
+  </data>
+  <data name="TestingAudioWarning" xml:space="preserve">
+    <value>警告：根据您的配置，测试音频可能会创建一个音频反馈循环。</value>
+  </data>
+  <data name="TestingNetworkConnection" xml:space="preserve">
+    <value>测试网络连接</value>
+  </data>
+  <data name="TestVideo" xml:space="preserve">
+    <value>测试视频</value>
+  </data>
+  <data name="ThisUtilityDetects" xml:space="preserve">
+    <value>此实用工具将检测您的计算机是否连接到 Internet2 和多播网络。如果您的计算机没有连接到多播网络，您可以通过单播或通过使用 ConferenceXP 反射器服务参与 ConferenceXP 会议。</value>
+  </data>
+  <data name="Tiled" xml:space="preserve">
+    <value>平铺</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TroubleshootingLog" xml:space="preserve">
+    <value>诊断日志</value>
+  </data>
+  <data name="TwoWayUnicastConference" xml:space="preserve">
+    <value>单播双向会议</value>
+  </data>
+  <data name="TwoWayUnicastConferencing" xml:space="preserve">
+    <value>当您有多播连接性问题并且不能访问 ConferenceXP 反射器服务时，通常将使用单播进行双向会议。</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TypeIPAddress" xml:space="preserve">
+    <value>键入远程参与者的计算机的 IP 地址：</value>
+  </data>
+  <data name="UnableToJoinUnicastVenue" xml:space="preserve">
+    <value>无法加入单播会场</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>未知的</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value> URL</value>
+  </data>
+  <data name="Venue_Service" xml:space="preserve">
+    <value>会场服务</value>
+  </data>
+  <data name="VenueJoinErrorText" xml:space="preserve">
+    <value>这台计算机不支持此会场的地址协议。
+若要加入一个 IPv6 会场，请参阅 ConferenceXP 帮助。</value>
+  </data>
+  <data name="VenueJoinErrorTitle" xml:space="preserve">
+    <value>会场加入错误</value>
+  </data>
+  <data name="VenueNotAvailable" xml:space="preserve">
+    <value>会场不可用</value>
+  </data>
+  <data name="VenueNotFound" xml:space="preserve">
+    <value>找不到会场‘{0}’。</value>
+  </data>
+  <data name="VenueServiceBaseURL" xml:space="preserve">
+    <value>会场服务：{0}</value>
+  </data>
+  <data name="VenueServiceNone" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="VersionIncompatible" xml:space="preserve">
+    <value>版本不兼容</value>
+  </data>
+  <data name="VideoFormat" xml:space="preserve">
+    <value>视频格式</value>
+  </data>
+  <data name="VideoSettings" xml:space="preserve">
+    <value>视频设置</value>
+  </data>
+  <data name="VideoSource" xml:space="preserve">
+    <value>{0}视频源：{1}</value>
+  </data>
+  <data name="VideoStandard" xml:space="preserve">
+    <value>{0}视频标准：{1}</value>
+  </data>
+  <data name="VideoStream" xml:space="preserve">
+    <value>视频流</value>
+  </data>
+  <data name="ViewHostedServices" xml:space="preserve">
+    <value>查看主持的服务</value>
+  </data>
+  <data name="WindowLayout" xml:space="preserve">
+    <value>窗口布局</value>
+  </data>
+  <data name="BitRateLabel" xml:space="preserve">
+    <value>位速率</value>
+  </data>
+  <data name="KeyFrameRateLabel" xml:space="preserve">
+    <value>关键帧速率</value>
+  </data>
+  <data name="PlaybackOngoingError" xml:space="preserve">
+    <value>此会场正在进行播放，请选择另一个会场来进行录制。</value>
+  </data>
+  <data name="VenueInUseError" xml:space="preserve">
+    <value>此会场正在进行播放或录制，
+请选择到另一个会场进行播放。</value>
+  </data>
+  <data name="VenueServiceVersionErrorText" xml:space="preserve">
+    <value>您正在运行该应用程序的版本小于预期的版本。
+请升级到最新版本：{0}。</value>
+  </data>
+  <data name="PersistWindowPositions" xml:space="preserve">
+    <value>保持窗口位置</value>
+  </data>
+  <data name="ArchiveServices" xml:space="preserve">
+    <value>存档服务</value>
+  </data>
+  <data name="ReflectorServices" xml:space="preserve">
+    <value>反射器服务</value>
+  </data>
+  <data name="Venue_Services" xml:space="preserve">
+    <value>会场服务</value>
+  </data>
+  <data name="Colon" xml:space="preserve">
+    <value>：</value>
+  </data>
+  <data name="DiagnosticService" xml:space="preserve">
+    <value>诊断服务</value>
+  </data>
+  <data name="DiagnosticServices" xml:space="preserve">
+    <value>诊断服务</value>
+  </data>
+  <data name="ExampleDiagnosticService" xml:space="preserve">
+    <value>例如：http://my.server.edu/diagnosticservice</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>无效的密码</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>密码错误</value>
+  </data>
+  <data name="SelectAudioCompressionFormat" xml:space="preserve">
+    <value>选择音频压缩格式</value>
+  </data>
+  <data name="UseUncompressedAudio" xml:space="preserve">
+    <value>使用压缩音频</value>
+  </data>
+  <data name="VenueRequiresPassword" xml:space="preserve">
+    <value>会场需要输入密码</value>
+  </data>
+  <data name="VenueServiceVersionErrorText2" xml:space="preserve">
+    <value>您所使用的应用程序的版本不在此会场服务的支持范围内。此会场服务支持的最高版本是  {0}。请选择一个支持您客户端程序版本的会场服务。</value>
+  </data>
+  <data name="ViewConferenceDiagnostics" xml:space="preserve">
+    <value>查看会议诊断记录</value>
+  </data>
+  <data name="AudioBufferCount" xml:space="preserve">
+    <value>音频缓冲区数量</value>
+  </data>
+  <data name="AudioBufferSize" xml:space="preserve">
+    <value>音频缓冲区大小</value>
+  </data>
+  <data name="DisableAudioForwardErrorCorrection" xml:space="preserve">
+    <value>禁用 Forward Error Correction（建议在使用未压缩音频时启用）</value>
+  </data>
+  <data name="DisableVideoForwardErrorCorrection" xml:space="preserve">
+    <value>禁用 Forward Error Correction（建议在使用未压缩视频时启用）</value>
+  </data>
+  <data name="ConfigureDiagnosticServices" xml:space="preserve">
+    <value>配置诊断服务 ...</value>
+  </data>
+  <data name="EnableDiagnosticServiceHotkey" xml:space="preserve">
+    <value>启用诊断服务(&amp;D)</value>
+  </data>
+  <data name="NoArchivingEncryptedVenues" xml:space="preserve">
+    <value>ConferenceXP 不支持加密会场的存档</value>
+  </data>
+  <data name="RecordingError" xml:space="preserve">
+    <value>录制时出错</value>
+  </data>
+  <data name="FriendlySocketInUseErrorMessage" xml:space="preserve">
+    <value>注意：由于所需的网络端口正在被您系统中其他应用程序或服务使用，会场加入失败。导致这一问题的一个常见原因是试图在同一个系统中运行 ConferenceXP 客户端和 ConferenceXP 反射器服务。应用程序不支持这样的配置。另一个可能的原因是同时运行两个 ConferenceXP 客户端。请关闭其他可能使用网络的 ConferenceXP 应用程序或服务，再重试。</value>
+  </data>
+  <data name="DoesNotUseEncryption" xml:space="preserve">
+    <value>不使用加密</value>
+  </data>
+  <data name="UsesEncryption" xml:space="preserve">
+    <value>使用加密</value>
+  </data>
+</root>

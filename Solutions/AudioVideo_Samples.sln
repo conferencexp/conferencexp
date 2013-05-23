@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDShowInterop", "..\MSR.LST.MDShow\Samples\Interop\MDShowInterop.csproj", "{5C9469B2-5D2A-4307-991C-22024D7AABC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DShowNetworkFilters", "..\MSR.LST.MDShow\Samples\NetworkFilters\DShowNetworkFilters.csproj", "{22525976-DB86-4B75-B984-C055A2684D0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C9469B2-5D2A-4307-991C-22024D7AABC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9469B2-5D2A-4307-991C-22024D7AABC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9469B2-5D2A-4307-991C-22024D7AABC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9469B2-5D2A-4307-991C-22024D7AABC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22525976-DB86-4B75-B984-C055A2684D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22525976-DB86-4B75-B984-C055A2684D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22525976-DB86-4B75-B984-C055A2684D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22525976-DB86-4B75-B984-C055A2684D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

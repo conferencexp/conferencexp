@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptHotkey" xml:space="preserve">
+    <value>承諾します。</value>
+  </data>
+  <data name="AddFilesHotkey" xml:space="preserve">
+    <value>ファイルを追加しています</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>高度な</value>
+  </data>
+  <data name="AdvancedHotkey" xml:space="preserve">
+    <value>高度な</value>
+  </data>
+  <data name="AdvancedSettings" xml:space="preserve">
+    <value>詳細設定</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>量:</value>
+  </data>
+  <data name="AvatarTipText" xml:space="preserve">
+    <value>IP: {0} ID: {1} 電子メール: {2} 電話: {3}</value>
+  </data>
+  <data name="Bps" xml:space="preserve">
+    <value>B/秒</value>
+  </data>
+  <data name="CancelHotkey" xml:space="preserve">
+    <value>キャンセルします。</value>
+  </data>
+  <data name="CapabilityNamePayloadType" xml:space="preserve">
+    <value>機能名: ペイロード型 {0}: {1}</value>
+  </data>
+  <data name="CapabilityReceived" xml:space="preserve">
+    <value>受信機能</value>
+  </data>
+  <data name="ConfigurationFileCorrupt" xml:space="preserve">
+    <value>構成ファイルが壊れています</value>
+  </data>
+  <data name="EnableFECHotkey" xml:space="preserve">
+    <value>FEC 有効にします。</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="FileColon" xml:space="preserve">
+    <value>ファイル:</value>
+  </data>
+  <data name="FileNoLongerExists" xml:space="preserve">
+    <value>{0} 個のファイルが存在するされなく! {1} このファイルをスキップし、続けますか?</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>ファイルが見つかりません</value>
+  </data>
+  <data name="FileReceived" xml:space="preserve">
+    <value>受信したファイル</value>
+  </data>
+  <data name="FileSize" xml:space="preserve">
+    <value>ファイル サイズ: {0} KB</value>
+  </data>
+  <data name="FileTransfer" xml:space="preserve">
+    <value>ファイル転送</value>
+  </data>
+  <data name="FileTransferCompleted" xml:space="preserve">
+    <value>ファイル転送完了</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>\289</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="InstallHotkey" xml:space="preserve">
+    <value>インストールします。</value>
+  </data>
+  <data name="KB" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="LastModified" xml:space="preserve">
+    <value>最後に変更</value>
+  </data>
+  <data name="MaxBandwidth" xml:space="preserve">
+    <value>最大帯域幅:</value>
+  </data>
+  <data name="NotYetImplemented" xml:space="preserve">
+    <value>まだ実装されていません</value>
+  </data>
+  <data name="OKHotkey" xml:space="preserve">
+    <value>[OK]</value>
+  </data>
+  <data name="PercentSign" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="RejectHotkey" xml:space="preserve">
+    <value>拒否します。</value>
+  </data>
+  <data name="RemoveHotkey" xml:space="preserve">
+    <value>削除します。</value>
+  </data>
+  <data name="SelectedFiles" xml:space="preserve">
+    <value>選択したファイル:</value>
+  </data>
+  <data name="SelectFiles" xml:space="preserve">
+    <value>ファイルを選択します。</value>
+  </data>
+  <data name="SendDone" xml:space="preserve">
+    <value>行う送信します。</value>
+  </data>
+  <data name="SendFiles" xml:space="preserve">
+    <value>ファイルを送信します。</value>
+  </data>
+  <data name="SendFilesToMultipleUsers" xml:space="preserve">
+    <value>ファイルをャ泣 ' キャスト経由で複数のユーザーが送信します。</value>
+  </data>
+  <data name="SendHotkey" xml:space="preserve">
+    <value>送信します。</value>
+  </data>
+  <data name="SendingFile" xml:space="preserve">
+    <value>ファイルを送信しています</value>
+  </data>
+  <data name="SendingFilePleaseWait" xml:space="preserve">
+    <value>{0} 個のファイルを送信します。 お待ちください。</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="TheseSettingsWillTakeEffect" xml:space="preserve">
+    <value>これらの設定は次にこの機能を起動したときに反映します。</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>時刻:</value>
+  </data>
+  <data name="UserSentYouCapability" xml:space="preserve">
+    <value>ユーザーがだけ送信する機能</value>
+  </data>
+  <data name="UserSentYouFile" xml:space="preserve">
+    <value>ユーザーがだけ送信するファイル</value>
+  </data>
+</root>

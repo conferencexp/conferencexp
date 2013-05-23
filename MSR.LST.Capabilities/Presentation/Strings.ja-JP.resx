@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>ついて</value>
+  </data>
+  <data name="BlackPen" xml:space="preserve">
+    <value>黒いペン</value>
+  </data>
+  <data name="BlueHighlighter" xml:space="preserve">
+    <value>青の蛍光ペン</value>
+  </data>
+  <data name="BluePen" xml:space="preserve">
+    <value>青のペン</value>
+  </data>
+  <data name="CloseHotkey" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="ConferencexpPresentation" xml:space="preserve">
+    <value>ConferenceXP プレゼンテーション</value>
+  </data>
+  <data name="EraseAll" xml:space="preserve">
+    <value>すべて消去します。</value>
+  </data>
+  <data name="Eraser" xml:space="preserve">
+    <value>消しゴム</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="ErrorDuringCommunication" xml:space="preserve">
+    <value>通信中にエラーが発生しました: {0}</value>
+  </data>
+  <data name="ErrorInOpening" xml:space="preserve">
+    <value>開く {0} でエラー、エラー メッセージ: {1}</value>
+  </data>
+  <data name="ErrorInOpeningFileType" xml:space="preserve">
+    <value>開くサポートされていない種類 {0} でエラー</value>
+  </data>
+  <data name="ErrorInOpeningVersion" xml:space="preserve">
+    <value>開くバージョン {0} でエラーは古い可能性があります。</value>
+  </data>
+  <data name="ErrorOccuredDuringNavigation" xml:space="preserve">
+    <value>ナビゲーション中にエラーが発生しました、ページの存在しない可能性がありますもありますダウンロード プロセスでまだ</value>
+  </data>
+  <data name="ErrorWhileTakingSnapshot" xml:space="preserve">
+    <value>中取得スナップショットにエラーが発生しました。
+スナップショット、ターゲット ウィンドウが、無効な状態または閉じられたでなることがあります。</value>
+  </data>
+  <data name="FileHotkey" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="ForMoreInformationSee" xml:space="preserve">
+    <value>詳細情報には、参照してください http://cct.cs.washington.edu/downloads/CXP/プレゼンテーション: {0} {1}</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>ヘルプします。</value>
+  </data>
+  <data name="Highlighter" xml:space="preserve">
+    <value>蛍光ペン</value>
+  </data>
+  <data name="ImportingPowerpointDocument" xml:space="preserve">
+    <value>PowerPoint ドキュメントをインポートしています</value>
+  </data>
+  <data name="IndexMustBeWithinTheCollection" xml:space="preserve">
+    <value>インデックスのコレクション内である必要があります。</value>
+  </data>
+  <data name="InsertBlankSlide" xml:space="preserve">
+    <value>空白のスライドを挿入します。</value>
+  </data>
+  <data name="InsertScreenShot" xml:space="preserve">
+    <value>挿入スクリーン ショット</value>
+  </data>
+  <data name="LimeHighlighter" xml:space="preserve">
+    <value>黄緑蛍光ペン</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>読み込んでいます</value>
+  </data>
+  <data name="NextSlide" xml:space="preserve">
+    <value>次のスライド</value>
+  </data>
+  <data name="NextSlideHotkey" xml:space="preserve">
+    <value>次のスライド</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>[OK]</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>開いています。</value>
+  </data>
+  <data name="OpenHotkey" xml:space="preserve">
+    <value>開いています。</value>
+  </data>
+  <data name="OpenRemote" xml:space="preserve">
+    <value>リモートを開いています</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>ページが見つかりません!</value>
+  </data>
+  <data name="Pen" xml:space="preserve">
+    <value>ペン</value>
+  </data>
+  <data name="PresentationCapabilityFMain" xml:space="preserve">
+    <value>PresentationCapabilityFMain</value>
+  </data>
+  <data name="PresentationHelp" xml:space="preserve">
+    <value>プレゼンテーションのヘルプ</value>
+  </data>
+  <data name="PreviousSlide" xml:space="preserve">
+    <value>前のスライド</value>
+  </data>
+  <data name="PreviousSlideHotkey" xml:space="preserve">
+    <value>前のスライド</value>
+  </data>
+  <data name="ReceivingPage" xml:space="preserve">
+    <value>ページの受信: {0}/{1}</value>
+  </data>
+  <data name="ReceivingPage_of_" xml:space="preserve">
+    <value>受信側のページ: 1/{0}</value>
+  </data>
+  <data name="RedPen" xml:space="preserve">
+    <value>赤いペン</value>
+  </data>
+  <data name="ResendCurrentSlide" xml:space="preserve">
+    <value>現在のスライドを再送信します。</value>
+  </data>
+  <data name="ResendingCurrentSlide" xml:space="preserve">
+    <value>現在のスライドの再送信しています</value>
+  </data>
+  <data name="ResendingSlides" xml:space="preserve">
+    <value>スライドを再送信しています</value>
+  </data>
+  <data name="RtDocumentIsNull" xml:space="preserve">
+    <value>rtDocument = = NULL</value>
+  </data>
+  <data name="ScreenShotInformation" xml:space="preserve">
+    <value>Shot 情報を画面します。</value>
+  </data>
+  <data name="SelectApplication" xml:space="preserve">
+    <value>[アプリケーション</value>
+  </data>
+  <data name="SelectScreenShot" xml:space="preserve">
+    <value>[スクリーン ショット</value>
+  </data>
+  <data name="SendingSlides" xml:space="preserve">
+    <value>スライドを送信しています</value>
+  </data>
+  <data name="Slide_Of_" xml:space="preserve">
+    <value>{0} から {1} のスライド</value>
+  </data>
+  <data name="Slide_Of_Placeholder" xml:space="preserve">
+    <value>スライド-の--</value>
+  </data>
+  <data name="SlideHotkey" xml:space="preserve">
+    <value>スライドします。</value>
+  </data>
+  <data name="SlideShow" xml:space="preserve">
+    <value>スライド ショー</value>
+  </data>
+  <data name="SnapshotOf" xml:space="preserve">
+    <value>{0} のスナップショット</value>
+  </data>
+  <data name="SnapshotsOfMinimizedWindows" xml:space="preserve">
+    <value>最小化されたウィンドウのスナップショットを実行できません {0} Please 復元またはウィンドウを最大化します。。</value>
+  </data>
+  <data name="ToolsHotkey" xml:space="preserve">
+    <value>ツール</value>
+  </data>
+  <data name="TryResendAllSlidesButton" xml:space="preserve">
+    <value>ページを移動しようとした会議のリーダーがいない秒間に受信しました。
+この問題を解決するには、"再送信すべてスライド"ボタンを使用してください。</value>
+  </data>
+  <data name="UnableToFindPage" xml:space="preserve">
+    <value>TOCNode 現在のページ検索できません。</value>
+  </data>
+  <data name="UnexpectedHighlighterColor" xml:space="preserve">
+    <value>予期しない蛍光ペンの色 ' {0} '</value>
+  </data>
+  <data name="UnexpectedPenColor" xml:space="preserve">
+    <value>予期しないペンの色 ' {0} '</value>
+  </data>
+  <data name="ValueGreaterThanMaxpagenum" xml:space="preserve">
+    <value>MaxPageNum より大きい値</value>
+  </data>
+  <data name="Whiteboard" xml:space="preserve">
+    <value>ホワイトボード {0}</value>
+  </data>
+  <data name="Whiteboard1" xml:space="preserve">
+    <value>ホワイトボード 1</value>
+  </data>
+  <data name="WhiteboardSession" xml:space="preserve">
+    <value>ホワイトボード セッション</value>
+  </data>
+  <data name="YellowHighlighter" xml:space="preserve">
+    <value>黄色の蛍光ペン</value>
+  </data>
+  <data name="YellowPen" xml:space="preserve">
+    <value>黄色のペン</value>
+  </data>
+  <data name="YouMustFirstOpenADocument" xml:space="preserve">
+    <value>最初に文書を開く必要があります。</value>
+  </data>
+  <data name="YouMustFirstSelectAScreenShot" xml:space="preserve">
+    <value>最初に、スクリーン ショットを Select スクリーン ショット スライド メニューの [クリックして選択する必要があるし、スクリーン ショットをクリックします。</value>
+  </data>
+</root>

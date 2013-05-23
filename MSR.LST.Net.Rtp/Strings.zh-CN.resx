@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActualPacketsDifferFromExpected" xml:space="preserve">
+    <value>Expected {0} pRtcpPacketExceptionacket: {1}, received: {2}</value>
+  </data>
+  <data name="AdministratorPrivilegesRequired" xml:space="preserve">
+    <value>需要管理员权限</value>
+  </data>
+  <data name="ArraySizesMustAgree" xml:space="preserve">
+    <value>Array sizes must agree</value>
+  </data>
+  <data name="BufferMustEndOnBoundary" xml:space="preserve">
+    <value>The buffer does not end on a 32 bit boundary, buffer size: {0}, size % 4: {1}</value>
+  </data>
+  <data name="BYEPacketMayContainMoreThan1SSRC" xml:space="preserve">
+    <value>A BYE packet may contain more than one SSRC. Please use the  methods provided for appropriately manipulating SSRCs.</value>
+  </data>
+  <data name="BYEReasonBytesExceeded" xml:space="preserve">
+    <value>BYE reason must be &lt;= {0} UTF8 bytes</value>
+  </data>
+  <data name="CallingANextFrameMethod" xml:space="preserve">
+    <value>Calling a NextFrame method without first calling IsUsingNextFrame = true</value>
+  </data>
+  <data name="CallMovenextBeforeCallingCurrent" xml:space="preserve">
+    <value>Call MoveNext() before calling Current()</value>
+  </data>
+  <data name="CannotAccessRtpMethods" xml:space="preserve">
+    <value>如果不监视Rtp通信，无法访问RtpSession上的Rtp方法!</value>
+  </data>
+  <data name="CantCreateAStreamNoParticipant" xml:space="preserve">
+    <value>如果没有参与者关联，不能创建流 !</value>
+  </data>
+  <data name="CNameConflictDetectedRemoteMachines" xml:space="preserve">
+    <value>检测到两个远程计算机间CName冲突。 冲突的IP地址是 {0} {1}，冲突的CName是 {2}</value>
+  </data>
+  <data name="cNameMustBeAValidString" xml:space="preserve">
+    <value>cName必须是有效的字符串，最好具备唯一性，如电子邮件地址</value>
+  </data>
+  <data name="CompoundPacketsMustEndOnBoundary" xml:space="preserve">
+    <value>Compound packets must end on a 32 bit boundary</value>
+  </data>
+  <data name="ConferencexpNodesDetected" xml:space="preserve">
+    <value>ConferenceXP 检测到的节点:</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>数据</value>
+  </data>
+  <data name="DataLengthIncorrect" xml:space="preserve">
+    <value>数据长度必须是 &lt; = Rtp.MAX_PACKET_SIZE ({0}) - RtcpHeader.SIZE({1}) - Rtp.SSRC_SIZE({2}) - NAME_SIZE({3})</value>
+  </data>
+  <data name="DroppingDataPacket" xml:space="preserve">
+    <value>正在删除数据报文: {0}，FecIndex: {1}，FrameIndex: {2}，TS： {3}</value>
+  </data>
+  <data name="DroppingFecPacket" xml:space="preserve">
+    <value>正在删除fec报文: {0}，FecIndex: {1}，DataRangeMin: {2}</value>
+  </data>
+  <data name="DuplicateCNameDetected" xml:space="preserve">
+    <value>DuplicateCNameDetectedEvent - 在网络{0} &amp; {1}上检测到存在与本地同CName，RtpListener 正在关闭</value>
+  </data>
+  <data name="DuplicateCnameWasDetected" xml:space="preserve">
+    <value>在网络{0} &amp; {1}上检测到存在与本地同CName，连接测试终止。</value>
+  </data>
+  <data name="DuplicatePacketReceived" xml:space="preserve">
+    <value>收到重复数据包 !</value>
+  </data>
+  <data name="DuplicatePacketReceivedInRtpStream" xml:space="preserve">
+    <value>Duplicate packet received in RtpStream - {0}</value>
+  </data>
+  <data name="ErrorCallingAnEventDelegate" xml:space="preserve">
+    <value>Error calling an event delegate - {0}</value>
+  </data>
+  <data name="ErrorDisposingConnectivityDetector" xml:space="preserve">
+    <value>Error disposing ConnectivityDetector.
+{0}</value>
+  </data>
+  <data name="EventNotHookedParticipantRemoved" xml:space="preserve">
+    <value>Event not hooked - ParticipantRemovedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedParticipantTimeout" xml:space="preserve">
+    <value>Event not hooked - ParticipantTimeoutEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpParticipantAdded" xml:space="preserve">
+    <value>Event not hooked - RtpParticipantAddedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpStreamAdded" xml:space="preserve">
+    <value>Event not hooked - RtpParticipantAddedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpStreamRemoved" xml:space="preserve">
+    <value>Event not hooked - RtpStreamRemovedEvent - {0}</value>
+  </data>
+  <data name="EventNotHookedRtpStreamTimeout" xml:space="preserve">
+    <value>Event not hooked - RtpStreamTimeoutEvent - {0}</value>
+  </data>
+  <data name="FirstPacketMustBeSROrRR" xml:space="preserve">
+    <value>The first packet in a compound RTCP packet must be an SR: {0} or RR: {1}, actual: {2}</value>
+  </data>
+  <data name="FrameLengthShouldBePositive" xml:space="preserve">
+    <value>frame.Length 应是大于 0，否则我们需要发送一个空数据包。</value>
+  </data>
+  <data name="FrameOutOfSequenceEvent" xml:space="preserve">
+    <value>FrameOutOfSequenceEvent - RtpStream: {0}，LostFrames:{1} Message:{2}</value>
+  </data>
+  <data name="FrameReceivedEvent" xml:space="preserve">
+    <value>FrameReceivedEvent - {0}</value>
+  </data>
+  <data name="HeaderLengthAndItemCountDisagree" xml:space="preserve">
+    <value>报头长度和项数目不一致 ！</value>
+  </data>
+  <data name="IncompatibleArgumentsMessageLong" xml:space="preserve">
+    <value>Incompatible arguments; you must specify a participant and intend to send RTP traffic if you are not receiving data.  Sending Rtcp data only is not a valid use case.</value>
+  </data>
+  <data name="IncompatibleArgumentsMessageShort" xml:space="preserve">
+    <value>Incompatible arguments; you must specify a participant and intend to send RTP traffic if you are not receiving data.</value>
+  </data>
+  <data name="IncompatibleArgumentsStatus" xml:space="preserve">
+    <value>Incompatible arguments - participant(null), rtpTraffic(true)</value>
+  </data>
+  <data name="IncompleteFrameReceived" xml:space="preserve">
+    <value>Incomplete Frame Received -- Frame Lost</value>
+  </data>
+  <data name="IncorrectNumberOfNullObjects" xml:space="preserve">
+    <value>Incorrect number of null objects, expected:{0}, actual:{1}</value>
+  </data>
+  <data name="InvalidBufferLength" xml:space="preserve">
+    <value>Invalid buffer length: {0}, must be: {1}</value>
+  </data>
+  <data name="InvalidItemCount" xml:space="preserve">
+    <value>Invalid ItemCount:{0}, must be &gt;=0 or &lt;=31</value>
+  </data>
+  <data name="InvalidLength" xml:space="preserve">
+    <value>Invalid length: {0}, must be &gt;=0 or &lt;= {1}</value>
+  </data>
+  <data name="InvalidPacketEvent" xml:space="preserve">
+    <value>InvalidPacketEvent - {0}</value>
+  </data>
+  <data name="InvalidPacketInFrameEvent" xml:space="preserve">
+    <value>InvalidPacketInFrameEvent - RtpStream:{0}、 Reason:{1}</value>
+  </data>
+  <data name="InvalidVersion" xml:space="preserve">
+    <value>无效的版本： {0}，当前： {1}</value>
+  </data>
+  <data name="IPAddressTryingToRemoveString" xml:space="preserve">
+    <value>IP 地址： {0} 正在尝试删除属于IP 地址： {2}  上的流 (ssrc: {1}) </value>
+  </data>
+  <data name="JoinRequestToServerFailed" xml:space="preserve">
+    <value> {2}加入服务器 {0}:{1} 请求失败。 
+{3}</value>
+  </data>
+  <data name="LeaveRequestToServerFailed" xml:space="preserve">
+    <value> {2}离开服务器 {0}:{1} 请求失败。 
+{3}</value>
+  </data>
+  <data name="LengthOfDataMustBePositive" xml:space="preserve">
+    <value>数据的长度必须 &gt;= 0</value>
+  </data>
+  <data name="MethodMeantToBeOverridden" xml:space="preserve">
+    <value>This method is meant to be overridden in a derived class</value>
+  </data>
+  <data name="MustBePositive" xml:space="preserve">
+    <value>必须是 &gt; = 1</value>
+  </data>
+  <data name="MustContainMoreThan1Packet" xml:space="preserve">
+    <value>A compound RTCP packet must contain more than 1 packet, actual count: {0}</value>
+  </data>
+  <data name="NameIsRequired" xml:space="preserve">
+    <value>名称是必需，并且必须是 {0} 长度ASCII 字符</value>
+  </data>
+  <data name="NameLengthIncorrect" xml:space="preserve">
+    <value>名称必须是 {0} ASCII 字符</value>
+  </data>
+  <data name="NeedARealSenderReport" xml:space="preserve">
+    <value>需要一个真正的 SenderReport，不能为空</value>
+  </data>
+  <data name="NextFrameCallHasBeenUnblocked" xml:space="preserve">
+    <value>NextFrame call has been unblocked, either manually or by the Dispose method</value>
+  </data>
+  <data name="NoPivotRowFound" xml:space="preserve">
+    <value>No pivot row found!</value>
+  </data>
+  <data name="NullObjectsAreNotAccepted" xml:space="preserve">
+    <value>不接受空对象</value>
+  </data>
+  <data name="OnBehalfOf" xml:space="preserve">
+    <value>on behalf of {0}，{1}</value>
+  </data>
+  <data name="PacketIsNotAnFECPacket" xml:space="preserve">
+    <value>提供的数据包不是 fec 数据包 ！</value>
+  </data>
+  <data name="PaddingBytesDiscrepancy" xml:space="preserve">
+    <value>There is a discrepancy between the number of padding bytes - actual: {0}, expected: {1}</value>
+  </data>
+  <data name="ParticipantRemovedEvent" xml:space="preserve">
+    <value>ParticipantRemovedEvent - {0}</value>
+  </data>
+  <data name="ParticipantStatusChangedEvent" xml:space="preserve">
+    <value>ParticipantStatusChangedEvent - Participant: {0}</value>
+  </data>
+  <data name="ParticipantTimeoutEvent" xml:space="preserve">
+    <value>ParticipantTimeoutEvent - {0}</value>
+  </data>
+  <data name="PayloadTypeIsASevenBitStructure" xml:space="preserve">
+    <value>MSR.LST.Rtp.RtpPacketBase.PayloadType is a seven bit structure, and can hold values between 0 and 127</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>前缀</value>
+  </data>
+  <data name="PrefixAndDataBytesExceeded" xml:space="preserve">
+    <value>A PRIV item's prefix + data can not exceed {0} UTF8 bytes</value>
+  </data>
+  <data name="ReceivedAnUnhandledRtcpType" xml:space="preserve">
+    <value>收到一个未处理的 Rtcp 类型，{0}</value>
+  </data>
+  <data name="ReflectorEPNotSetProperly" xml:space="preserve">
+    <value>ReflectorEP 设置不正确</value>
+  </data>
+  <data name="RtpListenerBufferPoolGrowing" xml:space="preserve">
+    <value>RtpListener 缓冲池溢出。  我们已经停止接收 / 分发线程,以防止它占用所有的 RAM</value>
+  </data>
+  <data name="RtpPacketFecDoesNotSupportTimestamp" xml:space="preserve">
+    <value>RtpPacketFec does not support the TimeStamp property.</value>
+  </data>
+  <data name="RtpParticipantAddedEvent" xml:space="preserve">
+    <value>RtpParticipantAddedEvent - {0}</value>
+  </data>
+  <data name="RtpSenderAlreadyDisposed" xml:space="preserve">
+    <value>RtpSender already disposed</value>
+  </data>
+  <data name="RtpSessionDoesNotContainASender" xml:space="preserve">
+    <value>RtpSession 对给定的 SSRC不包含发送人 - {0}</value>
+  </data>
+  <data name="RtpStreamAddedEvent" xml:space="preserve">
+    <value>RtpStreamAddedEvent - {0}</value>
+  </data>
+  <data name="RtpStreamRemovedEvent" xml:space="preserve">
+    <value>RtpStreamRemovedEvent - {0}</value>
+  </data>
+  <data name="RtpStreamTimeoutEvent" xml:space="preserve">
+    <value>RtpStreamTimeoutEvent - {0}</value>
+  </data>
+  <data name="SDESItemDataBytesExceeded" xml:space="preserve">
+    <value>SDES 项的数据不能超过 {0} UTF 8 字节： {1}、 {2}</value>
+  </data>
+  <data name="SDESPacketMayContainMoreThan1SSRC" xml:space="preserve">
+    <value>SDES 数据包可能包含多个 SSRC。 请使用提供的方法恰当处理 SSRC 。</value>
+  </data>
+  <data name="SendAppPacketNotAllowed" xml:space="preserve">
+    <value>SendAppPacket不允许Rtcp单独侦听模式。</value>
+  </data>
+  <data name="SSRCConflictDetectedLocalSender" xml:space="preserve">
+    <value>检测到SSRC冲突, 本地发送人和发送人在 {0} 间有冲突。  更改本地发送人 ssrc。</value>
+  </data>
+  <data name="SSRCConflictDetectedLocalSession" xml:space="preserve">
+    <value>检测到SSRC冲突, 本地会话和发送人在 {0} 之间的冲突。  更改 ssrc会话。</value>
+  </data>
+  <data name="SSRCConflictDetectedRemoteMachines" xml:space="preserve">
+    <value>检测到两个远程计算机之间SSRC冲突,，冲突的 IP 地址是 {0}</value>
+  </data>
+  <data name="SwapRowNotFound" xml:space="preserve">
+    <value>找不到交换行 ！</value>
+  </data>
+  <data name="ThereMustBeAtLeastOneIntPtr" xml:space="preserve">
+    <value>必须至少一个 IntPtr 数据发送</value>
+  </data>
+  <data name="TimeToLiveShouldBePositive" xml:space="preserve">
+    <value>TimeToLive 应该大于 0</value>
+  </data>
+  <data name="TooManyItems" xml:space="preserve">
+    <value>Can not have more than 31 items in an RtcpPacket</value>
+  </data>
+  <data name="UnexpectedPayloadType" xml:space="preserve">
+    <value>异常有效负载类型 !</value>
+  </data>
+  <data name="UnexpectedSDESType" xml:space="preserve">
+    <value>Unexpected SDES type: {0}</value>
+  </data>
+  <data name="UnsupportedRole" xml:space="preserve">
+    <value>不支持角色： {0}</value>
+  </data>
+  <data name="ValueMaximumPayload" xml:space="preserve">
+    <value>值 {0},此数据包的最大负载是： {1}</value>
+  </data>
+  <data name="XORCanOnlyProduce1Checksum" xml:space="preserve">
+    <value>XOR can only produce 1 checksum packet</value>
+  </data>
+  <data name="YouCantSetThePaddingBit" xml:space="preserve">
+    <value>You can't set the padding bit on the first packet</value>
+  </data>
+  <data name="YouMustBeAnAdministratorToInstall" xml:space="preserve">
+    <value>您必须是管理员才能安装 Rtp 或第一次进行运行。</value>
+  </data>
+  <data name="ErrorDuringRtpSenderSend" xml:space="preserve">
+    <value>Error during RtpSender.Send 
+{0}</value>
+  </data>
+  <data name="ErrorDisposingRtpListener" xml:space="preserve">
+    <value>Error Disposing RtpListener 
+{0}</value>
+  </data>
+  <data name="TryingToGrowTheBufferPool" xml:space="preserve">
+    <value>在已达到上限PoolMaxGrows后,尝试增加缓冲池</value>
+  </data>
+  <data name="ErrorWhileDisposingRtpSender" xml:space="preserve">
+    <value>Error while disposing RtpSender: {0}</value>
+  </data>
+</root>

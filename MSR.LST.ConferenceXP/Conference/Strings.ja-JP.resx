@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessingFile" xml:space="preserve">
+    <value>{0} {1} ファイルへのアクセス</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>{0} 追加</value>
+  </data>
+  <data name="AdministratorPrivilegesRequired" xml:space="preserve">
+    <value>必要な管理者特権</value>
+  </data>
+  <data name="AlreadyJoinedToVenue" xml:space="preserve">
+    <value>場所、場所に既に参加と参加できません。</value>
+  </data>
+  <data name="ApplicationIsNotConfigured" xml:space="preserve">
+    <value>アプリケーションがいないように構成されている Venue サービスの対話します。  プロファイルの更新は破棄されました。</value>
+  </data>
+  <data name="CallSendBeforeSendObject" xml:space="preserve">
+    <value>機能 {0}: Send() SendObject*() 呼び出す前に呼び出す必要があります。</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセルします。</value>
+  </data>
+  <data name="CannotBeChannelAndOwned" xml:space="preserve">
+    <value>機能、所有されているし、チャネルをすることはできません。</value>
+  </data>
+  <data name="CannotExitNotInVenue" xml:space="preserve">
+    <value>いないで、場所、場所を終了できません!</value>
+  </data>
+  <data name="CannotUseCapabilitiesUnless" xml:space="preserve">
+    <value>最初に、Conference.CallingForm プロパティを設定しない限り会議 Api から Windows フォーム ベースの capabilies 使用することはできません。  それ以外の場合は、適切な Windows メッセージ ループ設定がないされ、フォームの作成が失敗します。</value>
+  </data>
+  <data name="CapabilitiesCollectionAlreadyContains" xml:space="preserve">
+    <value>既にコレクション機能を格納-{0}</value>
+  </data>
+  <data name="CapabilityClassNotFound" xml:space="preserve">
+    <value>機能クラス {0} が CapabilitySenders で見つかりません。  Confernece.OtherCapabilitySenders CapabilitySender 有効名の一覧を確認します。</value>
+  </data>
+  <data name="CapabilityNameAttributeMustBeSet" xml:space="preserve">
+    <value>Capability.NameAttribute 設定する必要があります。</value>
+  </data>
+  <data name="CapabilityParticipantAdded" xml:space="preserve">
+    <value>CapabilityParticipantAdded {0}: {1}</value>
+  </data>
+  <data name="CapabilityParticipantRemoved" xml:space="preserve">
+    <value>CapabilityParticipantRemoved {0}: {1}</value>
+  </data>
+  <data name="CapabilityPayloadTypeMustBeSet" xml:space="preserve">
+    <value>Capability.PayloadTypeAttribute 設定する必要があります。</value>
+  </data>
+  <data name="CapabilityPlay" xml:space="preserve">
+    <value>Capability.Play(): {0}、{1}</value>
+  </data>
+  <data name="CapabilitySend" xml:space="preserve">
+    <value>Capability.Send(): {0}、{1}</value>
+  </data>
+  <data name="CapabilitySender" xml:space="preserve">
+    <value>CapabilitySender: {0}、{1}</value>
+  </data>
+  <data name="CapabilitySenderAlreadyExists" xml:space="preserve">
+    <value>CapabilitySender 既に-{0}</value>
+  </data>
+  <data name="CapabilityTimeout" xml:space="preserve">
+    <value>タイムアウト機能、{0}</value>
+  </data>
+  <data name="CapabilityTimeoutSSRC" xml:space="preserve">
+    <value>タイムアウト機能、ssrc = = {0}</value>
+  </data>
+  <data name="CapabilityViewer" xml:space="preserve">
+    <value>CapabilityViewer: {0}、{1}</value>
+  </data>
+  <data name="CapabilityViewerNotFound" xml:space="preserve">
+    <value>CapabilityViewer の PayloadType {0} が見つかりません!</value>
+  </data>
+  <data name="DidNotOriginateFromHere" xml:space="preserve">
+    <value>RtpSender この機能から発信されたできませんでした!</value>
+  </data>
+  <data name="DuplicateCapabilityViewersDetected" xml:space="preserve">
+    <value>複製の検出機能ビューア</value>
+  </data>
+  <data name="DuplicateLocalIdentityError" xml:space="preserve">
+    <value>{0} {1} 間のネットワーク上のローカル ID の複製が検出されました。  Venue.Leave() が呼び出されました。</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>電子メール:</value>
+  </data>
+  <data name="EmailAddressInvalidText" xml:space="preserve">
+    <value>{0}、有効な電子メール アドレスにない残念です</value>
+  </data>
+  <data name="EmailAddressInvalidTitle" xml:space="preserve">
+    <value>無効な電子メール アドレス</value>
+  </data>
+  <data name="ErroneousImageFile" xml:space="preserve">
+    <value>誤ったイメージ ファイル</value>
+  </data>
+  <data name="ErrorConnectingToVenueServer" xml:space="preserve">
+    <value>Venue Server への接続エラー</value>
+  </data>
+  <data name="ErrorInitializingCapabilityClasses" xml:space="preserve">
+    <value>エラー Initializing 機能クラス</value>
+  </data>
+  <data name="ErrorInitializingCapabilitySender" xml:space="preserve">
+    <value>エラー Initializing 機能センダ</value>
+  </data>
+  <data name="ErrorInitializingCapabilityViewer" xml:space="preserve">
+    <value>エラー Initializing 機能ビューア</value>
+  </data>
+  <data name="FecRatioRequires2Ints" xml:space="preserve">
+    <value>FecRatio は、data:checksum、文字列の形式で ints 2 が必要です。</value>
+  </data>
+  <data name="FileTypeCannotBeRead" xml:space="preserve">
+    <value>ファイルの種類を読み取ることはできません。</value>
+  </data>
+  <data name="FormTypeCanNotBeNull" xml:space="preserve">
+    <value>FormType は Null CreateForm 呼び出し時にできません。</value>
+  </data>
+  <data name="FoundDuplicateCapabilitySender" xml:space="preserve">
+    <value>重複した CapabilitySender {0} から {1} で見つかった</value>
+  </data>
+  <data name="FrameOutOfSequenceMessage" xml:space="preserve">
+    <value>FrameOutOfSequence、lostFrames = {0}、メッセージ = {1}、{2}</value>
+  </data>
+  <data name="FrameOutOfSequenceMessageSSRC" xml:space="preserve">
+    <value>FrameOutOfSequence、lostFrames = {0}、メッセージ = {1}、ssrc = = {2}</value>
+  </data>
+  <data name="IdentifierNotMatchingRequest" xml:space="preserve">
+    <value>場所 Service 参加者がいない要求 ID を一致する、indentifier で返されます。  参加者が拒否されました。
+    要求された ID: Returned ID {0}: {1}</value>
+  </data>
+  <data name="Identity" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="InvalidPacketCV" xml:space="preserve">
+    <value>無効なパケット: {0}、{1}</value>
+  </data>
+  <data name="InvalidPacketSSRC" xml:space="preserve">
+    <value>無効なパケット: {0}、ssrc = = {1}</value>
+  </data>
+  <data name="InvalidPacketUnknownCapabilityViewer" xml:space="preserve">
+    <value>無効なパケット、不明な CapabilityViewer、{0}</value>
+  </data>
+  <data name="InvalidVenue" xml:space="preserve">
+    <value>場所が無効です: {0}</value>
+  </data>
+  <data name="InvalidVenueType" xml:space="preserve">
+    <value>できます、場所が無効な型を参加できません。</value>
+  </data>
+  <data name="JournalViewerNotInstalled" xml:space="preserve">
+    <value>Microsoft Windows Journal Viewer の更新プログラムがインストールされませんされ ConferenceXP 実行する必要があります。</value>
+  </data>
+  <data name="MaximumBandwidthlimiterError" xml:space="preserve">
+    <value>MaximumBandwidthLimiter は、100,000,000 ～ 0 であることが必要です。</value>
+  </data>
+  <data name="MultipleCapabilityViewersExist" xml:space="preserve">
+    <value>複数の機能をビューア ペイロードの種類-{0} が存在します。 
+ConferenceXP は、{1} 選択され {2} は無視されます。</value>
+  </data>
+  <data name="MyIcon" xml:space="preserve">
+    <value>自分のアイコン</value>
+  </data>
+  <data name="MyInformation" xml:space="preserve">
+    <value>自分の情報</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>自分のプロファイル</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名:</value>
+  </data>
+  <data name="NameLengthErrorText" xml:space="preserve">
+    <value>名前長い 1 ～ 255 文字である必要があります。</value>
+  </data>
+  <data name="NameLengthErrorTitle" xml:space="preserve">
+    <value>名前 Length エラー</value>
+  </data>
+  <data name="NetworkTimeout" xml:space="preserve">
+    <value>ネットワーク タイムアウト</value>
+  </data>
+  <data name="NoFormSetForThisCapability" xml:space="preserve">
+    <value>この機能のないフォーム設定。</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>[OK]</value>
+  </data>
+  <data name="PacketOutOfSequenceMessage" xml:space="preserve">
+    <value>PacketOutOfSequence、失われたパケット = {0}、{1}</value>
+  </data>
+  <data name="PacketOutOfSequenceMessageSSRC" xml:space="preserve">
+    <value>PacketOutOfSequence、失われたパケット = {0}、ssrc = = {1}</value>
+  </data>
+  <data name="ParticipantIconSizeErrorText" xml:space="preserve">
+    <value>参加者アイコンより小さい 36 KB (96x96 ピクセル イメージ) する必要があります。</value>
+  </data>
+  <data name="ParticipantIconSizeErrorTitle" xml:space="preserve">
+    <value>参加者アイコン サイズ エラー</value>
+  </data>
+  <data name="ParticipantTimeout" xml:space="preserve">
+    <value>参加者のタイムアウト、{0}</value>
+  </data>
+  <data name="ParticipantTimeoutCName" xml:space="preserve">
+    <value>参加者のタイムアウト、CName-= = {0}</value>
+  </data>
+  <data name="Playing" xml:space="preserve">
+    <value>{0} 個の再生</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>プライバシー ポリシー</value>
+  </data>
+  <data name="ProfileCouldNotBeUpdated" xml:space="preserve">
+    <value>サーバー上のプロファイルを更新できませんでした。
+いる場所、サーバーへの接続をするかどうか確認します。</value>
+  </data>
+  <data name="ReflectorAddressNotFound" xml:space="preserve">
+    <value>リフレクタ アドレスが見つかりません-{0}</value>
+  </data>
+  <data name="ReflectorJoinRequestFailed" xml:space="preserve">
+    <value>リフレクタ参加要求失敗しました</value>
+  </data>
+  <data name="RemoveCapabilityFormHashtable" xml:space="preserve">
+    <value>アクセス/いないフォームの hashtable 内にある機能を削除しようとしています。</value>
+  </data>
+  <data name="RemoveCapabilityFormTypeHashtable" xml:space="preserve">
+    <value>FormType の hashtable いない内にある機能を削除しようとしています。</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>{0} 削除</value>
+  </data>
+  <data name="SecurityErrorOccurredConnecting" xml:space="preserve">
+    <value>(WSAEACCES) ネットワークに接続中に、セキュリティ エラーが発生しました。  このエラーの一般的な原因は。 ネットワーク接続が見つからないと、再起動、または最近不確定状態で Winsock 離れたする VPN セッションから切断せずに、.NET Framework または Winsock に変更。  ネットワーク接続、確認またはコンピュータを再起動やり直してください。</value>
+  </data>
+  <data name="Sending" xml:space="preserve">
+    <value>{0} 個の送信</value>
+  </data>
+  <data name="SpecifyBackgroundSenderAttribute" xml:space="preserve">
+    <value>機能は、オブジェクトへのアクセスをするために、BackgroundSender 属性を指定する必要があります。</value>
+  </data>
+  <data name="StoppedPlaying" xml:space="preserve">
+    <value>{0} から再生停止</value>
+  </data>
+  <data name="StoppedSending" xml:space="preserve">
+    <value>送信 {0} 停止</value>
+  </data>
+  <data name="StreamDoesNotMatchSettings" xml:space="preserve">
+    <value>この機能の設定を追加するストリームと一致しません。</value>
+  </data>
+  <data name="StreamLacksACapabilityidentifier" xml:space="preserve">
+    <value>外部プライベート拡張機能で、CapabilityIdentifier ストリームがありません。
+なしこのストリームは、ConferenceXP API によってサポートされていません。</value>
+  </data>
+  <data name="TryingToAddCustomVenue" xml:space="preserve">
+    <value>カスタム場所 ' {0} ' はその名前を追加しようが既に使用中です。</value>
+  </data>
+  <data name="UnableToCallSend" xml:space="preserve">
+    <value>いないで、場所、機能で呼び出す送信できません。</value>
+  </data>
+  <data name="UnableToConnectUsingDefaultVenue" xml:space="preserve">
+    <value>Venue サービスに接続できません。  既定、Venue を使用して: {0}</value>
+  </data>
+  <data name="UnableToConnectUsingGenericParticipant" xml:space="preserve">
+    <value>汎用の参加者を使用して、Venue サービスに接続できません: {0}</value>
+  </data>
+  <data name="UnableToPlayACapability" xml:space="preserve">
+    <value>再生いないで、場所、機能できません。</value>
+  </data>
+  <data name="UnexpectedConnectionError" xml:space="preserve">
+    <value>場所、サーバーへの接続中に予期しないエラーが発生しました。 
+再度場所、サーバーへの接続がある場合。 
+
+例外: {0}</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="ValueMustBeAType" xml:space="preserve">
+    <value>値の種類は</value>
+  </data>
+  <data name="VenueServerCouldNotBeReached" xml:space="preserve">
+    <value>プロファイルに格納されている場所サーバーに到達できませんでした。 
+再度場所、サーバーへの接続がある場合。</value>
+  </data>
+  <data name="YouMustBeAnAdministratorToInstall" xml:space="preserve">
+    <value>管理者インストール ConferenceXP またはを初めて実行する必要があります。</value>
+  </data>
+  <data name="YouMustBeAnAdministratorToUninstall" xml:space="preserve">
+    <value>ConferenceXP アンインストールするには管理者である必要があります。</value>
+  </data>
+</root>

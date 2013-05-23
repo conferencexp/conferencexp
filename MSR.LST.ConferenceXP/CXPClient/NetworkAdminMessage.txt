@@ -1,0 +1,14 @@
+Network diagnostics determined that this computer, %hostname%, and IP address %localmulticastinterfaceaddress% was unable to talk to other hosts
+on the Internet2 using multicast UDP on address %multicastaddress%:%multicastport%.
+
+More information on this diagnostic utility, including possible causes for this error, can be found at
+http://research.microsoft.com/conferencexp/redirects/cxp_client/connectivitydetector.htm.
+
+Hosts attempted:
+%hosts%
+
+--------------------------------------------------------------------------------------------
+
+Current status:
+
+%status%

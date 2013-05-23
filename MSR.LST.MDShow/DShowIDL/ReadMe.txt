@@ -1,0 +1,1 @@
+Copy of the <DX90>\Include\DShowIDL folder from the December 2004 DX SDK

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://research.microsoft.com/lst" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://research.microsoft.com/lst" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://research.microsoft.com/lst">
+      <s:element name="CheckAssemblyVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="assemblyVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAssemblyVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckAssemblyVersionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVenue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="venueIdentifier" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVenueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVenueResult" type="tns:Venue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Venue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Identifier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Port" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Icon" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccessList" type="tns:SecurityPatterns" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SecurityPatterns" />
+      <s:element name="GetVenues">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="participantIdentifier" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVenuesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVenuesResult" type="tns:ArrayOfVenue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVenue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Venue" nillable="true" type="tns:Venue" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddParticipant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p" type="tns:Participant" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Participant">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Identifier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Icon" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastAccessed" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddParticipantResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateParticipant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p" type="tns:Participant" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateParticipantResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetParticipant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="participantIdentifier" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParticipantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParticipantResult" type="tns:Participant" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParticipants">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetParticipantsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParticipantsResult" type="tns:ArrayOfParticipant" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfParticipant">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Participant" nillable="true" type="tns:Participant" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PrivacyPolicyUrl">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrivacyPolicyUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrivacyPolicyUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckAssemblyVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckAssemblyVersion" />
+  </wsdl:message>
+  <wsdl:message name="CheckAssemblyVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckAssemblyVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVenueSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVenue" />
+  </wsdl:message>
+  <wsdl:message name="GetVenueSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVenueResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVenuesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVenues" />
+  </wsdl:message>
+  <wsdl:message name="GetVenuesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVenuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddParticipantSoapIn">
+    <wsdl:part name="parameters" element="tns:AddParticipant" />
+  </wsdl:message>
+  <wsdl:message name="AddParticipantSoapOut">
+    <wsdl:part name="parameters" element="tns:AddParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateParticipantSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateParticipant" />
+  </wsdl:message>
+  <wsdl:message name="UpdateParticipantSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParticipantSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParticipant" />
+  </wsdl:message>
+  <wsdl:message name="GetParticipantSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParticipantsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParticipants" />
+  </wsdl:message>
+  <wsdl:message name="GetParticipantsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParticipantsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrivacyPolicyUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:PrivacyPolicyUrl" />
+  </wsdl:message>
+  <wsdl:message name="PrivacyPolicyUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:PrivacyPolicyUrlResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VenueServiceSoap">
+    <wsdl:operation name="CheckAssemblyVersion">
+      <wsdl:input message="tns:CheckAssemblyVersionSoapIn" />
+      <wsdl:output message="tns:CheckAssemblyVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVenue">
+      <wsdl:input message="tns:GetVenueSoapIn" />
+      <wsdl:output message="tns:GetVenueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVenues">
+      <wsdl:input message="tns:GetVenuesSoapIn" />
+      <wsdl:output message="tns:GetVenuesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddParticipant">
+      <wsdl:input message="tns:AddParticipantSoapIn" />
+      <wsdl:output message="tns:AddParticipantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParticipant">
+      <wsdl:input message="tns:UpdateParticipantSoapIn" />
+      <wsdl:output message="tns:UpdateParticipantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParticipant">
+      <wsdl:input message="tns:GetParticipantSoapIn" />
+      <wsdl:output message="tns:GetParticipantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParticipants">
+      <wsdl:input message="tns:GetParticipantsSoapIn" />
+      <wsdl:output message="tns:GetParticipantsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrivacyPolicyUrl">
+      <wsdl:input message="tns:PrivacyPolicyUrlSoapIn" />
+      <wsdl:output message="tns:PrivacyPolicyUrlSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VenueServiceSoap" type="tns:VenueServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckAssemblyVersion">
+      <soap:operation soapAction="http://research.microsoft.com/lst/CheckAssemblyVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVenue">
+      <soap:operation soapAction="http://research.microsoft.com/lst/GetVenue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVenues">
+      <soap:operation soapAction="http://research.microsoft.com/lst/GetVenues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParticipant">
+      <soap:operation soapAction="http://research.microsoft.com/lst/AddParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParticipant">
+      <soap:operation soapAction="http://research.microsoft.com/lst/UpdateParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParticipant">
+      <soap:operation soapAction="http://research.microsoft.com/lst/GetParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParticipants">
+      <soap:operation soapAction="http://research.microsoft.com/lst/GetParticipants" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrivacyPolicyUrl">
+      <soap:operation soapAction="http://research.microsoft.com/lst/PrivacyPolicyUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VenueServiceSoap12" type="tns:VenueServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckAssemblyVersion">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/CheckAssemblyVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVenue">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/GetVenue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVenues">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/GetVenues" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParticipant">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/AddParticipant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParticipant">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/UpdateParticipant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParticipant">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/GetParticipant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParticipants">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/GetParticipants" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrivacyPolicyUrl">
+      <soap12:operation soapAction="http://research.microsoft.com/lst/PrivacyPolicyUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VenueService">
+    <wsdl:port name="VenueServiceSoap" binding="tns:VenueServiceSoap">
+      <soap:address location="http://localhost/venueservice/venueservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VenueServiceSoap12" binding="tns:VenueServiceSoap12">
+      <soap12:address location="http://localhost/venueservice/venueservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Author" xml:space="preserve">
+    <value>作者: {0}</value>
+  </data>
+  <data name="Blank" xml:space="preserve">
+    <value>&lt;空白&gt;</value>
+  </data>
+  <data name="Checkbox" xml:space="preserve">
+    <value>&lt;复选框&gt;</value>
+  </data>
+  <data name="ComboBox" xml:space="preserve">
+    <value>&lt;组合框&gt;</value>
+  </data>
+  <data name="DocumentFromNewAuthor" xml:space="preserve">
+    <value>接收到一个新作者的文档。请选择或键入放置此笔记的节的名称。</value>
+  </data>
+  <data name="ErrorInOpeningFile" xml:space="preserve">
+    <value>打开 {0} 出错，错误消息：{1}</value>
+  </data>
+  <data name="IfYouSeeThisFormMessage" xml:space="preserve">
+    <value>如果您看到该窗体，这是一个错误。如果您关闭它，那么此功能将失效。</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>&lt;标签&gt;</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="OneNote2003WarningKey" xml:space="preserve">
+    <value>OneNote 2003 警告</value>
+  </data>
+  <data name="OneNote2003WarningMsg" xml:space="preserve">
+    <value>ConferenceXP 程序检测到 OneNote 2003 已安装。CXP 使用 OneNote 来提供特殊的功能，但必须安装 OneNote 2003 Service Pack 1。要安装 OneNote SP1，您可以转到 officeupdate.microsoft.com。
+
+注意：为了使 CXP 能够识别，您必须首先运行一次 OneNote 以进行初始化。
+
+安装 OneNote SP1 之后，OneNote 功能将可以通过 设置 -&gt; RTDocument 查看器 来使用。</value>
+  </data>
+  <data name="OneNote2007WarningKey" xml:space="preserve">
+    <value>OneNote 2007 警告</value>
+  </data>
+  <data name="OneNote2007WarningMsg" xml:space="preserve">
+    <value>ConferenceXP 程序检测到 OneNote 2007 已安装，但初始化时发生一个错误。请确保您从 officeupdate.microsoft.com 获取了最新更新。
+
+注意：为了使 CXP 能够识别，您必须首先运行一次 OneNote 以进行初始化。
+
+更新之后，OneNote 功能将可以通过 设置 -&gt; RTDocument 查看器 来使用。</value>
+  </data>
+  <data name="OneNoteImporter" xml:space="preserve">
+    <value>OneNote 导入程序</value>
+  </data>
+  <data name="OverwiteFile" xml:space="preserve">
+    <value>覆盖文件吗?</value>
+  </data>
+  <data name="ParentTocNodeNotFound" xml:space="preserve">
+    <value>Parent TOCNode for Page not found.</value>
+  </data>
+  <data name="PleaseEnterAValidResponse" xml:space="preserve">
+    <value>请输入有效的响应。</value>
+  </data>
+  <data name="SameTitleError" xml:space="preserve">
+    <value>正在接收的文档与此文件夹中的另一个文档具有相同的标题。要覆盖“{0}”吗?
+
+选择‘是’将覆盖该文件，选择‘否’将自动更改名称。</value>
+  </data>
+  <data name="SaveThisSetting" xml:space="preserve">
+    <value>为此作者保存此设置。</value>
+  </data>
+  <data name="StayAutoSynched" xml:space="preserve">
+    <value>保持自动同步</value>
+  </data>
+  <data name="SyncToInstructor" xml:space="preserve">
+    <value>与教师同步</value>
+  </data>
+  <data name="WhiteboardSession" xml:space="preserve">
+    <value>白板会话 {0}</value>
+  </data>
+  <data name="WhiteboardTitle" xml:space="preserve">
+    <value>白板 1</value>
+  </data>
+  <data name="WhyHelloThere" xml:space="preserve">
+    <value>Why hello there!</value>
+  </data>
+</root>

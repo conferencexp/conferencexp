@@ -1,0 +1,12 @@
+[
+	uuid(21E988FC-FBF6-4061-8173-BBE5A563AE88),
+	version(1.0),
+	helpstring("Managed Interface for the ConferenceXP filters"),
+	helpcontext(00000000)
+]
+library cxpfilters
+{
+    #include "..\..\MSR.LST.DShow\CxpRtpFilters\RtpSource.idl"
+    #include "..\..\MSR.LST.DShow\CxpRtpFilters\RtpRenderer.idl"
+    #include "..\..\MSR.LST.DShow\ScreenScraper\ScreenScraper.idl"
+}

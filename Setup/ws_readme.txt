@@ -1,0 +1,1 @@
+To install the webservice on Windows Vista or later with UAC, use the bootstrapper setup.exe.  This will cause the permission elevation prompt (if required) to obtain the permissions needed to install the software.

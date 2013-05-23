@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CXPClient", "..\..\MSR.LST.ConferenceXP\CXPClient\CXPClient.csproj", "{90CBC7CA-7856-4477-B601-1C45DB6944FD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_x64", "..\..\Setup\CXPClient\CXPClient_Setup_x64.vdproj", "{BDB10590-1FFC-4A13-A562-E29E2CA63933}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90CBC7CA-7856-4477-B601-1C45DB6944FD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{90CBC7CA-7856-4477-B601-1C45DB6944FD}.Debug|x64.Build.0 = Debug|Any CPU
+		{90CBC7CA-7856-4477-B601-1C45DB6944FD}.Release|x64.ActiveCfg = Release|Any CPU
+		{90CBC7CA-7856-4477-B601-1C45DB6944FD}.Release|x64.Build.0 = Release|Any CPU
+		{BDB10590-1FFC-4A13-A562-E29E2CA63933}.Debug|x64.ActiveCfg = Debug
+		{BDB10590-1FFC-4A13-A562-E29E2CA63933}.Debug|x64.Build.0 = Debug
+		{BDB10590-1FFC-4A13-A562-E29E2CA63933}.Release|x64.ActiveCfg = Release
+		{BDB10590-1FFC-4A13-A562-E29E2CA63933}.Release|x64.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddFrameCalledError" xml:space="preserve">
+    <value>AddFrame se le llama cuando el búfer no tiene suficiente espacio disponible.</value>
+  </data>
+  <data name="AdministratorPrivilegesText" xml:space="preserve">
+    <value>Debe ser un administrador para instalar RTP o ejecutarlo por primera vez.</value>
+  </data>
+  <data name="AdministratorPrivilegesTitle" xml:space="preserve">
+    <value>Privilegios de administrador necesarios</value>
+  </data>
+  <data name="ArchiveService" xml:space="preserve">
+    <value>Archivar servicio</value>
+  </data>
+  <data name="ArchiveServiceMicrosoftCom" xml:space="preserve">
+    <value>ArchiveService@microsoft.com</value>
+  </data>
+  <data name="ArchiveServiceStarted" xml:space="preserve">
+    <value>Archivo Servicio iniciado.</value>
+  </data>
+  <data name="ArchiveServiceStopped" xml:space="preserve">
+    <value>Archivo servicio detenido.</value>
+  </data>
+  <data name="BufferplayerSendframesError" xml:space="preserve">
+    <value>BufferPlayer::SendFrames llama a este método mientras Populating.</value>
+  </data>
+  <data name="ConferenceNameError" xml:space="preserve">
+    <value>Nombre de la conferencia no puede contener ' o ".</value>
+  </data>
+  <data name="DatabaseOperationFailedError" xml:space="preserve">
+    <value>No se pudo realizar la operación de base de datos.  Excepción: {0}</value>
+  </data>
+  <data name="DiagnosticServerError" xml:space="preserve">
+    <value>Failed to connect to diagnostic server</value>
+  </data>
+  <data name="DroppingAFrame" xml:space="preserve">
+    <value>Colocar un marco en StreamRecorder::OnFrameReceived debido a búferes no esté disponible.</value>
+  </data>
+  <data name="FailedToSaveAllIndices" xml:space="preserve">
+    <value>Error al guardar todos los índices en BufferRecorder::SaveIndices. Debe tener guardar {0} sólo guarda {1}</value>
+  </data>
+  <data name="GrowingBuffers" xml:space="preserve">
+    <value>Crecimiento búferes para secuencia {0} a {1}</value>
+  </data>
+  <data name="LastTicksIsTransientError" xml:space="preserve">
+    <value>LastTicks es transitorio mientras rellenar, por tanto, no se puede leer.</value>
+  </data>
+  <data name="OnWakeUpNoDataError" xml:space="preserve">
+    <value>StreamPlayer::OnWakeUp alcanzado y no hay datos en búferes! ID: {0}</value>
+  </data>
+  <data name="Playback" xml:space="preserve">
+    <value>La reproducción: {0}: {1}</value>
+  </data>
+  <data name="PlaybackOngoingError" xml:space="preserve">
+    <value>Una reproducción está en curso en esta ubicación.  Elija otra ubicación en que va a registrar.</value>
+  </data>
+  <data name="PlayerAlreadyPlayingError" xml:space="preserve">
+    <value>ConferencePlayer::Play se le llama cuando el reproductor está reproduciendo ya.</value>
+  </data>
+  <data name="Playing" xml:space="preserve">
+    <value>{0} (Playing)</value>
+  </data>
+  <data name="PlayingARecordedConference" xml:space="preserve">
+    <value>Reproducir una conferencia registrada.
+  Ubicación IP/Puerto: {0} secuencias contar: {1}</value>
+  </data>
+  <data name="PopulateCalledOnSenderError" xml:space="preserve">
+    <value>Rellenar llamado en remitente que no está preparado</value>
+  </data>
+  <data name="Recording" xml:space="preserve">
+    <value>{0} (Grabación)</value>
+  </data>
+  <data name="RecordingANewConference" xml:space="preserve">
+    <value>Grabando una conferencia nueva.
+  Descripción de la conferencia: identificador Venue {0}: {1} Venue IP/Puerto: {2}</value>
+  </data>
+  <data name="RecordingOngoingError" xml:space="preserve">
+    <value>Una reproducción o de grabación está en curso en esta ubicación.
+Elija otra ubicación en que en la reproducción.</value>
+  </data>
+  <data name="StreamsCannotBeNull" xml:space="preserve">
+    <value>Las secuencias no pueden ser NULL</value>
+  </data>
+  <data name="StreamWithBadDataReached" xml:space="preserve">
+    <value>Secuencia con datos erróneos alcanzados. Continuar la reproducción de todos los otros flujos. Secuencia id: {0}. de excepciones: {1}</value>
+  </data>
+  <data name="StringLongerThanAccepted" xml:space="preserve">
+    <value>Cadena más de aceptados por base de datos.</value>
+  </data>
+  <data name="TimeToJumpToLessThanStartTime" xml:space="preserve">
+    <value>El argumento timeToJumpTo es menor que la hora de inicio de la grabación.</value>
+  </data>
+  <data name="UnknownParticipantError" xml:space="preserve">
+    <value>Detectado secuencia para participante desconocido, omitiendo.  CNAME:</value>
+  </data>
+  <data name="VenueAddressProtocolError" xml:space="preserve">
+    <value>La ubicación del protocolo de direcciones no se entiende por el servidor.
+Esto se debe a mediante un IPv6 dirección de multidifusión, que no es compatible con este servidor.
+Consulte la documentación ConferenceXP para obtener información de soporte de IPv6.</value>
+  </data>
+  <data name="VenueDoesNotCorrelate" xml:space="preserve">
+    <value>La ubicación proporcionada no poner en correlación en una reproducción continua. 
+Quizás ya se ha detenido la reproducción.</value>
+  </data>
+</root>

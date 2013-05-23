@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CrossbarOutputPinNotRouted" xml:space="preserve">
+    <value>The crossbar output pin is not routed to any of the physical connectors we are aware of.</value>
+  </data>
+  <data name="DeviceDoesNotSupportError" xml:space="preserve">
+    <value>这个设备不支持 IAMCrossbar 接口！</value>
+  </data>
+  <data name="DirectshowErrortext" xml:space="preserve">
+    <value>DirectShow ErrorText: {0}</value>
+  </data>
+  <data name="DoesNotSupportIAMAnalogVideoDecoder" xml:space="preserve">
+    <value>这个设备不支持 IAMAnalogVideoDecoder 接口！</value>
+  </data>
+  <data name="DoesNotSupportIAMVfwCaptureDialogs" xml:space="preserve">
+    <value>这个设备不支持 IAMVfwCaptureDialogs 接口！</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>找不到文件</value>
+  </data>
+  <data name="FilterMonikerNotFound" xml:space="preserve">
+    <value>找不到名称为 {0}的筛选器。</value>
+  </data>
+  <data name="FilterNameNotFound" xml:space="preserve">
+    <value>找不到名称为 {0}的筛选器。</value>
+  </data>
+  <data name="InputPinCount" xml:space="preserve">
+    <value>InputPin count: {0}, index used: {1}</value>
+  </data>
+  <data name="InputPinError" xml:space="preserve">
+    <value>提供的 InputPin 不是来自这个设备！</value>
+  </data>
+  <data name="InvalidIndex" xml:space="preserve">
+    <value>Invalid index, must be &gt;= 0 and &lt; {0}, index provided: {1}</value>
+  </data>
+  <data name="MissingCxpRtpFiltersError" xml:space="preserve">
+    <value>本地目录中未能找到 CxpRtpFilters.ax。</value>
+  </data>
+  <data name="MissingScreenScraperFilterError" xml:space="preserve">
+    <value>本地目录中未能找到 ScreenScraperFilter.ax。</value>
+  </data>
+  <data name="NullRtpSenderError" xml:space="preserve">
+    <value>‘rtpSender’参数的值不能为空</value>
+  </data>
+  <data name="NullStartError" xml:space="preserve">
+    <value>‘start’参数的值不能为空</value>
+  </data>
+  <data name="OutputPinCount" xml:space="preserve">
+    <value>OutputPin count: {0}, index used: {1}</value>
+  </data>
+  <data name="OutputPinError" xml:space="preserve">
+    <value>提供的 OutputPin 不是来自这个设备！</value>
+  </data>
+  <data name="RenderLocalError" xml:space="preserve">
+    <value>当图已呈现时不能 RenderLocal </value>
+  </data>
+  <data name="RtpSender" xml:space="preserve">
+    <value>rtpSender</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="StartParameterError" xml:space="preserve">
+    <value>The 'start' parameter must be either the 'source' or 'compressor' filter</value>
+  </data>
+  <data name="UnableToConvertToGuid" xml:space="preserve">
+    <value>Unable to convert - {0} to Guid</value>
+  </data>
+  <data name="UnableToFindACompressor" xml:space="preserve">
+    <value>没有找到支持 {0} 的压缩器</value>
+  </data>
+  <data name="UnableToFindAudioCompressor" xml:space="preserve">
+    <value>未能找到音频压缩器 - {0}</value>
+  </data>
+  <data name="UnableToFindDefaultAudioRenderer" xml:space="preserve">
+    <value>未能找到默认的音频输出 - {0}</value>
+  </data>
+  <data name="UnableToFindDefaultCompressor" xml:space="preserve">
+    <value>未能找到默认的压缩器 - {0}</value>
+  </data>
+  <data name="UnableToFindVideoCompressor" xml:space="preserve">
+    <value>未能找到视频压缩器 - {0}</value>
+  </data>
+  <data name="UnexpectedFilterCategory" xml:space="preserve">
+    <value>异常筛选器类型</value>
+  </data>
+  <data name="UnknownFilterCategory" xml:space="preserve">
+    <value>未知筛选器类型 - {0}</value>
+  </data>
+  <data name="VideoStandardDoesNotMap" xml:space="preserve">
+    <value>该设备的视频标准和目前已知的视频标准不匹配。</value>
+  </data>
+  <data name="WindowsMediaAudioV2" xml:space="preserve">
+    <value>Windows Media Audio V2</value>
+  </data>
+</root>

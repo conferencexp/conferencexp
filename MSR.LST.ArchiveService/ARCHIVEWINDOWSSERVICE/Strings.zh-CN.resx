@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdministratorPrivilegesRequiredText" xml:space="preserve">
+    <value>要卸载存档服务，您必须具有管理员权限。</value>
+  </data>
+  <data name="AdministratorPrivilegesRequiredTitle" xml:space="preserve">
+    <value>需要管理员权限</value>
+  </data>
+  <data name="ConferenceXPArchiveService" xml:space="preserve">
+    <value>ConferenceXP 存档服务</value>
+  </data>
+  <data name="CXPArchiver" xml:space="preserve">
+    <value>CXPArchiver</value>
+  </data>
+  <data name="DatabaseInitializationComplete" xml:space="preserve">
+    <value>数据库初始化完成。</value>
+  </data>
+  <data name="DatabaseOperationFailedText" xml:space="preserve">
+    <value>未能创建 ArchiveService 数据库。请使用您的数据库工具（osql.exe，位于 tool 目录中）运行 AddDatabase.sql 来完成此操作。 
+
+异常：
+{0}</value>
+  </data>
+  <data name="DatabaseOperationFailedTitle" xml:space="preserve">
+    <value>数据库操作失败</value>
+  </data>
+  <data name="DeleteDatabaseText" xml:space="preserve">
+    <value>是否要删除 ArchiveService 数据库?
+此操作将删除所有的记录。</value>
+  </data>
+  <data name="DeleteDatabaseTitle" xml:space="preserve">
+    <value>删除数据库</value>
+  </data>
+  <data name="FirewallExceptionAddingText" xml:space="preserve">
+    <value>向您的防火墙例外列表中添加此应用程序时出错。请手动向您的防火墙添加此应用程序。
+
+
+异常错误消息：{0}</value>
+  </data>
+  <data name="FirewallExceptionFailedTitle" xml:space="preserve">
+    <value>添加防火墙例外失败</value>
+  </data>
+  <data name="FirewallExceptionRemovingText" xml:space="preserve">
+    <value>从您的防火墙例外列表删除此应用程序时出错。请从您的防火墙中手动删除此应用程序。
+
+
+异常错误消息：{0}</value>
+  </data>
+  <data name="FirewallText" xml:space="preserve">
+    <value>安装程序现在添加此应用程序到您的 Windows 防火墙例外列表。</value>
+  </data>
+  <data name="FirewallTitle" xml:space="preserve">
+    <value>防火墙</value>
+  </data>
+  <data name="InitializeDatabaseText" xml:space="preserve">
+    <value>您是否要初始化 ArchiveService 数据库? 如果您已经有一个 ArchiveService 数据库，此操作将清除它。如果您没有数据库，您必须将其初始化，才能使存档服务正常运行。</value>
+  </data>
+  <data name="InitializeDatabaseTitle" xml:space="preserve">
+    <value>初始化数据库</value>
+  </data>
+  <data name="OSQLEXEFailed" xml:space="preserve">
+    <value>OSQL.exe 无法在当前用户的权限下正确运行指定的文件。</value>
+  </data>
+  <data name="PleaseWaitDatabase" xml:space="preserve">
+    <value>数据库初始化，请稍候。这可能要花几分钟的时间 ...</value>
+  </data>
+  <data name="PleaseWaitStoredProcedures" xml:space="preserve">
+    <value>创建存储过程，请稍候 ...</value>
+  </data>
+  <data name="RunDropDatabaseSQL" xml:space="preserve">
+    <value>无法删除存档服务数据库。请使用您的数据库工具（osql.exe，位于 tool 目录中）运行 DropDatabase.sql。异常：
+{0}</value>
+  </data>
+  <data name="ServiceStartFailureText" xml:space="preserve">
+    <value>服务安装成功，但是不能启动该服务。 
+请确保 SQL Server 安装并运行。 
+
+异常：
+{0}</value>
+  </data>
+  <data name="ServiceStartFailureTitle" xml:space="preserve">
+    <value>服务启动失败</value>
+  </data>
+  <data name="SQLDataDirectoryError" xml:space="preserve">
+    <value>找不到 SQL Server 数据目录。</value>
+  </data>
+  <data name="SqlServerNotFoundText" xml:space="preserve">
+    <value>这台计算机上未检测到 Microsoft SQL Server。请确认已经通过执行 AddDatabase.sql 和 AddSPs.sql 创建了数据库。您必须编辑 ArchiveWindowsService.exe.config 文件中的 SqlConnectionString 并重新启动该服务。请注意连接存档服务到您在另一台服务器上 SQL Server 会对性能造成负面的影响。</value>
+  </data>
+  <data name="SqlServerNotFoundTitle" xml:space="preserve">
+    <value>找不到 SQL Server</value>
+  </data>
+  <data name="StoredProcedureCreationComplete" xml:space="preserve">
+    <value>存储过程创建完成。</value>
+  </data>
+  <data name="StoredProceduresAddFailed" xml:space="preserve">
+    <value>未能将存储过程添加到数据库。使用您的数据库工具（osql.exe，位于 tool 目录中）运行 AddSPs.sql 来完成此操作。
+
+异常：
+{0}</value>
+  </data>
+</root>

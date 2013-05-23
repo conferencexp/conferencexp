@@ -1,0 +1,12 @@
+[
+	uuid(29E02FF8-49F1-439d-85F1-B27A22F377C8),
+	version(1.0),
+	helpstring("Microsoft Research Managed DirectShow Interfaces devenum.idl, axcore.idl and axextend.idl"),
+	helpcontext(00000000)
+]
+library devaxcorex
+{
+    #include "devenum.idl"
+    #include "axcore.idl"
+    #include "axextend.idl"
+}

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessingFile" xml:space="preserve">
+    <value>访问文件 {0}
+{1}</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>添加 {0}</value>
+  </data>
+  <data name="AdministratorPrivilegesRequired" xml:space="preserve">
+    <value>需要管理员权限</value>
+  </data>
+  <data name="AlreadyJoinedToVenue" xml:space="preserve">
+    <value>已经加入到一个会场，不能再加入另一个会场。</value>
+  </data>
+  <data name="ApplicationIsNotConfigured" xml:space="preserve">
+    <value>应用程序未能配置好与会场服务的连接。配置文件的更新被忽略。</value>
+  </data>
+  <data name="CallSendBeforeSendObject" xml:space="preserve">
+    <value>{0} Capability: must call Send() before calling SendObject*()</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CannotBeChannelAndOwned" xml:space="preserve">
+    <value>A capability cannot be both a channel and owned.</value>
+  </data>
+  <data name="CannotExitNotInVenue" xml:space="preserve">
+    <value>不能退出一个没有进入的会场！</value>
+  </data>
+  <data name="CannotUseCapabilitiesUnless" xml:space="preserve">
+    <value>不能通过 Conference API 来使用基于 Windows 窗体的功能，除非预先设置好 Conference.CallingForm 属性。否则，我们将不能建立适当的 Windows 消息循环，并且窗体创建也将会失败。</value>
+  </data>
+  <data name="CapabilitiesCollectionAlreadyContains" xml:space="preserve">
+    <value>功能集合中已包含了 - {0}</value>
+  </data>
+  <data name="CapabilityClassNotFound" xml:space="preserve">
+    <value>在 CapabilitySenders 中找不到功能类 {0}。请检查 Confernece.OtherCapabilitySenders 的有效 CapabilitySender 名称列表。</value>
+  </data>
+  <data name="CapabilityNameAttributeMustBeSet" xml:space="preserve">
+    <value>必须设置 Capability.NameAttribute</value>
+  </data>
+  <data name="CapabilityParticipantAdded" xml:space="preserve">
+    <value>CapabilityParticipantAdded {0}:{1}</value>
+  </data>
+  <data name="CapabilityParticipantRemoved" xml:space="preserve">
+    <value>CapabilityParticipantRemoved {0}:{1}</value>
+  </data>
+  <data name="CapabilityPayloadTypeMustBeSet" xml:space="preserve">
+    <value>Capability.PayloadTypeAttribute must be set</value>
+  </data>
+  <data name="CapabilityPlay" xml:space="preserve">
+    <value>Capability.play(): {0}; {1}</value>
+  </data>
+  <data name="CapabilitySend" xml:space="preserve">
+    <value>Capability.Send(): {0}; {1}</value>
+  </data>
+  <data name="CapabilitySender" xml:space="preserve">
+    <value>CapabilitySender: {0}; {1}</value>
+  </data>
+  <data name="CapabilitySenderAlreadyExists" xml:space="preserve">
+    <value>CapabilitySender 已存在 - {0}</value>
+  </data>
+  <data name="CapabilityTimeout" xml:space="preserve">
+    <value>功能超时，{0}</value>
+  </data>
+  <data name="CapabilityTimeoutSSRC" xml:space="preserve">
+    <value>Capability Timeout, ssrc == {0}</value>
+  </data>
+  <data name="CapabilityViewer" xml:space="preserve">
+    <value>CapabilityViewer：{0}; {1}</value>
+  </data>
+  <data name="CapabilityViewerNotFound" xml:space="preserve">
+    <value>CapabilityViewer for PayloadType {0} not found!</value>
+  </data>
+  <data name="DidNotOriginateFromHere" xml:space="preserve">
+    <value>RtpSender did not originate from this capability!</value>
+  </data>
+  <data name="DuplicateCapabilityViewersDetected" xml:space="preserve">
+    <value>检测到多个功能查看器</value>
+  </data>
+  <data name="DuplicateLocalIdentityError" xml:space="preserve">
+    <value>在 {0} 和 {1} 之间的网络上检测到本地标识的副本。已调用 Venue.Leave()。</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>电子邮件：</value>
+  </data>
+  <data name="EmailAddressInvalidText" xml:space="preserve">
+    <value>{0} 似乎不是一个有效的电子邮件地址，很抱歉</value>
+  </data>
+  <data name="EmailAddressInvalidTitle" xml:space="preserve">
+    <value>电子邮件地址无效</value>
+  </data>
+  <data name="ErroneousImageFile" xml:space="preserve">
+    <value>错误的图像文件</value>
+  </data>
+  <data name="ErrorConnectingToVenueServer" xml:space="preserve">
+    <value>连接到会场服务器时出错</value>
+  </data>
+  <data name="ErrorInitializingCapabilityClasses" xml:space="preserve">
+    <value>初始化功能类错误</value>
+  </data>
+  <data name="ErrorInitializingCapabilitySender" xml:space="preserve">
+    <value>初始化功能发件人错误</value>
+  </data>
+  <data name="ErrorInitializingCapabilityViewer" xml:space="preserve">
+    <value>初始化功能查看器错误</value>
+  </data>
+  <data name="FecRatioRequires2Ints" xml:space="preserve">
+    <value>FecRatio requires 2 ints in the form of a string, data:checksum</value>
+  </data>
+  <data name="FileTypeCannotBeRead" xml:space="preserve">
+    <value>无法读取文件类型。</value>
+  </data>
+  <data name="FormTypeCanNotBeNull" xml:space="preserve">
+    <value>FormType can not be null when calling CreateForm</value>
+  </data>
+  <data name="FoundDuplicateCapabilitySender" xml:space="preserve">
+    <value>在 {1} 中找到重复的 CapabilitySender {0}</value>
+  </data>
+  <data name="FrameOutOfSequenceMessage" xml:space="preserve">
+    <value>FrameOutOfSequence, lostFrames = {0}, message = {1}, {2}</value>
+  </data>
+  <data name="FrameOutOfSequenceMessageSSRC" xml:space="preserve">
+    <value>FrameOutOfSequence, lostFrames = {0}, message = {1}, ssrc = = {2}</value>
+  </data>
+  <data name="IdentifierNotMatchingRequest" xml:space="preserve">
+    <value>会场服务返回一个与请求的标识符不匹配的参与者标识符。参与者被拒绝。
+    请求 ID：{0}
+    返回 ID：{1}</value>
+  </data>
+  <data name="Identity" xml:space="preserve">
+    <value>标识：</value>
+  </data>
+  <data name="InvalidPacketCV" xml:space="preserve">
+    <value>无效的数据包：{0}, {1}</value>
+  </data>
+  <data name="InvalidPacketSSRC" xml:space="preserve">
+    <value>无效的数据包：{0}, ssrc = = {1}</value>
+  </data>
+  <data name="InvalidPacketUnknownCapabilityViewer" xml:space="preserve">
+    <value>无效的数据包，未知的 CapabilityViewer，{0}</value>
+  </data>
+  <data name="InvalidVenue" xml:space="preserve">
+    <value>无效的会场：{0}</value>
+  </data>
+  <data name="InvalidVenueType" xml:space="preserve">
+    <value>Can not join a venue that is of type Invalid</value>
+  </data>
+  <data name="JournalViewerNotInstalled" xml:space="preserve">
+    <value>尚未安装 Microsoft Windows Journal Viewer 的更新，ConferenceXP 的正常运行依赖于这一更新。</value>
+  </data>
+  <data name="MaximumBandwidthlimiterError" xml:space="preserve">
+    <value>MaximumBandwidthLimiter 必须介于 0 和 100,000,000 之间</value>
+  </data>
+  <data name="MultipleCapabilityViewersExist" xml:space="preserve">
+    <value>payload 类型 - {0} 存在多个功能查看器。 
+ConferenceXP 选择 {1}，将忽略 {2}</value>
+  </data>
+  <data name="MyIcon" xml:space="preserve">
+    <value>我的图标</value>
+  </data>
+  <data name="MyInformation" xml:space="preserve">
+    <value>我的信息</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>我的配置文件</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="NameLengthErrorText" xml:space="preserve">
+    <value>名称必须在 1 到 255 个字符长之间</value>
+  </data>
+  <data name="NameLengthErrorTitle" xml:space="preserve">
+    <value>名称长度错误</value>
+  </data>
+  <data name="NetworkTimeout" xml:space="preserve">
+    <value>网络超时</value>
+  </data>
+  <data name="NoFormSetForThisCapability" xml:space="preserve">
+    <value>此功能没有设置窗体。</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="PacketOutOfSequenceMessage" xml:space="preserve">
+    <value>PacketOutOfSequence, packets lost = {0}, {1}</value>
+  </data>
+  <data name="PacketOutOfSequenceMessageSSRC" xml:space="preserve">
+    <value>PacketOutOfSequence, packets lost = {0}, ssrc == {1}</value>
+  </data>
+  <data name="ParticipantIconSizeErrorText" xml:space="preserve">
+    <value>参与者图标必须是小于 36 KB（一个 96x96 像素的图像）。</value>
+  </data>
+  <data name="ParticipantIconSizeErrorTitle" xml:space="preserve">
+    <value>参与者图标大小错误</value>
+  </data>
+  <data name="ParticipantTimeout" xml:space="preserve">
+    <value>参与者超时，{0}</value>
+  </data>
+  <data name="ParticipantTimeoutCName" xml:space="preserve">
+    <value>参与者超时，CName = = {0}</value>
+  </data>
+  <data name="Playing" xml:space="preserve">
+    <value>播放 {0}</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>隐私策略</value>
+  </data>
+  <data name="ProfileCouldNotBeUpdated" xml:space="preserve">
+    <value>无法在服务器上更新您的配置文件。请
+检查您有一个到会场服务器的连接。</value>
+  </data>
+  <data name="ReflectorAddressNotFound" xml:space="preserve">
+    <value>找不到反射器地址 - {0} </value>
+  </data>
+  <data name="ReflectorJoinRequestFailed" xml:space="preserve">
+    <value>反射器加入请求失败</value>
+  </data>
+  <data name="RemoveCapabilityFormHashtable" xml:space="preserve">
+    <value>You are trying to access / remove a capability that is not in form's hashtable</value>
+  </data>
+  <data name="RemoveCapabilityFormTypeHashtable" xml:space="preserve">
+    <value>You are trying to remove a capability that is not in FormType's hashtable</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>移除 {0}</value>
+  </data>
+  <data name="SecurityErrorOccurredConnecting" xml:space="preserve">
+    <value>连接到网络出现安全错误 (WSAEACCES)。此错误的常见原因是：未发现可用的网络连接，对 .NET 框架或 Winsock 进行了更改而没有重新启动，或最近断开的 VPN 会话使 Winsock 处于不确定状态。请检查您的网络连接或重新启动您的计算机然后试一次。</value>
+  </data>
+  <data name="Sending" xml:space="preserve">
+    <value>发送 {0}</value>
+  </data>
+  <data name="SpecifyBackgroundSenderAttribute" xml:space="preserve">
+    <value>The capability must specify the BackgroundSender attribute in order to have access to such an object</value>
+  </data>
+  <data name="StoppedPlaying" xml:space="preserve">
+    <value>停止播放 {0}</value>
+  </data>
+  <data name="StoppedSending" xml:space="preserve">
+    <value>停止发送 {0}</value>
+  </data>
+  <data name="StreamDoesNotMatchSettings" xml:space="preserve">
+    <value>要添加的流与此功能的设置不匹配。</value>
+  </data>
+  <data name="StreamLacksACapabilityidentifier" xml:space="preserve">
+    <value>Stream lacks a CapabilityIdentifier in the external private extensions.
+Streams without this are not supported by the ConferenceXP API.</value>
+  </data>
+  <data name="TryingToAddCustomVenue" xml:space="preserve">
+    <value>在尝试添加自定义会场‘{0}’，但该名称已在使用。</value>
+  </data>
+  <data name="UnableToCallSend" xml:space="preserve">
+    <value>不在一个会场时，无法对一个功能调用发送。</value>
+  </data>
+  <data name="UnableToConnectUsingDefaultVenue" xml:space="preserve">
+    <value>无法连接到会场服务。使用一个默认的会场：{0}</value>
+  </data>
+  <data name="UnableToConnectUsingGenericParticipant" xml:space="preserve">
+    <value>无法连接到会场服务，用一个泛型参与者：{0}</value>
+  </data>
+  <data name="UnableToPlayACapability" xml:space="preserve">
+    <value>不在一个会场时，无法播放一个功能。</value>
+  </data>
+  <data name="UnexpectedConnectionError" xml:space="preserve">
+    <value>连接到会场服务器时出错。请您在具有到会场服务器
+的连接时再试一次。 
+
+异常：
+{0}</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="ValueMustBeAType" xml:space="preserve">
+    <value>值必须是类型</value>
+  </data>
+  <data name="VenueServerCouldNotBeReached" xml:space="preserve">
+    <value>不能访问存储您的配置文件的会场服务器。请您在具有到会场服务器
+的连接时再试一次。</value>
+  </data>
+  <data name="YouMustBeAnAdministratorToInstall" xml:space="preserve">
+    <value>安装或进行第一次运行 ConferenceXP 时，您必须具有管理员权限。</value>
+  </data>
+  <data name="YouMustBeAnAdministratorToUninstall" xml:space="preserve">
+    <value>要卸载 ConferenceXP，您必须具有管理员权限。</value>
+  </data>
+</root>

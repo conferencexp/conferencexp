@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90CBC7CA-7856-4477-B601-1C45DB6944FD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>..\..\Graphics\Icons\ConferenceXP.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CXPClient</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MSR.LST.ConferenceXP</RootNamespace>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <StartupObject>MSR.LST.ConferenceXP.FMain</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArchiveWrapper, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.ArchiveService\Redist\ArchiveWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AVCapabilities, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.Capabilities\Redist\AVCapabilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Conference, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.ConferenceAPI\Redist\Conference.dll</HintPath>
+    </Reference>
+    <Reference Include="ConferenceXPInterfaces, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.ConferenceAPI\Redist\ConferenceXPInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="control.interop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.Capabilities\Redist\control.interop.dll</HintPath>
+    </Reference>
+    <Reference Include="devaxcorex.interop, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.Capabilities\Redist\devaxcorex.interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Identity, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.ConferenceAPI\Redist\Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="LSTCommon, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.ArchiveService\Redist\LSTCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="MDShowManager, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.Capabilities\Redist\MDShowManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.PowerPoint">
+      <Name>Microsoft.Office.Interop.PowerPoint</Name>
+      <HintPath>..\..\Microsoft.Office.Interop\Microsoft.Office.Interop.PowerPoint.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSR.LST.Net.Rtp, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.ConferenceAPI\Redist\MSR.LST.Net.Rtp.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkingBasics, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MSR.LST.ArchiveService\Redist\NetworkingBasics.dll</HintPath>
+    </Reference>
+    <Reference Include="Office">
+      <Name>office</Name>
+      <HintPath>..\..\Microsoft.Office.Interop\office.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CXPClient.exe.manifest" />
+    <EmbeddedResource Include="..\..\Graphics\Icons\ConferenceXP.ico">
+      <Link>ConferenceXP.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Graphics\Icons\GreenLight.ico">
+      <Link>GreenLight.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Graphics\Icons\RedLight.ico">
+      <Link>RedLight.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Graphics\Icons\WhiteLight.ico">
+      <Link>WhiteLight.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Graphics\Icons\YellowLight.ico">
+      <Link>YellowLight.ico</Link>
+    </EmbeddedResource>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArchiveClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArchiveConf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudioFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudioSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAVDevices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAVTroubleshooting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNetworkUnicast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServices2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVideoSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeartbeatMonitor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Installer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArchiveClient.resx">
+      <DependentUpon>frmArchiveClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArchiveConf.resx">
+      <DependentUpon>frmArchiveConf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudioFormat.resx">
+      <DependentUpon>frmAudioFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudioSettings.resx">
+      <DependentUpon>frmAudioSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAVDevices.resx">
+      <DependentUpon>frmAVDevices.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAVTroubleshooting.resx">
+      <DependentUpon>frmAVTroubleshooting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNetworkUnicast.resx">
+      <DependentUpon>frmNetworkUnicast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotification.resx">
+      <DependentUpon>frmNotification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecord.resx">
+      <DependentUpon>frmRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServices.resx">
+      <DependentUpon>frmServices.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServices2.resx">
+      <DependentUpon>frmServices2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVideoSettings.resx">
+      <DependentUpon>frmVideoSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkAdminMessage.txt" />
+    <EmbeddedResource Include="Strings.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.ja-JP.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>MSR.LST.ConferenceXP</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="lock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="redlock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>mt.exe -manifest "$(ProjectDir)$(TargetName).exe.manifest"  -outputresource:"$(TargetPath);#1"
+
+xcopy /y "$(ProjectDir)CXPClient.exe.local" "$(TargetDir)"
+xcopy /y "$(TargetDir)$(TargetName).*" "$(ProjectDir)..\Redist\"
+cmd /c xcopy /ys "$(TargetDir)*$(TargetName).resources.dll" "$(ProjectDir)..\Redist\"
+
+xcopy /y "$(ProjectDir)..\..\MSR.LST.ConferenceAPI\Redist\*.*" "$(TargetDir)"
+xcopy /y "$(ProjectDir)..\..\MSR.LST.Capabilities\Redist\*.*" "$(TargetDir)"
+xcopy /y "$(ProjectDir)..\..\UWCSE\ClassroomPresenter\*.*" "$(TargetDir)"
+xcopy /ys "$(ProjectDir)..\..\UWCSE\ClassroomPresenter\*.resources.dll" "$(TargetDir)"
+xcopy /ys "$(ProjectDir)..\..\MSR.LST.Capabilities\Redist\*.resources.dll" "$(TargetDir)"
+
+xcopy /y "$(ProjectDir)..\..\MSR.LST.ConferenceAPI\Redist\Conference.*" "$(ProjectDir)..\Redist\"
+xcopy /ys "$(ProjectDir)..\..\MSR.LST.ConferenceAPI\Redist\*Conference.resources.dll" "$(ProjectDir)..\Redist\"
+xcopy /y "$(ProjectDir)..\..\MSR.LST.ArchiveService\Redist\ArchiveWrapper.*" "$(ProjectDir)..\Redist\"
+xcopy /ys "$(ProjectDir)..\..\MSR.LST.ArchiveService\Redist\*ArchiveWrapper.resources.dll" "$(ProjectDir)..\Redist\"
+xcopy /y "$(ProjectDir)..\..\MSR.LST.Capabilities\Redist\AVCapabilities.*" "$(ProjectDir)..\Redist\"
+xcopy /ys "$(ProjectDir)..\..\MSR.LST.Capabilities\Redist\*AVCapabilities.resources.dll" "$(ProjectDir)..\Redist\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

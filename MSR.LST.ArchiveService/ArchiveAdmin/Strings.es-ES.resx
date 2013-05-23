@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutArchiveServiceText" xml:space="preserve">
+    <value>ConferenceXP de archivo del servicio de Microsoft Research {0} para obtener más información, vea http://cct.cs.washington.edu/downloads/CXP/</value>
+  </data>
+  <data name="AboutArchiveServiceTitle" xml:space="preserve">
+    <value>Acerca del servicio de archivo ConferenceXP.</value>
+  </data>
+  <data name="ArchiveDatabase" xml:space="preserve">
+    <value>Archivo de base de datos</value>
+  </data>
+  <data name="ArchiverHelpURL" xml:space="preserve">
+    <value>http://cct.cs.washington.edu/project-wiki/index.php/ConferenceXP_Archive_Service</value>
+  </data>
+  <data name="AreYouSureYouWantToDelete" xml:space="preserve">
+    <value>Estás seguro que desea eliminar el </value>
+    <comment>Observe espacio al final de línea...</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CleanUp" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="CleanUpDatabaseText" xml:space="preserve">
+    <value>La característica limpiar Seguridad de la base de datos quita los siguientes registros de su servicio de archivo base de datos: - conferencias sin participantes - participantes sin secuencias de secuencias sin graban marcos - secuencias sin datos sin procesar para completar estas tareas, se debe detener el servicio de archivo. Al hacer clic en Aceptar temporalmente detiene este servicio, lo que cualquier grabaciones de la conferencia actual para detener.</value>
+  </data>
+  <data name="CleanUpDatabaseTitle" xml:space="preserve">
+    <value>Limpiar de seguridad de la base de datos</value>
+  </data>
+  <data name="Conference" xml:space="preserve">
+    <value>Conferencia: {0} - {1}</value>
+  </data>
+  <data name="ConferenceLower" xml:space="preserve">
+    <value>Conferencia: {0} - </value>
+    <comment>Nota: hay un espacio al final de la línea</comment>
+  </data>
+  <data name="ConfirmDeleteText" xml:space="preserve">
+    <value>¿Estás seguro que desea eliminar conferencias {0} creadas a partir {1} en {2} \nto {3} en {4}?</value>
+  </data>
+  <data name="ConfirmDeleteTitle" xml:space="preserve">
+    <value>Confirmar eliminación</value>
+  </data>
+  <data name="CXPArchiveServiceManager" xml:space="preserve">
+    <value>Administrador de servicios de archivo ConferenceXP</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Fecha:</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="DeleteConference" xml:space="preserve">
+    <value>¿Conferencia "{0}" y todo el contenido contiene?</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>¿carpeta "{0}" y todo el contenido contiene?</value>
+  </data>
+  <data name="DeleteParticipant" xml:space="preserve">
+    <value>¿Participante "{0}" y todo el contenido contiene?</value>
+  </data>
+  <data name="DeleteRange" xml:space="preserve">
+    <value>Intervalo de eliminación</value>
+  </data>
+  <data name="DeleteRangeEllipsis" xml:space="preserve">
+    <value>Intervalo de eliminación...</value>
+  </data>
+  <data name="DeleteStream" xml:space="preserve">
+    <value>¿Secuencia "{0}"?</value>
+  </data>
+  <data name="ErrorConnectingToDatabaseText" xml:space="preserve">
+    <value>El objeto {0} no se pudo conectar con la base de datos de Microsoft SQL. Asegúrese de que la base de datos es creado correctamente y que la SqlConnectionString especificado en el archivo de configuración de la aplicación es correcto.</value>
+  </data>
+  <data name="ErrorConnectingToDatabaseTitle" xml:space="preserve">
+    <value>Error conexión a base de datos</value>
+  </data>
+  <data name="ErrorConnectingToServiceText" xml:space="preserve">
+    <value>El objeto {0} no se pudo conectar con el servce ventanas "Servicio de archivo ConferenceXP." Consulte comprobación para asegúrese de que el nombreDeServicio especificado en el archivo de configuración de la aplicación es correcto.</value>
+  </data>
+  <data name="ErrorConnectingToServiceTitle" xml:space="preserve">
+    <value>Error conectar al servicio</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="InvalidRangeText" xml:space="preserve">
+    <value>No las conferencias se encontraron durante ese período de tiempo.</value>
+  </data>
+  <data name="InvalidRangeTitle" xml:space="preserve">
+    <value>Intervalo no válido</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="Participant" xml:space="preserve">
+    <value>Participante: {0}</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="SpecifyConferencesToDelete" xml:space="preserve">
+    <value>Especificar las conferencias que va a eliminar por fecha de creación:</value>
+  </data>
+  <data name="Stream" xml:space="preserve">
+    <value>Secuencia: {0}</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Tiempo:</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Para</value>
+  </data>
+</root>

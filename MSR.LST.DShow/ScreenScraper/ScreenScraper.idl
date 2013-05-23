@@ -1,0 +1,22 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(ADBCF33F-70A3-4290-A801-7B4D43FF0BAC),
+	nonextensible,
+	pointer_default(unique)
+]
+interface IScreenScraper : IUnknown
+{
+	[id(1)] HRESULT Handle([in] HWND hWnd);
+	[id(2)] HRESULT FrameRate([in] int frameRate);
+};
+
+[
+    uuid(66BA5965-3092-4223-8649-496E7AB67F25),
+]
+coclass ScreenScraper
+{
+	[default] interface IScreenScraper;
+};

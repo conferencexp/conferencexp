@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MSR.LST.ConferenceXP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Conference_VenueService_VenueService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8894/VenueService.asmx</Value>
+    </Setting>
+    <Setting Name="Conference_DiagnosticWebService_DiagnosticWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:3727/DiagnosticService/DiagnosticWebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

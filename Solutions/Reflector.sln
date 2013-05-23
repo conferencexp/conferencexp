@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectorServer", "..\Reflector\ReflectorServer\ReflectorServer.csproj", "{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectorService", "..\Reflector\ReflectorService\ReflectorService.csproj", "{0026C0C9-09D5-494A-A452-6395FCD7FB72}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8} = {BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectorConsole", "..\Reflector\ReflectorConsole\ReflectorConsole.csproj", "{130EC080-C1CB-4CBD-B753-F685F9D52394}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8} = {BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectorAdmin", "..\Reflector\ReflectorAdmin\ReflectorAdmin.csproj", "{DEF5D7CC-ECDB-4EC0-ABB1-E58158DD89E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8} = {BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "..\Util\Utilities\Utilities.csproj", "{4CD6E7CF-E7F2-4BBA-8055-D0BEDF804204}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB2B266-4775-457F-BE0E-C1D2FD3A1DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0026C0C9-09D5-494A-A452-6395FCD7FB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0026C0C9-09D5-494A-A452-6395FCD7FB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0026C0C9-09D5-494A-A452-6395FCD7FB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0026C0C9-09D5-494A-A452-6395FCD7FB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{130EC080-C1CB-4CBD-B753-F685F9D52394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130EC080-C1CB-4CBD-B753-F685F9D52394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130EC080-C1CB-4CBD-B753-F685F9D52394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130EC080-C1CB-4CBD-B753-F685F9D52394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF5D7CC-ECDB-4EC0-ABB1-E58158DD89E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF5D7CC-ECDB-4EC0-ABB1-E58158DD89E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF5D7CC-ECDB-4EC0-ABB1-E58158DD89E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF5D7CC-ECDB-4EC0-ABB1-E58158DD89E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD6E7CF-E7F2-4BBA-8055-D0BEDF804204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD6E7CF-E7F2-4BBA-8055-D0BEDF804204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD6E7CF-E7F2-4BBA-8055-D0BEDF804204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD6E7CF-E7F2-4BBA-8055-D0BEDF804204}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

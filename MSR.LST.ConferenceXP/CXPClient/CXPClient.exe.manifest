@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- This manifest was added to cause Vista UAC to prompt for highest privileges so that performance
+counters could be read if possible. It is embedded as a post-build step. -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+   version="1.0.0.0"
+   name="CXPClient"
+   processorArchitecture="msil"
+   type="win32"
+/>
+  <description>CXPClient provides the user inferface for ConferenceXP.</description>
+  <!-- Identify the application security requirements. -->
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel
+          level="highestAvailable"
+          uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>  
+</assembly>

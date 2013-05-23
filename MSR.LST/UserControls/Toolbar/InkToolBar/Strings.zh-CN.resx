@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AliceBlue" xml:space="preserve">
+    <value>爱丽丝蓝</value>
+  </data>
+  <data name="Antialiased" xml:space="preserve">
+    <value>平滑</value>
+  </data>
+  <data name="AntiqueWhite" xml:space="preserve">
+    <value>古董白</value>
+  </data>
+  <data name="Aqua" xml:space="preserve">
+    <value>水色</value>
+  </data>
+  <data name="AquaMarine" xml:space="preserve">
+    <value>碧蓝色</value>
+  </data>
+  <data name="Azure" xml:space="preserve">
+    <value>湛蓝</value>
+  </data>
+  <data name="Ball" xml:space="preserve">
+    <value>球</value>
+  </data>
+  <data name="Beige" xml:space="preserve">
+    <value>米色</value>
+  </data>
+  <data name="Bisque" xml:space="preserve">
+    <value>陶坯黄</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>黑色</value>
+  </data>
+  <data name="BlackHotkey" xml:space="preserve">
+    <value>黑色(&amp;k)</value>
+  </data>
+  <data name="BlanchedAlmond" xml:space="preserve">
+    <value>杏仁白</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>蓝色</value>
+  </data>
+  <data name="BlueHotkey" xml:space="preserve">
+    <value>蓝色(&amp;B)</value>
+  </data>
+  <data name="BlueViolet" xml:space="preserve">
+    <value>蓝紫</value>
+  </data>
+  <data name="Brown" xml:space="preserve">
+    <value>褐色</value>
+  </data>
+  <data name="BurlyWood" xml:space="preserve">
+    <value>硬木色</value>
+  </data>
+  <data name="CadetBlue" xml:space="preserve">
+    <value>军服蓝</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CancelHotkey" xml:space="preserve">
+    <value>取消(&amp;C)</value>
+  </data>
+  <data name="Chartreuse" xml:space="preserve">
+    <value>查特酒绿</value>
+  </data>
+  <data name="Chocolate" xml:space="preserve">
+    <value>巧克力色</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>颜色：</value>
+  </data>
+  <data name="Coral" xml:space="preserve">
+    <value>珊瑚红</value>
+  </data>
+  <data name="CornflowerBlue" xml:space="preserve">
+    <value>矢车菊蓝</value>
+  </data>
+  <data name="Cornsilk" xml:space="preserve">
+    <value>玉米丝色</value>
+  </data>
+  <data name="Crimson" xml:space="preserve">
+    <value>绯红</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>自定义 ...</value>
+  </data>
+  <data name="DarkBlue" xml:space="preserve">
+    <value>暗蓝</value>
+  </data>
+  <data name="DarkCyan" xml:space="preserve">
+    <value>暗青</value>
+  </data>
+  <data name="DarkGoldenrod" xml:space="preserve">
+    <value>暗金菊色</value>
+  </data>
+  <data name="DarkGray" xml:space="preserve">
+    <value>暗灰</value>
+  </data>
+  <data name="DarkGreen" xml:space="preserve">
+    <value>暗绿</value>
+  </data>
+  <data name="DarkKhaki" xml:space="preserve">
+    <value>暗卡其色</value>
+  </data>
+  <data name="DarkMagenta" xml:space="preserve">
+    <value>暗洋红</value>
+  </data>
+  <data name="DarkOliveGreen" xml:space="preserve">
+    <value>暗橄榄绿</value>
+  </data>
+  <data name="DarkOrange" xml:space="preserve">
+    <value>暗橙</value>
+  </data>
+  <data name="DarkOrchid" xml:space="preserve">
+    <value>暗兰紫</value>
+  </data>
+  <data name="DarkRed" xml:space="preserve">
+    <value>暗红</value>
+  </data>
+  <data name="DarkSalmon" xml:space="preserve">
+    <value>暗鲑红</value>
+  </data>
+  <data name="DarkSeaGreen" xml:space="preserve">
+    <value>暗海绿</value>
+  </data>
+  <data name="DarkSlateBlue" xml:space="preserve">
+    <value>暗岩蓝</value>
+  </data>
+  <data name="DarkSlateGray" xml:space="preserve">
+    <value>暗岩灰</value>
+  </data>
+  <data name="DarkTurquoise" xml:space="preserve">
+    <value>暗绿松石色</value>
+  </data>
+  <data name="DarkViolet" xml:space="preserve">
+    <value>暗紫</value>
+  </data>
+  <data name="DeepPink" xml:space="preserve">
+    <value>深粉色</value>
+  </data>
+  <data name="DeepSkyBlue" xml:space="preserve">
+    <value>深天蓝</value>
+  </data>
+  <data name="DimGray" xml:space="preserve">
+    <value>昏灰</value>
+  </data>
+  <data name="DodgerBlue" xml:space="preserve">
+    <value>道奇蓝</value>
+  </data>
+  <data name="EraseAll" xml:space="preserve">
+    <value>擦除全部</value>
+  </data>
+  <data name="Eraser" xml:space="preserve">
+    <value>橡皮擦</value>
+  </data>
+  <data name="EraserSizeError" xml:space="preserve">
+    <value>橡皮擦大小不能小于 1</value>
+  </data>
+  <data name="Firebrick" xml:space="preserve">
+    <value>耐火砖红</value>
+  </data>
+  <data name="FitToCurve" xml:space="preserve">
+    <value>拟合曲线</value>
+  </data>
+  <data name="FloralWhite" xml:space="preserve">
+    <value>花卉白</value>
+  </data>
+  <data name="ForestGreen" xml:space="preserve">
+    <value>森林绿</value>
+  </data>
+  <data name="Fuchsia" xml:space="preserve">
+    <value>品红</value>
+  </data>
+  <data name="Gainsboro" xml:space="preserve">
+    <value>庚斯博罗灰</value>
+  </data>
+  <data name="GhostWhite" xml:space="preserve">
+    <value>幽灵白</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>金色</value>
+  </data>
+  <data name="Gray" xml:space="preserve">
+    <value>灰色</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>绿色</value>
+  </data>
+  <data name="GreenYellow" xml:space="preserve">
+    <value>绿黄</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Highlighter" xml:space="preserve">
+    <value>荧光笔</value>
+  </data>
+  <data name="HighlighterSettings" xml:space="preserve">
+    <value>荧光笔设置</value>
+  </data>
+  <data name="Honeydew" xml:space="preserve">
+    <value>蜜瓜绿</value>
+  </data>
+  <data name="HotPink" xml:space="preserve">
+    <value>暖粉红</value>
+  </data>
+  <data name="IgnorePressure" xml:space="preserve">
+    <value>忽略压力</value>
+  </data>
+  <data name="IndianRed" xml:space="preserve">
+    <value>印度红</value>
+  </data>
+  <data name="Indigo" xml:space="preserve">
+    <value>靛色</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="InkSettings" xml:space="preserve">
+    <value>墨迹设置</value>
+  </data>
+  <data name="Ivory" xml:space="preserve">
+    <value>象牙色</value>
+  </data>
+  <data name="Khaki" xml:space="preserve">
+    <value>卡其色</value>
+  </data>
+  <data name="Lavender" xml:space="preserve">
+    <value>薰衣草紫</value>
+  </data>
+  <data name="LavenderBlush" xml:space="preserve">
+    <value>薰衣草紫红</value>
+  </data>
+  <data name="LawnGreen" xml:space="preserve">
+    <value>草坪绿</value>
+  </data>
+  <data name="LemonChiffon" xml:space="preserve">
+    <value>柠檬绸色</value>
+  </data>
+  <data name="LightBlue" xml:space="preserve">
+    <value>亮蓝色</value>
+  </data>
+  <data name="LightCoral" xml:space="preserve">
+    <value>亮珊瑚红</value>
+  </data>
+  <data name="LightCyan" xml:space="preserve">
+    <value>亮青</value>
+  </data>
+  <data name="LightGoldenrodYellow" xml:space="preserve">
+    <value>亮金菊黄</value>
+  </data>
+  <data name="LightGray" xml:space="preserve">
+    <value>亮灰</value>
+  </data>
+  <data name="LightPink" xml:space="preserve">
+    <value>亮粉红</value>
+  </data>
+  <data name="LightSalmon" xml:space="preserve">
+    <value>亮鲑红</value>
+  </data>
+  <data name="LightSeaGreen" xml:space="preserve">
+    <value>亮海绿</value>
+  </data>
+  <data name="LightSkyBlue" xml:space="preserve">
+    <value>亮天蓝</value>
+  </data>
+  <data name="LightSlateGray" xml:space="preserve">
+    <value>亮岩灰</value>
+  </data>
+  <data name="LightSteelBlue" xml:space="preserve">
+    <value>亮钢蓝</value>
+  </data>
+  <data name="LightYellow" xml:space="preserve">
+    <value>亮黄</value>
+  </data>
+  <data name="Lime" xml:space="preserve">
+    <value>柠檬色</value>
+  </data>
+  <data name="LimeGreen" xml:space="preserve">
+    <value>柠檬绿</value>
+  </data>
+  <data name="LimeHotkey" xml:space="preserve">
+    <value>柠檬色(&amp;L)</value>
+  </data>
+  <data name="Linen" xml:space="preserve">
+    <value>亚麻色</value>
+  </data>
+  <data name="Maroon" xml:space="preserve">
+    <value>栗色</value>
+  </data>
+  <data name="MediumAquaMarine" xml:space="preserve">
+    <value>中碧蓝色</value>
+  </data>
+  <data name="MediumBlue" xml:space="preserve">
+    <value>中蓝</value>
+  </data>
+  <data name="MediumOrchid" xml:space="preserve">
+    <value>中兰紫</value>
+  </data>
+  <data name="MediumPurple" xml:space="preserve">
+    <value>中紫红</value>
+  </data>
+  <data name="MediumSeaGreen" xml:space="preserve">
+    <value>中海绿</value>
+  </data>
+  <data name="MediumSlateBlue" xml:space="preserve">
+    <value>中岩蓝</value>
+  </data>
+  <data name="MediumSpringgreen" xml:space="preserve">
+    <value>中春绿色</value>
+  </data>
+  <data name="MediumTurquoise" xml:space="preserve">
+    <value>中绿松石色</value>
+  </data>
+  <data name="MediumVioletRed" xml:space="preserve">
+    <value>中青紫红</value>
+  </data>
+  <data name="MidnightBlue" xml:space="preserve">
+    <value>午夜蓝</value>
+  </data>
+  <data name="MillimeterAbbreviation" xml:space="preserve">
+    <value>毫米</value>
+  </data>
+  <data name="MintCream" xml:space="preserve">
+    <value>薄荷奶油色</value>
+  </data>
+  <data name="MistyRose" xml:space="preserve">
+    <value>雾玫瑰色</value>
+  </data>
+  <data name="Moccasin" xml:space="preserve">
+    <value>鹿皮鞋色</value>
+  </data>
+  <data name="NavajoWhite" xml:space="preserve">
+    <value>那瓦霍白</value>
+  </data>
+  <data name="Navy" xml:space="preserve">
+    <value>海军蓝</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="OKHotkey" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="Oldlace" xml:space="preserve">
+    <value>旧蕾丝色</value>
+  </data>
+  <data name="Olive" xml:space="preserve">
+    <value>橄榄色</value>
+  </data>
+  <data name="OliveDrab" xml:space="preserve">
+    <value>橄榄军服绿</value>
+  </data>
+  <data name="OptimizeForHighlightingText" xml:space="preserve">
+    <value>优化突出显示文本</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>橙色</value>
+  </data>
+  <data name="OrangeRed" xml:space="preserve">
+    <value>橙红</value>
+  </data>
+  <data name="Orchid" xml:space="preserve">
+    <value>兰花色</value>
+  </data>
+  <data name="PaleGoldenrod" xml:space="preserve">
+    <value>灰金菊色</value>
+  </data>
+  <data name="PaleGreen" xml:space="preserve">
+    <value>灰绿</value>
+  </data>
+  <data name="PaleTurquoise" xml:space="preserve">
+    <value>灰绿松石色</value>
+  </data>
+  <data name="PaleVioletRed" xml:space="preserve">
+    <value>灰紫红</value>
+  </data>
+  <data name="PapayaWhip" xml:space="preserve">
+    <value>番木瓜色</value>
+  </data>
+  <data name="PeachPuff" xml:space="preserve">
+    <value>粉扑桃色</value>
+  </data>
+  <data name="Pen" xml:space="preserve">
+    <value>笔</value>
+  </data>
+  <data name="Peru" xml:space="preserve">
+    <value>秘鲁色</value>
+  </data>
+  <data name="Pink" xml:space="preserve">
+    <value>粉红色</value>
+  </data>
+  <data name="Plum" xml:space="preserve">
+    <value>李紫</value>
+  </data>
+  <data name="PowderBlue" xml:space="preserve">
+    <value>粉末蓝</value>
+  </data>
+  <data name="Purple" xml:space="preserve">
+    <value>紫红</value>
+  </data>
+  <data name="Rectangle" xml:space="preserve">
+    <value>矩形</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>红色</value>
+  </data>
+  <data name="RedHotkey" xml:space="preserve">
+    <value>红色(&amp;R)</value>
+  </data>
+  <data name="RosyBrown" xml:space="preserve">
+    <value>玫瑰褐</value>
+  </data>
+  <data name="RoyalBlue" xml:space="preserve">
+    <value>皇室蓝</value>
+  </data>
+  <data name="SaddleBrown" xml:space="preserve">
+    <value>鞍褐</value>
+  </data>
+  <data name="Salmon" xml:space="preserve">
+    <value>鲑红</value>
+  </data>
+  <data name="SandyBrown" xml:space="preserve">
+    <value>沙褐</value>
+  </data>
+  <data name="SeaGreen" xml:space="preserve">
+    <value>海绿</value>
+  </data>
+  <data name="SeaShell" xml:space="preserve">
+    <value>海贝色</value>
+  </data>
+  <data name="Sienna" xml:space="preserve">
+    <value>黄土赭</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>银色</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>大小：</value>
+  </data>
+  <data name="SkyBlue" xml:space="preserve">
+    <value>天蓝</value>
+  </data>
+  <data name="SlateBlue" xml:space="preserve">
+    <value>岩蓝</value>
+  </data>
+  <data name="SlateGray" xml:space="preserve">
+    <value>岩灰</value>
+  </data>
+  <data name="Smoothness" xml:space="preserve">
+    <value>平滑度：</value>
+  </data>
+  <data name="Snow" xml:space="preserve">
+    <value>雪色</value>
+  </data>
+  <data name="SpringGreen" xml:space="preserve">
+    <value>春绿</value>
+  </data>
+  <data name="SteelBlue" xml:space="preserve">
+    <value>钢蓝</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="Tan" xml:space="preserve">
+    <value>日晒色</value>
+  </data>
+  <data name="Teal" xml:space="preserve">
+    <value>凫绿</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="Thistle" xml:space="preserve">
+    <value>蓟紫</value>
+  </data>
+  <data name="Tip" xml:space="preserve">
+    <value>提示：</value>
+  </data>
+  <data name="Tomato" xml:space="preserve">
+    <value>番茄红</value>
+  </data>
+  <data name="Transparency" xml:space="preserve">
+    <value>透明：</value>
+  </data>
+  <data name="TryingToDrawError" xml:space="preserve">
+    <value>您所绘制的页面正在修改中。您的笔划将被忽略。</value>
+  </data>
+  <data name="Turquoise" xml:space="preserve">
+    <value>绿松石色</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="Violet" xml:space="preserve">
+    <value>紫色</value>
+  </data>
+  <data name="Web" xml:space="preserve">
+    <value>网</value>
+  </data>
+  <data name="Wheat" xml:space="preserve">
+    <value>小麦色</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>白色</value>
+  </data>
+  <data name="WhiteSmoke" xml:space="preserve">
+    <value>白烟色</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>宽度</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>黄色</value>
+  </data>
+  <data name="YellowGreen" xml:space="preserve">
+    <value>黄绿</value>
+  </data>
+  <data name="YellowHotkey" xml:space="preserve">
+    <value>黄色(&amp;Y)</value>
+  </data>
+</root>
