@@ -33,10 +33,10 @@ msbuild .\Solutions\DiagnosticService.sln /t:Build /p:Configuration=%1
 
 :::: Service setup solutions
 
-::devenv .\Solutions\Setup\Archive_Setup.sln /Build %1
-::devenv .\Solutions\Setup\Reflector_Setup.sln /Build %1
-::devenv .\Solutions\Setup\VenueService_Setup.sln /Build %1
-::devenv .\Solutions\Setup\DiagnosticService_Setup.sln /Build %1
+devenv .\Solutions\Setup\Archive_Setup.sln /Build %1
+devenv .\Solutions\Setup\Reflector_Setup.sln /Build %1
+devenv .\Solutions\Setup\VenueService_Setup.sln /Build %1
+devenv .\Solutions\Setup\DiagnosticService_Setup.sln /Build %1
 
 :::: Capabilities
 
