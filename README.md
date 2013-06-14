@@ -13,4 +13,6 @@ To build ConferenceXP you'll need Visual Studio 2010.
 3. cd to the root of the local project directory
 4. Issue the command 'cxpbuild.bat release'
 
-More information is available at http://cct.cs.washington.edu
+More information about building ConferenceXP: http://cct.cs.washington.edu/project-wiki/index.php/Building_ConferenceXP
+
+ConferenceXP Home: http://cct.cs.washington.edu
