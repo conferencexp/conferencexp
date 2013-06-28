@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 
 using MSR.LST.MDShow;
 using MSR.LST.Net.Rtp;
+using System.Collections.Generic;
 
 
 namespace MSR.LST.ConferenceXP
@@ -179,7 +180,11 @@ namespace MSR.LST.ConferenceXP
                     cg.AddCompressor(AudioCompressor.DefaultFilterInfo());
                     Log(cg.Compressor.Dump());
 
-                    DefaultAudioCompressorSettings();
+                    IAudioCaptureGraph iacg = cg as IAudioCaptureGraph;
+                    Dictionary<string, Object> args = new Dictionary<string, object>();
+                    args.Add("CaptureGraph", cg);
+                    args.Add("CompressionMediaTypeIndex", this.CompressionMediaTypeIndex);
+                    iacg.AudioCompressor.PostConnectConfig(args);
                 }
                 catch (Exception e)
                 {
@@ -620,17 +625,6 @@ namespace MSR.LST.ConferenceXP
                 Log(((AudioCaptureGraph)cg).AudioSource.Dump());
             }
         }
-
-        /// <summary>
-        /// By default, we use the Windows Media Audio V2 compressor
-        /// </summary>
-        private void DefaultAudioCompressorSettings()
-        {
-            Debug.Assert(AudioCompressor.DefaultName == "Windows Media Audio V2");
-            IAudioCaptureGraph iacg = cg as IAudioCaptureGraph;
-            iacg.AudioCompressor.SetMediaType(iacg.AudioCompressor.PreConnectMediaTypes[this.CompressionMediaTypeIndex]);
-        }
-
 
         #region Registry
         

@@ -242,6 +242,9 @@ namespace MSR.LST.MDShow
             compressor = (Compressor)Filter.CreateFilter(fiCompressor);
             iGB.AddFilter(compressor.BaseFilter, compressor.FriendlyName);
             compressor.AddedToGraph(fgm); // Chooses input pin
+            Dictionary<string, Object> args = new Dictionary<string, object>();
+            args.Add("SourceFilter", source);
+            compressor.PreConnectConfig(args);
 
             try
             {

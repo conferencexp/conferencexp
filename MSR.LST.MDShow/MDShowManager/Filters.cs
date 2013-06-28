@@ -203,8 +203,12 @@ namespace MSR.LST.MDShow
             }
                 
             // Compressors
-            if(fi.Category == AudioCompressor.CategoryGuid) 
+            if (fi.Category == AudioCompressor.CategoryGuid) {
+                if (fi.Name == "Opus Encoder") {
+                    return new OpusAudioCompressor(fi);
+                }
                 return new AudioCompressor(fi);
+            }
 
             if(fi.Category == VideoCompressor.CategoryGuid) 
                 return new VideoCompressor(fi);
@@ -1765,8 +1769,22 @@ namespace MSR.LST.MDShow
 
         public Compressor(FilterInfo fi) : base(fi){}
         
-        
         #endregion Constructor
+
+        /// <summary>
+        /// This is a place for compressor config that needs to be done before connecting
+        /// the source filter.
+        /// </summary>
+        /// <param name="source"></param>
+        public virtual void PreConnectConfig(Dictionary<string,Object> args) { }
+        
+        /// <summary>
+        /// Use this for compressor config that needs to be done after connecting to the 
+        /// source filter.
+        /// </summary>
+        /// <param name="args"></param>
+        public virtual void PostConnectConfig(Dictionary<string,Object> args) { }
+
     }
 
     public class VideoCompressor : Compressor
@@ -2566,7 +2584,7 @@ namespace MSR.LST.MDShow
     public class AudioCompressor : Compressor
     {
         #region Statics
-        
+
         private static FilterInfo[] compressors;
 
         static AudioCompressor()
@@ -2575,6 +2593,12 @@ namespace MSR.LST.MDShow
 
             // Enumerate compressors on the machine and strongly type them
             compressors = EnumerateFilters(CategoryGuid);
+
+            // Allow compressor override in app.config
+            string compressorName = System.Configuration.ConfigurationManager.AppSettings["MSR.LST.MDShow.AudioCompressor.DefaultName"];
+            if (compressorName != null && compressorName.Trim() != String.Empty) {
+                DefaultName = compressorName;
+            }
         }
 
         /// <summary>
@@ -2621,7 +2645,7 @@ namespace MSR.LST.MDShow
         /// encoder, and couldn't find any reasonabl low latency values in the
         /// WMAudio encoder.  So we are sticking with the old encoder.
         /// </summary>
-        public const string DefaultName = "Windows Media Audio V2";
+        public static string DefaultName = "Windows Media Audio V2";
         
         /// <summary>
         /// Only a limited number of _AMMediaTypes actually work and have
@@ -2668,29 +2692,6 @@ namespace MSR.LST.MDShow
             }
         }
 
-        /// <summary>
-        /// Audio compressors are "static" devices.  That is to say, they do not come and go on the
-        /// machine very often (like a USB webcam might).  They are also "multi-use", meaning you
-        /// may have multiple instances of a compressor running, whereas you only have 1 instance
-        /// of a webcam.  Therefore we hand out new instances each time.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        public static AudioCompressor CreateFilter(string name)
-        {
-            foreach(FilterInfo fi in compressors)
-            {
-                if(fi.Name == name)
-                {
-                    return new AudioCompressor(fi);
-                }
-            }
-
-            throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, 
-                Strings.UnableToFindAudioCompressor, name));
-        }
-
-
         #endregion Statics
 
         #region Members
@@ -2724,6 +2725,7 @@ namespace MSR.LST.MDShow
 
         #endregion Constructor
 
+
         public override void AddedToGraph(FilgraphManager fgm)
         {
             base.AddedToGraph (fgm);
@@ -2737,6 +2739,17 @@ namespace MSR.LST.MDShow
         public _AMMediaType[] PreConnectMediaTypes
         {
             get{return pcMTs;}
+        }
+
+        /// <summary>
+        /// Configuration for the audio compressor that occurs after the compressor has been added
+        /// to the graph and connected to the source.
+        /// </summary>
+        /// <param name="cg"></param>
+        /// <param name="mtIndex"></param>
+        public override void PostConnectConfig(Dictionary<string,Object> args) {
+            int? mtIndex = args["CompressionMediaTypeIndex"] as int?;
+            SetMediaType(this.pcMTs[(int)mtIndex]);
         }
 
         public class MediaTypeIndexPair {

@@ -732,6 +732,11 @@ namespace MSR.LST.ConferenceXP
 
             if(!ckUncompressedAudio.Checked) //compressed
             {
+                if (ac.CaptureGraph.Compressor is OpusAudioCompressor) {
+                    //TODO: forms to be redesigned to support Opus
+                    lblCurrentSettings.Text = "Opus Encoder";
+                    return;
+                }
                 ac.CaptureGraph.Compressor.GetMediaType(out mt, out fb);
             }
             else //uncompressed

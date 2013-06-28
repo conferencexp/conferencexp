@@ -298,10 +298,20 @@ namespace MSR.LST.ConferenceXP
             {
                 _AMMediaType mt;
                 object fb;
-                f.GetMediaType(out mt, out fb);
+                if (f is MSR.LST.MDShow.OpusAudioCompressor) { 
+                    //TODO: log something useful
+                }
+                else {
+                    try {
+                        f.GetMediaType(out mt, out fb);
+                        Log(string.Format(CultureInfo.CurrentCulture, "\r\nCurrent media type for {0}...",
+                            f.FriendlyName) + MediaType.Dump(mt) + MediaType.FormatType.Dump(fb));
 
-                Log(string.Format(CultureInfo.CurrentCulture, "\r\nCurrent media type for {0}...", 
-                    f.FriendlyName) + MediaType.Dump(mt) + MediaType.FormatType.Dump(fb));
+                    }
+                    catch { 
+                        //TODO: log something useful
+                    }
+                }
             }
         }
 
