@@ -46,6 +46,8 @@ namespace MSR.LST.ConferenceXP
         private System.Windows.Forms.GroupBox gbVideoDevices;
         private System.Windows.Forms.GroupBox gbWindowLayout;
         private System.Windows.Forms.GroupBox gbPerf;
+        private Label label1;
+        private ComboBox cboACompressor;
         private System.ComponentModel.IContainer components;
 
         [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303")]
@@ -79,6 +81,8 @@ namespace MSR.LST.ConferenceXP
             this.tmrPerf = new System.Windows.Forms.Timer(this.components);
             this.chkAutoPlayRemoteVideo = new System.Windows.Forms.CheckBox();
             this.gbAutoPlay = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboACompressor = new System.Windows.Forms.ComboBox();
             this.gbAudioDevices.SuspendLayout();
             this.gbVideoDevices.SuspendLayout();
             this.gbWindowLayout.SuspendLayout();
@@ -91,7 +95,7 @@ namespace MSR.LST.ConferenceXP
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnClose.Location = new System.Drawing.Point(480, 261);
+            this.btnClose.Location = new System.Drawing.Point(480, 296);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 23);
             this.btnClose.TabIndex = 37;
@@ -108,6 +112,8 @@ namespace MSR.LST.ConferenceXP
             // 
             // gbAudioDevices
             // 
+            this.gbAudioDevices.Controls.Add(this.label1);
+            this.gbAudioDevices.Controls.Add(this.cboACompressor);
             this.gbAudioDevices.Controls.Add(this.btnAdvancedAudioSettings);
             this.gbAudioDevices.Controls.Add(this.cboSpeakers);
             this.gbAudioDevices.Controls.Add(this.lblSpeaker);
@@ -118,7 +124,7 @@ namespace MSR.LST.ConferenceXP
             this.gbAudioDevices.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.gbAudioDevices.Location = new System.Drawing.Point(296, 8);
             this.gbAudioDevices.Name = "gbAudioDevices";
-            this.gbAudioDevices.Size = new System.Drawing.Size(280, 188);
+            this.gbAudioDevices.Size = new System.Drawing.Size(280, 220);
             this.gbAudioDevices.TabIndex = 52;
             this.gbAudioDevices.TabStop = false;
             this.gbAudioDevices.Text = "Audio Settings";
@@ -127,7 +133,7 @@ namespace MSR.LST.ConferenceXP
             // 
             this.btnAdvancedAudioSettings.Enabled = false;
             this.btnAdvancedAudioSettings.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAdvancedAudioSettings.Location = new System.Drawing.Point(8, 112);
+            this.btnAdvancedAudioSettings.Location = new System.Drawing.Point(8, 157);
             this.btnAdvancedAudioSettings.Name = "btnAdvancedAudioSettings";
             this.btnAdvancedAudioSettings.Size = new System.Drawing.Size(117, 23);
             this.btnAdvancedAudioSettings.TabIndex = 71;
@@ -177,7 +183,7 @@ namespace MSR.LST.ConferenceXP
             this.ckPlayAudio.Appearance = System.Windows.Forms.Appearance.Button;
             this.ckPlayAudio.Enabled = false;
             this.ckPlayAudio.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.ckPlayAudio.Location = new System.Drawing.Point(192, 112);
+            this.ckPlayAudio.Location = new System.Drawing.Point(192, 157);
             this.ckPlayAudio.Name = "ckPlayAudio";
             this.ckPlayAudio.Size = new System.Drawing.Size(80, 24);
             this.ckPlayAudio.TabIndex = 82;
@@ -188,7 +194,7 @@ namespace MSR.LST.ConferenceXP
             // lblTestAudio
             // 
             this.lblTestAudio.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblTestAudio.Location = new System.Drawing.Point(8, 144);
+            this.lblTestAudio.Location = new System.Drawing.Point(8, 185);
             this.lblTestAudio.Name = "lblTestAudio";
             this.lblTestAudio.Size = new System.Drawing.Size(264, 28);
             this.lblTestAudio.TabIndex = 81;
@@ -216,8 +222,8 @@ namespace MSR.LST.ConferenceXP
             this.clbCameras.Size = new System.Drawing.Size(256, 64);
             this.clbCameras.Sorted = true;
             this.clbCameras.TabIndex = 68;
-            this.clbCameras.SelectedIndexChanged += new System.EventHandler(this.clbCameras_SelectedIndexChanged);
             this.clbCameras.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbCameras_ItemCheck);
+            this.clbCameras.SelectedIndexChanged += new System.EventHandler(this.clbCameras_SelectedIndexChanged);
             // 
             // btnAdvancedVideoSettings
             // 
@@ -312,7 +318,7 @@ namespace MSR.LST.ConferenceXP
             // 
             this.gbPerf.Controls.Add(this.lblPerf);
             this.gbPerf.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gbPerf.Location = new System.Drawing.Point(296, 204);
+            this.gbPerf.Location = new System.Drawing.Point(296, 234);
             this.gbPerf.Name = "gbPerf";
             this.gbPerf.Size = new System.Drawing.Size(280, 46);
             this.gbPerf.TabIndex = 74;
@@ -331,7 +337,7 @@ namespace MSR.LST.ConferenceXP
             // btnTroubleshooting
             // 
             this.btnTroubleshooting.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnTroubleshooting.Location = new System.Drawing.Point(296, 260);
+            this.btnTroubleshooting.Location = new System.Drawing.Point(296, 296);
             this.btnTroubleshooting.Name = "btnTroubleshooting";
             this.btnTroubleshooting.Size = new System.Drawing.Size(128, 24);
             this.btnTroubleshooting.TabIndex = 75;
@@ -365,11 +371,29 @@ namespace MSR.LST.ConferenceXP
             this.gbAutoPlay.TabStop = false;
             this.gbAutoPlay.Text = "Auto-play";
             // 
+            // label1
+            // 
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label1.Location = new System.Drawing.Point(8, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 16);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Audio Compressor:";
+            // 
+            // cboACompressor
+            // 
+            this.cboACompressor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboACompressor.Location = new System.Drawing.Point(8, 128);
+            this.cboACompressor.Name = "cboACompressor";
+            this.cboACompressor.Size = new System.Drawing.Size(264, 21);
+            this.cboACompressor.TabIndex = 83;
+            this.cboACompressor.SelectedIndexChanged += new System.EventHandler(this.cboACompressor_SelectedIndexChanged);
+            // 
             // frmAVDevices
             // 
             this.AcceptButton = this.btnClose;
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(586, 293);
+            this.ClientSize = new System.Drawing.Size(586, 328);
             this.ControlBox = false;
             this.Controls.Add(this.gbAutoPlay);
             this.Controls.Add(this.btnTroubleshooting);
@@ -387,8 +411,8 @@ namespace MSR.LST.ConferenceXP
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Audio/Video Settings";
-            this.Load += new System.EventHandler(this.frmAVDevices_Load);
             this.Closing += new System.ComponentModel.CancelEventHandler(this.frmAVDevices_Closing);
+            this.Load += new System.EventHandler(this.frmAVDevices_Load);
             this.gbAudioDevices.ResumeLayout(false);
             this.gbVideoDevices.ResumeLayout(false);
             this.gbWindowLayout.ResumeLayout(false);
@@ -624,11 +648,17 @@ namespace MSR.LST.ConferenceXP
             }
 
             Log("\r\nSpeakers");
-            foreach(FilterInfo fi in AudioRenderer.Renderers())
-            {
+            foreach (FilterInfo fi in AudioRenderer.Renderers()) {
                 cboSpeakers.Items.Add(fi);
                 Log(string.Format(CultureInfo.CurrentCulture, "{0}, {1}", fi.DisplayName, fi.Moniker));
+            } 
+            
+            Log("\r\nAudio Compressors");
+            foreach (FilterInfo fi in AudioCompressor.EnabledCompressors) {
+                cboACompressor.Items.Add(fi);
+                Log(string.Format(CultureInfo.CurrentCulture, "{0}, {1}", fi.DisplayName, fi.Moniker));
             }
+            cboACompressor.Items.Add(new FilterInfo("Uncompressed", "Uncompressed", Guid.Empty));
         }
 
         /// <summary>
@@ -668,6 +698,8 @@ namespace MSR.LST.ConferenceXP
             }
 
             cboSpeakers.SelectedIndex = cboSpeakers.Items.IndexOf(AudioCapability.SelectedSpeaker());
+
+            cboACompressor.SelectedIndex = cboACompressor.Items.IndexOf(AudioCapability.SelectedCompressor());
         }
 
         #endregion Load
@@ -1006,6 +1038,24 @@ namespace MSR.LST.ConferenceXP
             catch (COMException ex) {
                 Log(DShowError._AMGetErrorText(ex.ErrorCode));
                 Log(ex.ToString());
+            }
+            catch (Exception ex) {
+                Log(ex.ToString());
+            }
+        }
+
+
+        private void cboACompressor_SelectedIndexChanged(object sender, EventArgs e) {
+            try {
+                FilterInfo fi = (FilterInfo)cboACompressor.SelectedItem;
+                AVReg.WriteValue(AVReg.SelectedDevices, AVReg.AudioCompressor, fi.Moniker);
+                if (fi.Moniker == "Uncompressed") {
+
+                }
+                else {
+
+                }
+                    
             }
             catch (Exception ex) {
                 Log(ex.ToString());

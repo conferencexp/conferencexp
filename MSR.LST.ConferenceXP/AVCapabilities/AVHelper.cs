@@ -42,6 +42,7 @@ namespace MSR.LST.ConferenceXP
         public static readonly string SelectedCameras = SelectedDevices + "Cameras\\";
         public static readonly string SelectedMicrophone = SelectedDevices + "Microphone\\";
         public static readonly string SelectedSpeaker = SelectedDevices + "Speaker\\";
+        public static readonly string AudioCompressor = "AudioCompressor";
         public static readonly string LinkedCamera = SelectedDevices + "LinkedCamera\\";
 
         public static readonly string MediaType      = "MediaType";

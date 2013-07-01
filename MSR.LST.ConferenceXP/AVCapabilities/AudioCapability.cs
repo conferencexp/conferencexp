@@ -90,6 +90,30 @@ namespace MSR.LST.ConferenceXP
             return selectedSpeaker;
         }
 
+        /// <summary>
+        /// Get the selected audio compressor from the registry.  It may be a moniker of a compressor that is enabled
+        /// on the system or "Uncompressed".  Otherwise return the default compressor.
+        /// </summary>
+        /// <returns></returns>
+        public static FilterInfo SelectedCompressor() {
+            FilterInfo selectedCompressor = AudioCompressor.DefaultFilterInfo();
+            string regSelectedCompressor = (string)AVReg.ReadValue(AVReg.SelectedDevices,AVReg.AudioCompressor);
+            if (regSelectedCompressor != null) {
+                if (regSelectedCompressor == "Uncompressed") {
+                    return new FilterInfo("Uncompressed", "Uncompressed", Guid.Empty);
+                }
+
+                foreach (FilterInfo fi in AudioCompressor.EnabledCompressors) {
+                    if (fi.Moniker == regSelectedCompressor) {
+                        selectedCompressor = fi;
+                        break;
+                    }
+                }
+            }
+
+            return selectedCompressor;
+        }
+
 
         #endregion
 
@@ -173,11 +197,12 @@ namespace MSR.LST.ConferenceXP
         /// </summary>
         public void AddAudioCompressor()
         {
-            if(RegAudioCompressorEnabled)
+            FilterInfo compressor = AudioCapability.SelectedCompressor();
+            if(compressor.Moniker != "Uncompressed")
             {
                 try
                 {
-                    cg.AddCompressor(AudioCompressor.DefaultFilterInfo());
+                    cg.AddCompressor(SelectedCompressor());
                     Log(cg.Compressor.Dump());
 
                     IAudioCaptureGraph iacg = cg as IAudioCaptureGraph;
@@ -190,7 +215,7 @@ namespace MSR.LST.ConferenceXP
                 {
                     // If we encounter an error trying to add or configure the
                     // compressor, just disable compressor and log it 
-                    RegAudioCompressorEnabled = false;
+                    //RegAudioCompressorEnabled = false;
                     Log(e.ToString());
                 }
             }

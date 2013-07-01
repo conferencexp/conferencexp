@@ -312,6 +312,9 @@ namespace MSR.LST.ConferenceXP
 
         #region Statics
 
+        /// <summary>
+        /// A string of spaces
+        /// </summary>
         private const string TAB = "     ";
 
         #endregion Statics
@@ -493,7 +496,7 @@ namespace MSR.LST.ConferenceXP
         private void RestoreCompression()
         {
             ckUncompressedAudio.Enabled = false;
-            ckUncompressedAudio.Checked = !ac.RegAudioCompressorEnabled;
+            //ckUncompressedAudio.Checked = !ac.RegAudioCompressorEnabled;
             btnAudio.Enabled = ckUncompressedAudio.Checked;
             cbCompressionFormat.Enabled = !ckUncompressedAudio.Checked;
             ckUncompressedAudio.Enabled = true;
@@ -622,7 +625,7 @@ namespace MSR.LST.ConferenceXP
 
                 if(ckUncompressedAudio.Enabled)
                 {
-                    ac.RegAudioCompressorEnabled = !ckUncompressedAudio.Checked;
+                    //ac.RegAudioCompressorEnabled = !ckUncompressedAudio.Checked;
 
                     frmAV.RenderAndRunAudio(ac.CaptureGraph, false);
                     ac.CaptureGraph.RemoveFiltersDownstreamFromSource(MSR.LST.Net.Rtp.PayloadType.dynamicAudio);
@@ -693,7 +696,7 @@ namespace MSR.LST.ConferenceXP
                     frmAV.RenderAndRunAudio(ac.CaptureGraph, false);
                     ac.CaptureGraph.RemoveFiltersDownstreamFromSource(MSR.LST.Net.Rtp.PayloadType.dynamicAudio);
                     //If adding the compressor failed last time, we want to reset this property so that we can try again with the new format:
-                    ac.RegAudioCompressorEnabled = true;
+                    //ac.RegAudioCompressorEnabled = true;
                     ac.AddAudioCompressor();
                     frmAV.RenderAndRunAudio(ac.CaptureGraph);
                     UpdateCurrentSettings();

@@ -2586,6 +2586,7 @@ namespace MSR.LST.MDShow
         #region Statics
 
         private static FilterInfo[] compressors;
+        private static FilterInfo[] enabledCompressors;
 
         static AudioCompressor()
         {
@@ -2593,12 +2594,8 @@ namespace MSR.LST.MDShow
 
             // Enumerate compressors on the machine and strongly type them
             compressors = EnumerateFilters(CategoryGuid);
+            enabledCompressors = Array.FindAll<FilterInfo>(compressors, (fi) => (fi.Name == "Windows Media Audio V2" || fi.Name == "Opus Encoder"));
 
-            // Allow compressor override in app.config
-            string compressorName = System.Configuration.ConfigurationManager.AppSettings["MSR.LST.MDShow.AudioCompressor.DefaultName"];
-            if (compressorName != null && compressorName.Trim() != String.Empty) {
-                DefaultName = compressorName;
-            }
         }
 
         /// <summary>
@@ -2645,8 +2642,8 @@ namespace MSR.LST.MDShow
         /// encoder, and couldn't find any reasonabl low latency values in the
         /// WMAudio encoder.  So we are sticking with the old encoder.
         /// </summary>
-        public static string DefaultName = "Windows Media Audio V2";
-        
+        public const string DefaultName = "Windows Media Audio V2";
+
         /// <summary>
         /// Only a limited number of _AMMediaTypes actually work and have
         /// low latency, in the 'Windows Media Audio V2' encoder.  
@@ -2690,6 +2687,10 @@ namespace MSR.LST.MDShow
             {
                 return compressors;
             }
+        }
+
+        public static FilterInfo[] EnabledCompressors {
+            get { return enabledCompressors; }
         }
 
         #endregion Statics
