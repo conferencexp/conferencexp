@@ -205,6 +205,15 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="frmAudioSettingsBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudioSettingsOpus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudioSettingsUnc.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,7 +226,7 @@
     <Compile Include="frmAudioFormat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAudioSettings.cs">
+    <Compile Include="frmAudioSettingsWMA.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAVDevices.cs">
@@ -261,6 +270,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAudioSettingsBase.resx">
+      <DependentUpon>frmAudioSettingsBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudioSettingsOpus.resx">
+      <DependentUpon>frmAudioSettingsOpus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudioSettingsUnc.resx">
+      <DependentUpon>frmAudioSettingsUnc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -277,8 +298,8 @@
       <DependentUpon>frmAudioFormat.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAudioSettings.resx">
-      <DependentUpon>frmAudioSettings.cs</DependentUpon>
+    <EmbeddedResource Include="frmAudioSettingsWMA.resx">
+      <DependentUpon>frmAudioSettingsWMA.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAVDevices.resx">

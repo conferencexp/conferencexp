@@ -179,7 +179,6 @@ namespace MSR.LST.ConferenceXP
             CreateAudioGraph(fi);
             RestoreMicrophoneSettings();
             RestoreAudioSettings();
-            // Get Custom buffer settings: uncompressed audio only
             RestoreBufferSettings();
 
             LogCurrentMediaType(cg.Source);
@@ -326,6 +325,7 @@ namespace MSR.LST.ConferenceXP
 
         /// <summary>
         /// Save the audio stream's current settings to the registry
+        /// This is the *uncompressed* audio media type.
         /// </summary>
         public void SaveAudioSettings()
         {
@@ -654,7 +654,7 @@ namespace MSR.LST.ConferenceXP
         #region Registry
         
         /// <summary>
-        /// Restore the microphone's last settings from the registry.  Not applicable to DV sources
+        /// Restore the audio device input pin setting from the registry.  Not applicable to DV sources
         /// </summary>
         private void RestoreMicrophoneSettings()
         {
@@ -670,7 +670,8 @@ namespace MSR.LST.ConferenceXP
         }
         
         /// <summary>
-        /// Restore custom buffer settings from the registry, if any.  This doesn't seem to work with DV Sources
+        /// Restore custom buffer settings from the registry, if any.  This doesn't seem to work with DV Sources.
+        /// It is also not relevant for the Opus Encoder since the settings will be overridden later in that case.
         /// </summary>
         private void RestoreBufferSettings() {
             if (cg is AudioCaptureGraph) {
@@ -689,7 +690,9 @@ namespace MSR.LST.ConferenceXP
 
 
         /// <summary>
-        /// Restore the audio stream's last settings from the registry
+        /// Restore the audio source media type settings from the registry.
+        /// This is only for uncompressed audio and could probably be skipped
+        /// if we have a compressor enabled.
         /// </summary>
         private void RestoreAudioSettings()
         {

@@ -267,7 +267,7 @@ namespace MSR.LST.ConferenceXP
         }
 
         /// <summary>
-        /// Save the stream's current settings to the registry
+        /// Save the stream's current settings to the registry.
         /// </summary>
         protected void SaveStreamSettings()
         {

@@ -1069,7 +1069,20 @@ namespace MSR.LST.ConferenceXP
                 this.ckPlayAudio.Checked = false;
             }
 
-            new frmAudioSettings((FilterInfo)this.cboMicrophones.SelectedItem, this).ShowDialog(this);
+            FilterInfo compressor = (FilterInfo)this.cboACompressor.SelectedItem;
+            if (compressor.Name == "Uncompressed") {
+                new frmAudioSettingsUnc((FilterInfo)this.cboMicrophones.SelectedItem, this).ShowDialog(this);
+            }
+            else if (compressor.Name == "Windows Media Audio V2") {
+                new frmAudioSettingsWMA((FilterInfo)this.cboMicrophones.SelectedItem, this).ShowDialog(this);
+            }
+            else if (compressor.Name == "Opus Encoder") {
+                new frmAudioSettingsOpus((FilterInfo)this.cboMicrophones.SelectedItem, this).ShowDialog(this);
+            }
+            else {
+                throw new ApplicationException("Configuration form does not exist for selected compressor");
+            }
+
         }
 
         private void ckPlayAudio_CheckedChanged(object sender, System.EventArgs e)
