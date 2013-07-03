@@ -44,6 +44,7 @@ namespace MSR.LST.ConferenceXP
         public static readonly string SelectedSpeaker = SelectedDevices + "Speaker\\";
         public static readonly string AudioCompressor = "AudioCompressor";
         public static readonly string LinkedCamera = SelectedDevices + "LinkedCamera\\";
+        public static readonly string OpusCompressorKey = RootKey + "Compressors\\OpusCompressor\\";
 
         public static readonly string MediaType      = "MediaType";
         public static readonly string FormatBlock    = "FormatBlock";

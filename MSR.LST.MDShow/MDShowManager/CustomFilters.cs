@@ -94,26 +94,9 @@ namespace MSR.LST.MDShow {
     public class OpusAudioCompressor : AudioCompressor {
 
         #region Constructor
-        /// <summary>
-        /// Use the static constructor and reflection to set public static fields from app.config
-        /// </summary>
-        static OpusAudioCompressor() {
-            Type myType = typeof(OpusAudioCompressor);
-            FieldInfo[] fields = myType.GetFields(BindingFlags.Public | BindingFlags.Static);
-            foreach (FieldInfo field in fields) {
-                if (field.IsLiteral) // Is Constant?
-                    continue; // We can't set it
-                string fullName = field.Name;
-                string configOverride = System.Configuration.ConfigurationManager.AppSettings["MSR.LST.MDShow.OpusAudioCompressor." + fullName];
-                if (configOverride != null && configOverride != String.Empty) {
-                    Type newType = field.FieldType;
-                    object newValue = Convert.ChangeType(configOverride, newType, System.Globalization.CultureInfo.InvariantCulture);
-                    field.SetValue(null, newValue);
-                }
-            }
-        }
 
         public OpusAudioCompressor(FilterInfo fi) : base(fi) { }
+
         #endregion
 
         #region Static
@@ -122,7 +105,7 @@ namespace MSR.LST.MDShow {
         
         public static int Frequency = 48000;
         public static int Channels = 2;
-        public static int Depth = 16;
+        public const int Depth = 16;
         public static int BufferMS = 20;
         public static int Signal = 3002;
         public static int BitRate = -1000;
@@ -145,15 +128,11 @@ namespace MSR.LST.MDShow {
             return (Frequency / 1000) * BufferMS * Channels * (Depth / 8);
         }
 
-        #endregion
-
-        #region Methods
-
         /// <summary>
         /// Determine if a particular format is compatible with the encoder.
         /// </summary>
         /// <returns></returns>
-        public bool WorksWithOpus(WAVEFORMATEX wfex) {
+        public static bool WorksWithOpus(WAVEFORMATEX wfex) {
             if (wfex.BitsPerSample != 16)
                 return false;
 
@@ -170,7 +149,11 @@ namespace MSR.LST.MDShow {
             }
 
             return true;
-        }
+        }        
+        
+        #endregion
+
+        #region Methods
 
         /// <summary>
         /// Configuration that occurs after the filter is added to 
@@ -229,6 +212,19 @@ namespace MSR.LST.MDShow {
 
         #endregion
 
+        #region Enums
+
+        public enum EnumBitRate { Auto = -1000, Max = -1 };
+        public enum EnumVbr { HardCbr = 0, VBR = 1 };
+        public enum EnumVbrConstraint { HardCbr = 0, VBR = 1 };
+        public enum EnumForcedChannels { Auto = -1000, ForcedMono = 1, ForcedStereo = 2 };
+        public enum EnumMaxBandwidth { NarrowBand = 1101, MediumBand = 1102, WideBand = 1103, SuperWideBand = 1104, FullBand = 1105 };
+        public enum EnumSignal { Auto = -1000, Voice = 3001, Music = 3002 };
+        public enum EnumApplication { VoIP = 2048, Audio = 2049, RestrictedLowDelay = 2051 };
+        public enum EnumInbandFec { Disable = 0, Enable = 1 };
+        public enum EnumDtx { Disable = 0, Enable = 1 };
+
+        #endregion
     }
 
     #region Opus Encoder Interop

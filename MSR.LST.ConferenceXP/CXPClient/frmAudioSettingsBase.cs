@@ -276,7 +276,7 @@ namespace MSR.LST.ConferenceXP
             try
             {
                 this.Text = string.Format(CultureInfo.CurrentCulture, Strings.AdvancedAudioSettings, 
-                    ac.CaptureGraph.Source.FriendlyName);
+                    this.sourceFilter.Name);
 
                 RestoreLinkedCamera();
                 RestoreInputPin();
