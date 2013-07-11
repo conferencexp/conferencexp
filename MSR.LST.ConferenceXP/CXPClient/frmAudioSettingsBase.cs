@@ -28,7 +28,7 @@ namespace MSR.LST.ConferenceXP
         private System.Windows.Forms.Label label1;
         protected System.Windows.Forms.ComboBox cboMicrophonePins;
         private System.Windows.Forms.ComboBox cboLinkedCamera;
-        private System.Windows.Forms.GroupBox gbCurrentSettings;
+        protected System.Windows.Forms.GroupBox gbCurrentSettings;
         protected System.Windows.Forms.Label lblCurrentSettings;
         protected System.Windows.Forms.GroupBox gbMicAndAudio;
         private CheckBox ckDisableFec;

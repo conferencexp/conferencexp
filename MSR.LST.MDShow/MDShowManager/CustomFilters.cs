@@ -6,7 +6,6 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Text;
-
 using Microsoft.Win32;
 using System.Reflection;
 
@@ -22,7 +21,7 @@ namespace MSR.LST.MDShow {
     /// subclass handles connecting the filter, and making the two filters appear to the caller
     /// as a normal source filter.
     /// </summary>
-    class BlackMagicSource: VideoSource {
+    class BlackMagicSource : VideoSource {
 
         private IPin decoderOutput;
         private IPin captureOutput;
@@ -102,23 +101,63 @@ namespace MSR.LST.MDShow {
         #region Static
 
         #region Configuration Properties
-        
-        public static int Frequency = 48000;
-        public static int Channels = 2;
-        public const int Depth = 16;
-        public static int BufferMS = 20;
-        public static int Signal = 3002;
-        public static int BitRate = -1000;
-        public static int Complexity = 10;
-        public static int VBR = 1;
-        public static int VBRConstraint = 1;
-        public static int ForcedChannels = -1000;
-        public static int MaxBandwith = 1105;
-        public static int DTX = 0;
-        public static int PacketLossPerc = 0;
-        public static int LSBDepth = 24;
+
+        public static int Frequency = DefaultFrequency;
+        public static int Channels = DefaultChannels;
+        public const int Depth = DefaultDepth;
+        public static int BufferMS = DefaultBufferMS;
+        public static int Signal = DefaultSignal;
+        public static int BitRate = DefaultBitRate;
+        public static int ManualBitRate = DefaultManualBitRate;
+        public static int Complexity = DefaultComplexity;
+        public static int VBR = DefaultVBR;
+        public static int VBRConstraint = DefaultVBRConstraint;
+        public static int ForcedChannels = DefaultForcedChannels;
+        public static int MaxBandwidth = DefaultMaxBandwidth;
+        public static int DTX = DefaultDTX;
+        public static int PacketLossPerc = DefaultPacketLossPerc;
+        public static int LSBDepth = DefaultLSBDepth;
+        public static int Application = DefaultApplication;
+        public static int InbandFec = DefaultInbandFec;
 
         #endregion
+
+        #region Property Defaults
+
+        public const int DefaultFrequency = 48000;
+        public const int DefaultChannels = 2;
+        public const int DefaultDepth = 16;
+        public const int DefaultBufferMS = 20;
+        public const int DefaultSignal = 3002;
+        public const int DefaultBitRate = -1000;
+        public const int DefaultManualBitRate = 512;
+        public const int DefaultComplexity = 10;
+        public const int DefaultVBR = 1;
+        public const int DefaultVBRConstraint = 1;
+        public const int DefaultForcedChannels = -1000;
+        public const int DefaultMaxBandwidth = 1105;
+        public const int DefaultDTX = 0;
+        public const int DefaultPacketLossPerc = 0;
+        public const int DefaultLSBDepth = 24;
+        public const int DefaultApplication = 2051;
+        public const int DefaultInbandFec = 0;
+
+        #endregion
+
+        #region Property Constraints
+
+        // Property values may be constrained either by enums, or by one of the following int arrays.
+        public static readonly int[] ValuesFrequency = new[] { 8000, 12000, 16000, 24000, 48000 };
+        public static readonly int[] ValuesChannels = new[] { 1, 2 };
+        public static readonly int[] ValuesBufferMS = new[] { 5, 10, 20, 40, 60 };
+        public static readonly int[] ValuesComplexity = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        public static readonly int[] ValuesLSBDepth = new[] { 8, 16, 24 };
+        public static readonly int[] MinMaxPacketLossPerc = new[] { 0, 100 };
+        public static readonly int[] MinMaxManualBitRate = new[] { 500, 512000 };
+
+        #endregion
+
+        #region Static Methods
 
         /// <summary>
         /// The encoder requires a very specific buffer size
@@ -140,20 +179,34 @@ namespace MSR.LST.MDShow {
                 return false;
             }
 
-            if ((wfex.SamplesPerSec != 8000) &&
-                (wfex.SamplesPerSec != 12000) &&
-                (wfex.SamplesPerSec != 16000) &&
-                (wfex.SamplesPerSec != 24000) &&
-                (wfex.SamplesPerSec != 48000)) {
-                    return false;
+            foreach (int f in ValuesFrequency) {
+                if (wfex.SamplesPerSec == f) {
+                    return true;
+                }
             }
 
-            return true;
-        }        
-        
+            return false;
+        }
+
         #endregion
 
-        #region Methods
+        #endregion
+
+        #region Enums
+
+        public enum EnumBitRate { Auto = -1000, Max = -1 , Manual = 0 };
+        public enum EnumVBR { HardCbr = 0, VBR = 1 };
+        public enum EnumVBRConstraint { HardCbr = 0, VBR = 1 };
+        public enum EnumForcedChannels { Auto = -1000, ForcedMono = 1, ForcedStereo = 2 };
+        public enum EnumMaxBandwidth { NarrowBand = 1101, MediumBand = 1102, WideBand = 1103, SuperWideBand = 1104, FullBand = 1105 };
+        public enum EnumSignal { Auto = -1000, Voice = 3001, Music = 3002 };
+        public enum EnumApplication { VoIP = 2048, Audio = 2049, RestrictedLowDelay = 2051 };
+        public enum EnumInbandFec { Disable = 0, Enable = 1 };
+        public enum EnumDTX { Disable = 0, Enable = 1 };
+
+        #endregion
+
+        #region Public Methods
 
         /// <summary>
         /// Configuration that occurs after the filter is added to 
@@ -163,7 +216,7 @@ namespace MSR.LST.MDShow {
         /// that the Opus encoder requires.
         /// </summary>
         /// <param name="source"></param>
-        public override void PreConnectConfig(Dictionary<string,object> args) {
+        public override void PreConnectConfig(Dictionary<string, object> args) {
             SourceFilter source = args["SourceFilter"] as SourceFilter;
             ((AudioSource)source).BufferSize = OpusAudioCompressor.GetBufferSize();
         }
@@ -177,7 +230,7 @@ namespace MSR.LST.MDShow {
         /// </summary>
         /// <param name="cg"></param>
         /// <param name="j"></param>
-        public override void PostConnectConfig(Dictionary<string,Object> args) {
+        public override void PostConnectConfig(Dictionary<string, Object> args) {
             CaptureGraph cg = args["CaptureGraph"] as CaptureGraph;
             IAudioCaptureGraph iacg = cg as IAudioCaptureGraph;
 
@@ -197,84 +250,74 @@ namespace MSR.LST.MDShow {
             }
 
             IOpusEncoderCtl iOpus = (IOpusEncoderCtl)iacg.AudioCompressor.BaseFilter;
-            iOpus.SetSignal(Signal); //3002 is music
-            iOpus.SetBitRate(BitRate);
-            iOpus.SetComplexity(Complexity); //default 10
-            iOpus.SetMaxBandwidth(MaxBandwith); //1105 is fullband
-            iOpus.SetVbr(VBR); //default 1
-            iOpus.SetVbrConstraint(VBRConstraint); //default 1
+            iOpus.SetSignal(Signal); 
+            int br = BitRate;
+            if (br == 0)
+                br = ManualBitRate;
+            iOpus.SetBitRate(br);
+            iOpus.SetComplexity(Complexity); 
+            iOpus.SetMaxBandwidth(MaxBandwidth); 
+            iOpus.SetVbr(VBR); 
+            iOpus.SetVbrConstraint(VBRConstraint); 
             iOpus.SetDtx(DTX);
             iOpus.SetPacketLossPerc(PacketLossPerc);
             iOpus.SetLsbDepth(LSBDepth);
-            iOpus.SetForcedChannels(ForcedChannels); //2 = stereo; -1000 = auto
+            iOpus.SetForcedChannels(ForcedChannels); 
         }
 
 
         #endregion
 
-        #region Enums
+        #region Opus Encoder Interop
+        [ComConversionLoss, Guid("F749E87F-5536-4D73-BF44-8179A46C4B61"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown), ComImport]
+        public interface IOpusEncoderCtl {
 
-        public enum EnumBitRate { Auto = -1000, Max = -1 };
-        public enum EnumVbr { HardCbr = 0, VBR = 1 };
-        public enum EnumVbrConstraint { HardCbr = 0, VBR = 1 };
-        public enum EnumForcedChannels { Auto = -1000, ForcedMono = 1, ForcedStereo = 2 };
-        public enum EnumMaxBandwidth { NarrowBand = 1101, MediumBand = 1102, WideBand = 1103, SuperWideBand = 1104, FullBand = 1105 };
-        public enum EnumSignal { Auto = -1000, Voice = 3001, Music = 3002 };
-        public enum EnumApplication { VoIP = 2048, Audio = 2049, RestrictedLowDelay = 2051 };
-        public enum EnumInbandFec { Disable = 0, Enable = 1 };
-        public enum EnumDtx { Disable = 0, Enable = 1 };
+            void GetComplexity([In, Out] ref Int32 x);
+            void SetComplexity([In] Int32 x);
 
+            void GetBitRate([In, Out] ref Int32 x);
+            void SetBitRate([In] Int32 x);
+
+            void GetVbr([In, Out] ref Int32 x);
+            void SetVbr([In] Int32 x);
+
+            void GetVbrConstraint([In, Out] ref Int32 x);
+            void SetVbrConstraint([In] Int32 x);
+
+            void GetForcedChannels([In, Out] ref Int32 x);
+            void SetForcedChannels([In] Int32 x);
+
+            void GetMaxBandwidth([In, Out] ref Int32 x);
+            void SetMaxBandwidth([In] Int32 x);
+
+            void GetSignal([In, Out] ref Int32 x);
+            void SetSignal([In] Int32 x);
+
+            void SetApplication([In] Int32 x);
+            void GetApplication([In, Out] ref Int32 x);
+
+            void GetSampleRate([In, Out] ref Int32 x);
+
+            void GetLookAhead([In, Out] ref Int32 x);
+
+            void GetInbandFec([In, Out] ref Int32 x);
+            void SetInbandFec([In] Int32 x);
+
+            void GetPacketLossPerc([In, Out] ref Int32 x);
+            void SetPacketLossPerc([In] Int32 x);
+
+            void GetDtx([In, Out] ref Int32 x);
+            void SetDtx([In] Int32 x);
+
+            void GetLsbDepth([In, Out] ref Int32 x);
+            void SetLsbDepth([In] Int32 x);
+
+            void GetLastPacketDuration([In, Out] ref Int32 x);
+
+        }
         #endregion
-    }
-
-    #region Opus Encoder Interop
-    [ComConversionLoss, Guid("F749E87F-5536-4D73-BF44-8179A46C4B61"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown), ComImport]
-    public interface IOpusEncoderCtl {
-
-        void GetComplexity([In, Out] ref Int32 x);
-        void SetComplexity([In] Int32 x);
-
-        void GetBitRate([In, Out] ref Int32 x);
-        void SetBitRate([In] Int32 x);
-
-        void GetVbr([In, Out] ref Int32 x);
-        void SetVbr([In] Int32 x);
-
-        void GetVbrConstraint([In, Out] ref Int32 x);
-        void SetVbrConstraint([In] Int32 x);
-
-        void GetForcedChannels([In, Out] ref Int32 x);
-        void SetForcedChannels([In] Int32 x);
-
-        void GetMaxBandwidth([In, Out] ref Int32 x);
-        void SetMaxBandwidth([In] Int32 x);
-
-        void GetSignal([In, Out] ref Int32 x);
-        void SetSignal([In] Int32 x);
-
-        void SetApplication([In] Int32 x);
-        void GetApplication([In, Out] ref Int32 x);
-
-        void GetSampleRate([In, Out] ref Int32 x);
-
-        void GetLookAhead([In, Out] ref Int32 x);
-
-        void GetInbandFec([In, Out] ref Int32 x);
-        void SetInbandFec([In] Int32 x);
-
-        void GetPacketLossPerc([In, Out] ref Int32 x);
-        void SetPacketLossPerc([In] Int32 x);
-
-        void GetDtx([In, Out] ref Int32 x);
-        void SetDtx([In] Int32 x);
-
-        void GetLsbDepth([In, Out] ref Int32 x);
-        void SetLsbDepth([In] Int32 x);
-
-        void GetLastPacketDuration([In, Out] ref Int32 x);
 
     }
-        #endregion
 
     #endregion OpusAudioCompressor
 
