@@ -80,12 +80,49 @@ namespace MSR.LST.ConferenceXP {
                 //MessageBox.Show("Exception while adding registry key: " + e.ToString());
             }
             #endregion
+
+            #region Register Opus Encoder/Decoder
+            try {
+                RegisterOpusEncoderFilter();
+            }
+            catch (DllNotFoundException) { } 
+            
+            try {
+                RegisterOpusDecoderFilter();
+            }
+            catch (DllNotFoundException) { }
+            #endregion
+
         }
 
-        public override void Uninstall(System.Collections.IDictionary savedState) {}
+        public override void Uninstall(System.Collections.IDictionary savedState) {
+            #region Unregister Opus Encoder/Decoder
+            try {
+                UnregisterOpusEncoderFilter();
+            }
+            catch (DllNotFoundException) { }
+            try {
+                UnregisterOpusDecoderFilter();
+            }
+            catch (DllNotFoundException) { }     
+            #endregion
+        }
 
         [DllImport(@"msadds32.ax", EntryPoint = "DllRegisterServer")]
         private static extern void RegisterWMACodecFilter();
+
+        [DllImport("OpusEncoder.dll", EntryPoint = "DllRegisterServer")]
+        private static extern void RegisterOpusEncoderFilter();
+
+        [DllImport("OpusDecoder.dll", EntryPoint = "DllRegisterServer")]
+        private static extern void RegisterOpusDecoderFilter();
+
+        [DllImport("OpusEncoder.dll", EntryPoint = "DllUnregisterServer")]
+        private static extern void UnregisterOpusEncoderFilter();
+
+        [DllImport("OpusDecoder.dll", EntryPoint = "DllUnregisterServer")]
+        private static extern void UnregisterOpusDecoderFilter();
+
 
     }
 }
