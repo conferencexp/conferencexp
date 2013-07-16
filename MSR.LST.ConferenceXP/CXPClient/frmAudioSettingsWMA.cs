@@ -13,6 +13,7 @@ using MSR.LST.MDShow;
 namespace MSR.LST.ConferenceXP
 {
     public class frmAudioSettingsWMA : frmAudioSettingsBase {
+
         #region Windows Forms Designer
 
         private ComboBox cbBufferSize;
@@ -233,26 +234,6 @@ namespace MSR.LST.ConferenceXP
         #endregion Form Load
 
         #region UI Events
-
-        /// <summary>
-        /// Input pin change.  Not applicable to DV sources
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void cboMicrophonePins_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            AudioCaptureGraph acg = ac.CaptureGraph as AudioCaptureGraph;
-            if (acg == null) {
-                return;
-            }
-
-            if (ckTestAudio.Checked) {
-                ckTestAudio.Checked = false;
-            }
-
-            acg.AudioSource.InputPinIndex = cboMicrophonePins.SelectedIndex;
-            ac.SaveMicrophoneSettings();
-        }
 
         private void cbCompressionFormat_SelectedIndexChanged(object sender, EventArgs e) {
             if (ckTestAudio.Checked) {

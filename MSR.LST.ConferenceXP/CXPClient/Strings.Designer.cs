@@ -1782,7 +1782,7 @@ namespace MSR.LST.ConferenceXP {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Constrains the maximum bandwidth. Don&apos;t use a value greater than the input bandwidth..
+        ///   Looks up a localized string similar to Constrains the maximum bandwidth. Set to match or to be just greater than the bandwidth of the input..
         /// </summary>
         internal static string OpusTTMaxBandwidth {
             get {

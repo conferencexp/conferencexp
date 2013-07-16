@@ -13,6 +13,7 @@ using MSR.LST.MDShow;
 namespace MSR.LST.ConferenceXP
 {
     public class frmAudioSettingsUnc : frmAudioSettingsBase {
+
         #region Form Designer
 
         private Button btnAudio;        

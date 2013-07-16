@@ -130,7 +130,7 @@ namespace MSR.LST.MDShow {
         public const int DefaultBufferMS = 20;
         public const int DefaultSignal = 3002;
         public const int DefaultBitRate = -1000;
-        public const int DefaultManualBitRate = 512;
+        public const int DefaultManualBitRate = 128000;
         public const int DefaultComplexity = 10;
         public const int DefaultVBR = 1;
         public const int DefaultVBRConstraint = 1;

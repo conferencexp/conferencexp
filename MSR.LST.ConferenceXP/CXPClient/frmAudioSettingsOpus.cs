@@ -382,7 +382,7 @@ namespace MSR.LST.ConferenceXP
             this.lblManualBitRateRange.Name = "lblManualBitRateRange";
             this.lblManualBitRateRange.Size = new System.Drawing.Size(70, 13);
             this.lblManualBitRateRange.TabIndex = 117;
-            this.lblManualBitRateRange.Text = "(512-512000)";
+            this.lblManualBitRateRange.Text = "(500-512000)";
             // 
             // label16
             // 
@@ -655,8 +655,6 @@ namespace MSR.LST.ConferenceXP
                 if (field.IsLiteral || field.IsInitOnly)
                     continue; //Ignore const and readonly
 
-                // Fetch the current value in case none is set in the registry.
-                // On first use, this should be the default.
                 object newValue = findDefaultValue(field.Name);
 
                 if (newValue == null)
@@ -919,8 +917,6 @@ namespace MSR.LST.ConferenceXP
         }
         
         #endregion
-
-
 
     }
 }

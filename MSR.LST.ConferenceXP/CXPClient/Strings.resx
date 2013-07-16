@@ -1118,7 +1118,7 @@ Frame rate: {2} fps</value>
     <value>A hint which helps the encoder identify silence or near-silence.</value>
   </data>
   <data name="OpusTTMaxBandwidth" xml:space="preserve">
-    <value>Constrains the maximum bandwidth. Don't use a value greater than the input bandwidth.</value>
+    <value>Constrains the maximum bandwidth. Set to match or to be just greater than the bandwidth of the input.</value>
   </data>
   <data name="OpusTTPacketLossPerc" xml:space="preserve">
     <value>Configure to expected Packet Loss Percentage.  Higher values result in lower quality in lossless environments, but higher quality under loss.</value>
