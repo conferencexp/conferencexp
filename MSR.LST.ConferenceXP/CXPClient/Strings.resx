@@ -1096,4 +1096,43 @@ Frame rate: {2} fps</value>
   <data name="ReflectorNotDetected" xml:space="preserve">
     <value>Reflector not detected</value>
   </data>
+  <data name="OpusTTApplication" xml:space="preserve">
+    <value>Tradeoff between speech intelligibility (VoIP), fidelity to original input (Audio), and low latency (Low Delay).</value>
+  </data>
+  <data name="OpusTTBufferMS" xml:space="preserve">
+    <value>The audio buffer size in milliseconds.  A smaller buffer will reduce latency, but may require slightly greater bandwidth.</value>
+  </data>
+  <data name="OpusTTComplexity" xml:space="preserve">
+    <value>Influence complexity of various computations in encoding.  Greater complexity may result in higher quality, at the cost of greater CPU requirement.  </value>
+  </data>
+  <data name="OpusTTDTX" xml:space="preserve">
+    <value>Discontinuous Transmission (DTX) reduces bitrate during silence or background noise.</value>
+  </data>
+  <data name="OpusTTForcedChannels" xml:space="preserve">
+    <value>Force mono or stereo output, regardless of input.</value>
+  </data>
+  <data name="OpusTTInbandFEC" xml:space="preserve">
+    <value>Forward Error Correction (FEC) provides robustness against packet loss at the cost of increased bitrate.</value>
+  </data>
+  <data name="OpusTTLSBDepth" xml:space="preserve">
+    <value>A hint which helps the encoder identify silence or near-silence.</value>
+  </data>
+  <data name="OpusTTMaxBandwidth" xml:space="preserve">
+    <value>Constrains the maximum bandwidth. Don't use a value greater than the input bandwidth.</value>
+  </data>
+  <data name="OpusTTPacketLossPerc" xml:space="preserve">
+    <value>Configure to expected Packet Loss Percentage.  Higher values result in lower quality in lossless environments, but higher quality under loss.</value>
+  </data>
+  <data name="OpusTTSignal" xml:space="preserve">
+    <value>A hint to help the encoder optimize for source content.</value>
+  </data>
+  <data name="OpusTTVBR" xml:space="preserve">
+    <value>Variable Bit Rate (VBR) mode allows the encoder to dynamically change the bit rate depending on the requirements of the input signal.  The alternative is Constant Bit Rate (CBR) where bitrate is fixed.</value>
+  </data>
+  <data name="OpusTTVBRConstraint" xml:space="preserve">
+    <value>Only applicable if VBR is enabled.  Constrains the maximum buffering delay to one frame.  Unconstrained may result in greater latency.</value>
+  </data>
+  <data name="RestoreCompressorDefaultValues" xml:space="preserve">
+    <value>Restore all compressor settings to default values.</value>
+  </data>
 </root>

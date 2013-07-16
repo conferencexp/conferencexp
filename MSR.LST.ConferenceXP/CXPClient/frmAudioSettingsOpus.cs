@@ -50,6 +50,7 @@ namespace MSR.LST.ConferenceXP
         private Label lblManualBitRate;
         private Label lblManualBitRateRange;
         private Label label16;
+        private Button btnRestoreDefaults;
         private Label lblACompressionFmt;
 
         /// <summary>
@@ -104,6 +105,7 @@ namespace MSR.LST.ConferenceXP
             this.lblManualBitRate = new System.Windows.Forms.Label();
             this.lblManualBitRateRange = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.btnRestoreDefaults = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbCompressionFormat
@@ -145,7 +147,7 @@ namespace MSR.LST.ConferenceXP
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(304, 17);
+            this.label1.Location = new System.Drawing.Point(308, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 91;
@@ -181,7 +183,7 @@ namespace MSR.LST.ConferenceXP
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(304, 45);
+            this.label3.Location = new System.Drawing.Point(308, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 95;
@@ -199,7 +201,7 @@ namespace MSR.LST.ConferenceXP
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(304, 72);
+            this.label4.Location = new System.Drawing.Point(308, 72);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 97;
@@ -219,14 +221,14 @@ namespace MSR.LST.ConferenceXP
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(308, 234);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 13);
+            this.label5.Size = new System.Drawing.Size(77, 13);
             this.label5.TabIndex = 99;
-            this.label5.Text = "Packet Loss Perc";
+            this.label5.Text = "Packet Loss %";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(304, 99);
+            this.label6.Location = new System.Drawing.Point(308, 99);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 101;
@@ -391,11 +393,22 @@ namespace MSR.LST.ConferenceXP
             this.label16.TabIndex = 119;
             this.label16.Text = "(0-100)";
             // 
+            // btnRestoreDefaults
+            // 
+            this.btnRestoreDefaults.Location = new System.Drawing.Point(400, 257);
+            this.btnRestoreDefaults.Name = "btnRestoreDefaults";
+            this.btnRestoreDefaults.Size = new System.Drawing.Size(109, 23);
+            this.btnRestoreDefaults.TabIndex = 120;
+            this.btnRestoreDefaults.Text = "Restore Defaults";
+            this.btnRestoreDefaults.UseVisualStyleBackColor = true;
+            this.btnRestoreDefaults.Click += new System.EventHandler(this.btnRestoreDefaults_Click);
+            // 
             // frmAudioSettingsOpus
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(528, 312);
             this.ControlBox = false;
+            this.Controls.Add(this.btnRestoreDefaults);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.lblManualBitRateRange);
             this.Controls.Add(this.lblManualBitRate);
@@ -463,7 +476,22 @@ namespace MSR.LST.ConferenceXP
             this.gbCurrentSettings.Visible = false;
 
             // Increase the height of the form to fit more controls.
-            this.ClientSize = new System.Drawing.Size(this.ClientSize.Width,this.ClientSize.Height + 50);
+            this.ClientSize = new System.Drawing.Size(this.ClientSize.Width,this.ClientSize.Height + 60);
+
+            // Tool tips
+            this.ttASettings.SetToolTip(this.cbApplication, Strings.OpusTTApplication);
+            this.ttASettings.SetToolTip(this.cbBufferMS, Strings.OpusTTBufferMS);
+            this.ttASettings.SetToolTip(this.cbComplexity, Strings.OpusTTComplexity);
+            this.ttASettings.SetToolTip(this.cbDTX, Strings.OpusTTDTX);
+            this.ttASettings.SetToolTip(this.cbForcedChannels, Strings.OpusTTForcedChannels);
+            this.ttASettings.SetToolTip(this.cbInbandFec, Strings.OpusTTInbandFEC);
+            this.ttASettings.SetToolTip(this.cbLSBDepth, Strings.OpusTTLSBDepth);
+            this.ttASettings.SetToolTip(this.cbMaxBandwidth, Strings.OpusTTMaxBandwidth);
+            this.ttASettings.SetToolTip(this.cbSignal, Strings.OpusTTSignal);
+            this.ttASettings.SetToolTip(this.cbVBR, Strings.OpusTTVBR);
+            this.ttASettings.SetToolTip(this.cbVBRConstraint, Strings.OpusTTVBRConstraint);
+            this.ttASettings.SetToolTip(this.tbPacketLossPerc, Strings.OpusTTPacketLossPerc);
+            this.ttASettings.SetToolTip(this.btnRestoreDefaults, Strings.RestoreCompressorDefaultValues);
 
             // Establish data sources for the ComboBox controls
             this.cbSignal.DataSource = Enum.GetValues(typeof(OpusAudioCompressor.EnumSignal));
@@ -614,6 +642,59 @@ namespace MSR.LST.ConferenceXP
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Put all compressor static properties and corresponding form controls back to their default values.
+        /// </summary>
+        private void RestoreDefaultValues() {
+            // Loop over all the public statics in the compressor type.
+            Type compressorType = typeof(OpusAudioCompressor);
+            FieldInfo[] fields = compressorType.GetFields(BindingFlags.Public | BindingFlags.Static);
+            foreach (FieldInfo field in fields) {
+                if (field.IsLiteral || field.IsInitOnly)
+                    continue; //Ignore const and readonly
+
+                // Fetch the current value in case none is set in the registry.
+                // On first use, this should be the default.
+                object newValue = findDefaultValue(field.Name);
+
+                if (newValue == null)
+                    continue;
+
+                field.SetValue(null, newValue);
+
+                // Find the corresponding enum or array
+                Type enumType;
+                int[] valuesArray;
+                // Check for enum first
+                if ((enumType = findEnumType(field.Name)) != null) {
+                    ComboBox cb = findComboBox(field.Name);
+                    if (cb != null)
+                        cb.SelectedItem = Enum.ToObject(enumType, newValue);
+                }
+                else if ((valuesArray = findValuesArray(field.Name)) != null) {
+                    ComboBox cb = findComboBox(field.Name);
+                    if (cb != null)
+                        cb.SelectedItem = newValue;
+                }
+                else if ((valuesArray = findMinMaxArray(field.Name)) != null) {
+                    TextBox tb = findTextBox(field.Name);
+                    if (tb != null) {
+                        tb.Text = newValue.ToString();
+                    }
+                }
+            }
+
+            int selectedIndex = 0;
+            for (int i = 0; i < this.cbCompressionFormat.Items.Count; i++) {
+                if ((((CompressorFmt)this.cbCompressionFormat.Items[i]).WFEX.SamplesPerSec == OpusAudioCompressor.Frequency) &&
+                    (((CompressorFmt)this.cbCompressionFormat.Items[i]).WFEX.Channels == OpusAudioCompressor.Channels)) {
+                    selectedIndex = i;
+                    break;
+                }
+            }
+            this.cbCompressionFormat.SelectedIndex = selectedIndex;
         }
 
         #endregion
@@ -809,6 +890,10 @@ namespace MSR.LST.ConferenceXP
             this.lblManualBitRateRange.Enabled = manual;
         }
 
+        private void btnRestoreDefaults_Click(object sender, EventArgs e) {
+            this.RestoreDefaultValues();
+        }
+        
         #endregion       
         
         #endregion Methods
@@ -834,6 +919,8 @@ namespace MSR.LST.ConferenceXP
         }
         
         #endregion
+
+
 
     }
 }

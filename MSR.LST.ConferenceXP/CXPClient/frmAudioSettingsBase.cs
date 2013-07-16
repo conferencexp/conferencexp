@@ -33,8 +33,8 @@ namespace MSR.LST.ConferenceXP
         protected System.Windows.Forms.GroupBox gbMicAndAudio;
         private CheckBox ckDisableFec;
         protected CheckBox ckTestAudio;
-
-        private System.ComponentModel.Container components = null;
+        protected ToolTip ttASettings;
+        private IContainer components;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -58,6 +58,7 @@ namespace MSR.LST.ConferenceXP
         //[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303")]
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnOK = new System.Windows.Forms.Button();
             this.gbCurrentSettings = new System.Windows.Forms.GroupBox();
             this.lblCurrentSettings = new System.Windows.Forms.Label();
@@ -68,6 +69,7 @@ namespace MSR.LST.ConferenceXP
             this.gbMicAndAudio = new System.Windows.Forms.GroupBox();
             this.ckDisableFec = new System.Windows.Forms.CheckBox();
             this.ckTestAudio = new System.Windows.Forms.CheckBox();
+            this.ttASettings = new System.Windows.Forms.ToolTip(this.components);
             this.gbCurrentSettings.SuspendLayout();
             this.gbMicAndAudio.SuspendLayout();
             this.SuspendLayout();
@@ -142,6 +144,7 @@ namespace MSR.LST.ConferenceXP
             this.cboLinkedCamera.Size = new System.Drawing.Size(272, 21);
             this.cboLinkedCamera.Sorted = true;
             this.cboLinkedCamera.TabIndex = 85;
+            this.ttASettings.SetToolTip(this.cboLinkedCamera, "The audio controls will be integrated with the video window for this camera.");
             this.cboLinkedCamera.SelectedIndexChanged += new System.EventHandler(this.cboLinkedCamera_SelectedIndexChanged);
             // 
             // gbMicAndAudio
@@ -165,6 +168,8 @@ namespace MSR.LST.ConferenceXP
             this.ckDisableFec.Size = new System.Drawing.Size(478, 21);
             this.ckDisableFec.TabIndex = 82;
             this.ckDisableFec.Text = "Disable Forward Error Correction (Recommended for Uncompressed Audio)";
+            this.ttASettings.SetToolTip(this.ckDisableFec, "Disabling slightly reduces bandwidth and CPU requirement, but packet loss will re" +
+        "sult in audible artifacts.");
             this.ckDisableFec.CheckedChanged += new System.EventHandler(this.ckDisableFec_CheckedChanged);
             // 
             // ckTestAudio
@@ -179,6 +184,13 @@ namespace MSR.LST.ConferenceXP
             this.ckTestAudio.Text = "Test Audio";
             this.ckTestAudio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ckTestAudio.CheckedChanged += new System.EventHandler(this.ckTestAudio_CheckedChanged);
+            // 
+            // ttASettings
+            // 
+            this.ttASettings.AutomaticDelay = 1000;
+            this.ttASettings.AutoPopDelay = 10000;
+            this.ttASettings.InitialDelay = 500;
+            this.ttASettings.ReshowDelay = 100;
             // 
             // frmAudioSettingsBase
             // 

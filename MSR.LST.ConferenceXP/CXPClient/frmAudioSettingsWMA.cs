@@ -61,7 +61,7 @@ namespace MSR.LST.ConferenceXP
             "2000",
             "5000",
             "10000"});
-            this.cbBufferSize.Location = new System.Drawing.Point(383, 167);
+            this.cbBufferSize.Location = new System.Drawing.Point(396, 148);
             this.cbBufferSize.Name = "cbBufferSize";
             this.cbBufferSize.Size = new System.Drawing.Size(100, 21);
             this.cbBufferSize.TabIndex = 88;
@@ -73,7 +73,7 @@ namespace MSR.LST.ConferenceXP
             "4",
             "5",
             "6"});
-            this.cbBufferCount.Location = new System.Drawing.Point(116, 167);
+            this.cbBufferCount.Location = new System.Drawing.Point(129, 148);
             this.cbBufferCount.Name = "cbBufferCount";
             this.cbBufferCount.Size = new System.Drawing.Size(100, 21);
             this.cbBufferCount.TabIndex = 89;
@@ -81,7 +81,7 @@ namespace MSR.LST.ConferenceXP
             // lblBufferSize
             // 
             this.lblBufferSize.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblBufferSize.Location = new System.Drawing.Point(285, 170);
+            this.lblBufferSize.Location = new System.Drawing.Point(298, 151);
             this.lblBufferSize.Name = "lblBufferSize";
             this.lblBufferSize.Size = new System.Drawing.Size(95, 21);
             this.lblBufferSize.TabIndex = 90;
@@ -90,7 +90,7 @@ namespace MSR.LST.ConferenceXP
             // lblBufferCount
             // 
             this.lblBufferCount.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblBufferCount.Location = new System.Drawing.Point(8, 170);
+            this.lblBufferCount.Location = new System.Drawing.Point(21, 151);
             this.lblBufferCount.Name = "lblBufferCount";
             this.lblBufferCount.Size = new System.Drawing.Size(106, 21);
             this.lblBufferCount.TabIndex = 92;
@@ -168,7 +168,10 @@ namespace MSR.LST.ConferenceXP
             this.Controls.Remove(this.cbCompressionFormat);
             this.gbMicAndAudio.Controls.Add(this.cbCompressionFormat);
             this.gbMicAndAudio.Controls.Add(this.lblACompressionFmt);
-            
+
+            // Increase the height of the form to fit more controls.
+            this.ClientSize = new System.Drawing.Size(this.ClientSize.Width, this.ClientSize.Height - 30);
+
             try
             {
                 this.Text += " - WM Audio V2";

@@ -45,10 +45,10 @@ namespace MSR.LST.ConferenceXP
         private void InitializeComponent()
         {
             this.btnAudio = new System.Windows.Forms.Button();
-            this.cbBufferSize = new System.Windows.Forms.ComboBox();
-            this.cbBufferCount = new System.Windows.Forms.ComboBox();
             this.lblBufferSize = new System.Windows.Forms.Label();
+            this.cbBufferSize = new System.Windows.Forms.ComboBox();
             this.lblBufferCount = new System.Windows.Forms.Label();
+            this.cbBufferCount = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnAudio
@@ -61,6 +61,15 @@ namespace MSR.LST.ConferenceXP
             this.btnAudio.Text = "Uncompressed Audio Format...";
             this.btnAudio.Click += new System.EventHandler(this.btnAudio_Click);
             // 
+            // lblBufferSize
+            // 
+            this.lblBufferSize.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblBufferSize.Location = new System.Drawing.Point(298, 151);
+            this.lblBufferSize.Name = "lblBufferSize";
+            this.lblBufferSize.Size = new System.Drawing.Size(95, 21);
+            this.lblBufferSize.TabIndex = 90;
+            this.lblBufferSize.Text = "Audio Buffer Size";
+            // 
             // cbBufferSize
             // 
             this.cbBufferSize.FormattingEnabled = true;
@@ -69,10 +78,19 @@ namespace MSR.LST.ConferenceXP
             "2000",
             "5000",
             "10000"});
-            this.cbBufferSize.Location = new System.Drawing.Point(383, 162);
+            this.cbBufferSize.Location = new System.Drawing.Point(396, 148);
             this.cbBufferSize.Name = "cbBufferSize";
             this.cbBufferSize.Size = new System.Drawing.Size(100, 21);
             this.cbBufferSize.TabIndex = 88;
+            // 
+            // lblBufferCount
+            // 
+            this.lblBufferCount.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblBufferCount.Location = new System.Drawing.Point(21, 151);
+            this.lblBufferCount.Name = "lblBufferCount";
+            this.lblBufferCount.Size = new System.Drawing.Size(106, 21);
+            this.lblBufferCount.TabIndex = 92;
+            this.lblBufferCount.Text = "Audio Buffer Count";
             // 
             // cbBufferCount
             // 
@@ -81,28 +99,10 @@ namespace MSR.LST.ConferenceXP
             "4",
             "5",
             "6"});
-            this.cbBufferCount.Location = new System.Drawing.Point(116, 162);
+            this.cbBufferCount.Location = new System.Drawing.Point(129, 148);
             this.cbBufferCount.Name = "cbBufferCount";
             this.cbBufferCount.Size = new System.Drawing.Size(100, 21);
             this.cbBufferCount.TabIndex = 89;
-            // 
-            // lblBufferSize
-            // 
-            this.lblBufferSize.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblBufferSize.Location = new System.Drawing.Point(285, 165);
-            this.lblBufferSize.Name = "lblBufferSize";
-            this.lblBufferSize.Size = new System.Drawing.Size(95, 21);
-            this.lblBufferSize.TabIndex = 90;
-            this.lblBufferSize.Text = "Audio Buffer Size";
-            // 
-            // lblBufferCount
-            // 
-            this.lblBufferCount.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblBufferCount.Location = new System.Drawing.Point(8, 165);
-            this.lblBufferCount.Name = "lblBufferCount";
-            this.lblBufferCount.Size = new System.Drawing.Size(106, 21);
-            this.lblBufferCount.TabIndex = 92;
-            this.lblBufferCount.Text = "Audio Buffer Count";
             // 
             // frmAudioSettingsUnc
             // 
@@ -150,6 +150,9 @@ namespace MSR.LST.ConferenceXP
 
             this.Controls.Remove(this.btnAudio);
             this.gbMicAndAudio.Controls.Add(this.btnAudio);
+
+            // Reduce the height of the form
+            this.ClientSize = new System.Drawing.Size(this.ClientSize.Width, this.ClientSize.Height - 30);
             
             try
             {

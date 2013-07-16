@@ -139,7 +139,7 @@ namespace MSR.LST.MDShow {
         public const int DefaultDTX = 0;
         public const int DefaultPacketLossPerc = 0;
         public const int DefaultLSBDepth = 24;
-        public const int DefaultApplication = 2051;
+        public const int DefaultApplication = 2049;
         public const int DefaultInbandFec = 0;
 
         #endregion
@@ -195,12 +195,12 @@ namespace MSR.LST.MDShow {
         #region Enums
 
         public enum EnumBitRate { Auto = -1000, Max = -1 , Manual = 0 };
-        public enum EnumVBR { HardCbr = 0, VBR = 1 };
-        public enum EnumVBRConstraint { HardCbr = 0, VBR = 1 };
+        public enum EnumVBR { CBR = 0, VBR = 1 };
+        public enum EnumVBRConstraint { Unconstrained = 0, Constrained = 1 };
         public enum EnumForcedChannels { Auto = -1000, ForcedMono = 1, ForcedStereo = 2 };
-        public enum EnumMaxBandwidth { NarrowBand = 1101, MediumBand = 1102, WideBand = 1103, SuperWideBand = 1104, FullBand = 1105 };
+        public enum EnumMaxBandwidth { Narrow_4kHz = 1101, Medium_6kHz = 1102, Wide_8kHz = 1103, SuperWide_12kHz = 1104, Full_20kHz = 1105 };
         public enum EnumSignal { Auto = -1000, Voice = 3001, Music = 3002 };
-        public enum EnumApplication { VoIP = 2048, Audio = 2049, RestrictedLowDelay = 2051 };
+        public enum EnumApplication { VoIP = 2048, Audio = 2049, LowDelay = 2051 };
         public enum EnumInbandFec { Disable = 0, Enable = 1 };
         public enum EnumDTX { Disable = 0, Enable = 1 };
 
