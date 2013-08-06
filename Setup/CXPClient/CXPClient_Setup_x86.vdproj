@@ -2112,11 +2112,6 @@
             "AssemblyAsmDisplayName" = "8:ConferenceXPInterfaces, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_04795120B293BFEF9AB42D97073B18C2"
-                    {
-                    "Name" = "8:ConferenceXPInterfaces.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ConferenceXPInterfaces.DLL"
             "TargetName" = "8:"
@@ -2163,11 +2158,6 @@
             "AssemblyAsmDisplayName" = "8:devaxcorex.interop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0B5B24C232411050E57CDA0CA2ABAA9D"
-                    {
-                    "Name" = "8:devaxcorex.interop.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:devaxcorex.interop.DLL"
             "TargetName" = "8:"
@@ -2409,11 +2399,6 @@
             "AssemblyAsmDisplayName" = "8:NetworkingBasics, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_17382A7309DE6226B36BC3ABC440B3CE"
-                    {
-                    "Name" = "8:NetworkingBasics.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:NetworkingBasics.DLL"
             "TargetName" = "8:"
@@ -2460,11 +2445,6 @@
             "AssemblyAsmDisplayName" = "8:GraphCapture, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_1B574A558B637B8FAC156F3AB007AE59"
-                    {
-                    "Name" = "8:GraphCapture.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:GraphCapture.DLL"
             "TargetName" = "8:"
@@ -2542,11 +2522,6 @@
             "AssemblyAsmDisplayName" = "8:Conference, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_1F080222F9FED5E0F0EB4FC80331EB40"
-                    {
-                    "Name" = "8:Conference.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Conference.DLL"
             "TargetName" = "8:"
@@ -2604,11 +2579,6 @@
             "AssemblyAsmDisplayName" = "8:RTDocumentUtilities, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_200B973BF72299A41F0393BCD8368B3C"
-                    {
-                    "Name" = "8:RTDocumentUtilities.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:RTDocumentUtilities.DLL"
             "TargetName" = "8:"
@@ -2728,11 +2698,6 @@
             "AssemblyAsmDisplayName" = "8:Identity, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_291C7A34835DAACDDDCE0D1FFE3CCF06"
-                    {
-                    "Name" = "8:Identity.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Identity.DLL"
             "TargetName" = "8:"
@@ -3300,11 +3265,6 @@
             "AssemblyAsmDisplayName" = "8:InkToolBar, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_50F1F01E2330055882D8200820FA89A4"
-                    {
-                    "Name" = "8:InkToolBar.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:InkToolBar.DLL"
             "TargetName" = "8:"
@@ -3362,11 +3322,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Office.Interop.PowerPoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_57D34302852A1EB8923F02BC2497B44E"
-                    {
-                    "Name" = "8:Microsoft.Office.Interop.PowerPoint.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Office.Interop.PowerPoint.DLL"
             "TargetName" = "8:"
@@ -3393,11 +3348,6 @@
             "AssemblyAsmDisplayName" = "8:QuartzTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_58877C7E51DA0B12F83AA6733802FD2A"
-                    {
-                    "Name" = "8:QuartzTypeLib.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:QuartzTypeLib.DLL"
             "TargetName" = "8:"
@@ -3464,11 +3414,6 @@
             "AssemblyAsmDisplayName" = "8:filters.interop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5D4CBF9F5858DA0F06F5AB56277DD82F"
-                    {
-                    "Name" = "8:filters.interop.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:filters.interop.DLL"
             "TargetName" = "8:"
@@ -3495,11 +3440,6 @@
             "AssemblyAsmDisplayName" = "8:MDShowManager, Version=5.3.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5E1D02BCBA249A3DAAE4211966430011"
-                    {
-                    "Name" = "8:MDShowManager.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MDShowManager.DLL"
             "TargetName" = "8:"
@@ -3526,11 +3466,6 @@
             "AssemblyAsmDisplayName" = "8:Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5E42F5E352BAB1B44E8D33CA7621C582"
-                    {
-                    "Name" = "8:Interop.NetFwTypeLib.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Interop.NetFwTypeLib.DLL"
             "TargetName" = "8:"
@@ -3588,11 +3523,6 @@
             "AssemblyAsmDisplayName" = "8:LSTCommon, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_686A037011D549510CE7D52DEE2526FD"
-                    {
-                    "Name" = "8:LSTCommon.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:LSTCommon.DLL"
             "TargetName" = "8:"
@@ -3681,11 +3611,6 @@
             "AssemblyAsmDisplayName" = "8:Interop.NETCONLib, Version=1.0.0.0, Culture=neutral"
                 "ScatterAssemblies"
                 {
-                    "_7069887AEC093BA89BCB33EC35BD789B"
-                    {
-                    "Name" = "8:Interop.NETCONLib.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Interop.NETCONLib.DLL"
             "TargetName" = "8:"
@@ -3712,11 +3637,6 @@
             "AssemblyAsmDisplayName" = "8:ArchiveWrapper, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7140E54E2D14D20E82D5B33B00AA46B3"
-                    {
-                    "Name" = "8:ArchiveWrapper.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ArchiveWrapper.DLL"
             "TargetName" = "8:"
@@ -3865,11 +3785,6 @@
             "AssemblyAsmDisplayName" = "8:control.interop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7AF88A56246A103E54CEA261BF2A6998"
-                    {
-                    "Name" = "8:control.interop.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:control.interop.DLL"
             "TargetName" = "8:"
@@ -3989,11 +3904,6 @@
             "AssemblyAsmDisplayName" = "8:Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7E8FAE2991A17F08754A13869593AD61"
-                    {
-                    "Name" = "8:Interop.SHDocVw.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Interop.SHDocVw.DLL"
             "TargetName" = "8:"
@@ -4020,11 +3930,6 @@
             "AssemblyAsmDisplayName" = "8:MSR.LST.Net.Rtp, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_80288EDE24D1FBD13E62204BE7992231"
-                    {
-                    "Name" = "8:MSR.LST.Net.Rtp.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MSR.LST.Net.Rtp.DLL"
             "TargetName" = "8:"
@@ -4317,11 +4222,6 @@
             "AssemblyAsmDisplayName" = "8:Interop.MessengerAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_AB68835E36761D07FCE2A6A7CFCC26E4"
-                    {
-                    "Name" = "8:Interop.MessengerAPI.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Interop.MessengerAPI.DLL"
             "TargetName" = "8:"
@@ -4430,11 +4330,6 @@
             "AssemblyAsmDisplayName" = "8:DmoEnum, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_B0DE4B5DDFAFE31AD61D238FBEEB2F19"
-                    {
-                    "Name" = "8:DmoEnum.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DmoEnum.DLL"
             "TargetName" = "8:"
@@ -4696,11 +4591,6 @@
             "AssemblyAsmDisplayName" = "8:AVControls, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_CA1AF264F75468F750C101E7BB475838"
-                    {
-                    "Name" = "8:AVControls.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AVControls.DLL"
             "TargetName" = "8:"
@@ -4840,11 +4730,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Vbe.Interop, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_DA64C1FF7CF27122A8E287284182836C"
-                    {
-                    "Name" = "8:Microsoft.Vbe.Interop.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Vbe.Interop.DLL"
             "TargetName" = "8:"
@@ -4933,11 +4818,6 @@
             "AssemblyAsmDisplayName" = "8:office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E18BAE8A2915A37E7AFEAD4D95DAE280"
-                    {
-                    "Name" = "8:office.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:office.DLL"
             "TargetName" = "8:"
@@ -4964,11 +4844,6 @@
             "AssemblyAsmDisplayName" = "8:AVCapabilities, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E3CD857893E08B467A3B5BA651F850DF"
-                    {
-                    "Name" = "8:AVCapabilities.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AVCapabilities.DLL"
             "TargetName" = "8:"
@@ -5015,11 +4890,6 @@
             "AssemblyAsmDisplayName" = "8:RTDocuments, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E5C4A803D61F0F555108B5E76B7916A2"
-                    {
-                    "Name" = "8:RTDocuments.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:RTDocuments.DLL"
             "TargetName" = "8:"
@@ -5484,21 +5354,21 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:ConferenceXP Client 5.3"
-        "ProductCode" = "8:{6FB11D54-3773-4A37-BBAB-2FE91BD630F3}"
-        "PackageCode" = "8:{35F12238-01EF-4447-8C58-5C2CF747AAB9}"
+        "ProductName" = "8:ConferenceXP Client 5.3.2"
+        "ProductCode" = "8:{2D1CED25-7745-47E3-AA0C-C0431686FF9B}"
+        "PackageCode" = "8:{098BC494-BD2C-4304-BE88-4DADE29D3B65}"
         "UpgradeCode" = "8:{A90958F3-7B6C-4255-A86F-566F14AE55D8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.3"
+        "ProductVersion" = "8:5.3.2"
         "Manufacturer" = "8:Center for Collaborative Technologies"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://cct.cs.washington.edu"
-        "Title" = "8:ConferenceXP Client 5.3"
-        "Subject" = "8:ConferenceXP Client 5.3"
+        "Title" = "8:ConferenceXP Client 5.3.2"
+        "Subject" = "8:ConferenceXP Client 5.3.2"
         "ARPCONTACT" = "8:Center for Collaborative Technologies"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
