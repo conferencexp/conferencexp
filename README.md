@@ -21,3 +21,12 @@ Contributing to the project
 
 We welcome code contributions to the project.  Feel free to work on any unclaimed items in the issue queue,
 or other ideas you may have.  
+
+See also related projects:
+--------------------------
+
+* [Classroom Presenter](https://github.com/ClassroomPresenter/CP3)
+* [CXP Archive Transcoder](http://github.com/fvideon/archivetranscoder)
+* [CXP Windows Media Gateway](http://github.com/fvideon/wmgateway)
+* [CXP WebViewer](http://github.com/fvideon/webviewer)
+
