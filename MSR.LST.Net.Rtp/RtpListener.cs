@@ -453,7 +453,6 @@ namespace MSR.LST.Net.Rtp
 
                     unchecked{pcPackets++;}
                 }
-                catch(ThreadAbortException){}
                 catch(PoolExhaustedException e)
                 {
                     LogEvent(e.ToString(), EventLogEntryType.Error, (int)RtpEL.ID.UnboundedGrowth);
@@ -474,8 +473,10 @@ namespace MSR.LST.Net.Rtp
                 }
                 catch(Exception e)
                 {
-                    ReturnBuffer(bc);
-                    LogEvent(e.ToString(), EventLogEntryType.Error, (int)RtpEL.ID.Error);
+                    if (!(e is ThreadAbortException)) {
+                        ReturnBuffer(bc);
+                        LogEvent(e.ToString(), EventLogEntryType.Error, (int)RtpEL.ID.Error);
+                    }
                 }
             }
         }
