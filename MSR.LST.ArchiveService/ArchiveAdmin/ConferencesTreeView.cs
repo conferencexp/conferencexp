@@ -261,13 +261,15 @@ namespace MSR.LST.ConferenceXP.ArchiveService
             }
             else // it's a year, month, or day, so do search for conferences
             {
-                // We'll do this with a really simple recursive-style approach...
-                foreach(TreeNode child in node.Nodes)
+                // We'll do this with a really simple recursive-style approach.
+                // Iterate over a shallow copy since we'll be deleting from the main Nodes collection.
+                TreeNode[] tmp = new TreeNode[node.Nodes.Count];
+                node.Nodes.CopyTo(tmp, 0);
+                foreach(TreeNode child in tmp)
                 {
                     DeleteNode(child);
                 }
             }
-
             this.RemoveNodes(new TreeNode[]{node});
         }
 
@@ -458,15 +460,16 @@ namespace MSR.LST.ConferenceXP.ArchiveService
                 // This is some sort of weird limiting case.
                 if( parent == null )
                     continue;
-                
+
                 node.Remove();
 
-                while( parent != null && !parent.Nodes.GetEnumerator().MoveNext() ) // while parent has no kids
+                while (parent != null && (parent.Nodes.Count == 0)) // while parent has no kids
                 {
                     TreeNode oldParent = parent;
                     parent = oldParent.Parent;
 
                     DeleteNodeContents(oldParent);
+
                     oldParent.Remove();
                 }
             }
