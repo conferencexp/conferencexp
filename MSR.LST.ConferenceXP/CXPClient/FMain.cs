@@ -156,7 +156,6 @@ namespace MSR.LST.ConferenceXP
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.ItemActivate += new System.EventHandler(this.listView_ItemActivate);
-            this.listView.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listView_MouseMove);
             // 
             // columnHeader
             // 
@@ -430,6 +429,10 @@ namespace MSR.LST.ConferenceXP
             this.toolTip.InitialDelay = 500;
             this.toolTip.ReshowDelay = 100;
             this.toolTip.ShowAlways = true;
+            this.toolTip.OwnerDraw = true;
+            this.toolTip.Draw += new DrawToolTipEventHandler(this.toolTip_Draw);
+            this.toolTip.Popup += new PopupEventHandler(toolTip_Popup);
+
             // 
             // statusBarTimer
             // 
@@ -1143,6 +1146,9 @@ namespace MSR.LST.ConferenceXP
                 InVenueUIState();
             }
 
+            // Associate the toolTip with the listView
+            this.toolTip.SetToolTip(this.listView, "foobar");
+
             Cursor = Cursors.Default;
         }
 
@@ -1278,7 +1284,7 @@ namespace MSR.LST.ConferenceXP
         {
             listView.Items.Clear();
             imageList.Images.Clear();
-            toolTip.RemoveAll();
+            toolTip.Active = false;
 
             try {
                 Cursor.Current = Cursors.WaitCursor;
@@ -1325,7 +1331,7 @@ namespace MSR.LST.ConferenceXP
                     AutoSendAV();
 
                 InVenueUIState();
-
+                toolTip.Active = true;
             }
 
             catch (InvalidPasswordException) {
@@ -1639,7 +1645,6 @@ namespace MSR.LST.ConferenceXP
 
             listView.Items.Clear();
             imageList.Images.Clear();
-            toolTip.RemoveAll();
             int cnt = 0;
 
             // This set of code may be causing a very long delay in showing the UI...
@@ -2738,83 +2743,6 @@ namespace MSR.LST.ConferenceXP
         #endregion Menu handlers
 
         #region Context handlers
-        private void listView_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
-        {
-            Point clientCoords = listView.PointToClient(Cursor.Position);
-            ListViewItem lvi = listView.GetItemAt(clientCoords.X, clientCoords.Y);
-            string toolTipString = string.Empty;
-
-            if (lvi != null)
-            {
-                if (lvi.Tag is Participant)
-                {
-                    Participant p = (Participant)lvi.Tag;
-
-                    if (p.MissingParticipant) {
-                        toolTipString = "Participant " + p.Identifier + " is in the venue, but no streams are received. \n\n";
-                        foreach (Participant.ThroughputWarning tw in p.ThroughputWarnings) {
-                            if (tw.WarningType == Participant.ThroughputWarningType.Inbound) {
-                                toolTipString += "Throughput Warning: Inbound to this participant from " + tw.OtherParticipant + "\n";
-                            }
-                            else if (tw.WarningType == Participant.ThroughputWarningType.Outbound) {
-                                toolTipString += "Throughput Warning: Outbound from this participant to " + tw.OtherParticipant + "\n";
-                            }
-                        }
-                    }
-                    else {
-                        // rtpParticpant can be null if the participant is leaving
-                        if (p.RtpParticipant != null) {
-                            toolTipString = string.Format(CultureInfo.CurrentCulture, Strings.NameIdentifierIPEMail +
-                                "\n", p.Name, p.Identifier, p.RtpParticipant.IPAddress, p.Email);
-
-                            foreach (ICapabilityViewer cv in p.Capabilities) {
-                                toolTipString += cv.PayloadType + ": " + cv.Name;
-                                if (cv.IsPlaying) {
-                                    toolTipString += Strings.Playing;
-                                }
-                                toolTipString += "\n";
-                            }
-
-                            toolTipString += "\n";
-                            foreach (Participant.ThroughputWarning tw in p.ThroughputWarnings) {
-                                if (tw.WarningType == Participant.ThroughputWarningType.Inbound) {
-                                    toolTipString += "Throughput Warning: Inbound to this participant from " + tw.OtherParticipant + "\n";
-                                }
-                                else if (tw.WarningType == Participant.ThroughputWarningType.Outbound) {
-                                    toolTipString += "Throughput Warning: Outbound from this participant to " + tw.OtherParticipant + "\n";
-                                }
-                            }
-                        }
-                    }
-                }
-                if (lvi.Tag is Venue)
-                {
-                    Venue v = (Venue)lvi.Tag;
-
-                    if (v.VenueData.VenueType == VenueType.Invalid)
-                    {
-                        toolTipString = Strings.VenueNotAvailable;
-                    }
-                    else
-                    {
-                        toolTipString = string.Format(CultureInfo.CurrentCulture, Strings.EnterAVenue, v.Name,
-                            v.Identifier, v.EndPoint.Address.ToString(), v.EndPoint.Port);
-
-                        // encryption status
-                        Venue venue = v as Venue;
-                        if (v.PWStatus == PasswordStatus.STRONG_PASSWORD)
-                            toolTipString += "\n" + Strings.UsesEncryption;
-                        else if (v.PWStatus == PasswordStatus.WEAK_PASSWORD)
-                            toolTipString += "\n" + Strings.DoesNotUseEncryption;
-                    }
-
-                }
-            }
-
-            if (toolTip.GetToolTip(listView) != toolTipString)
-                toolTip.SetToolTip(listView, toolTipString);
-        }
-
 
         private void contextParticipant_Popup(object sender, System.EventArgs e)
         {
@@ -2851,7 +2779,6 @@ namespace MSR.LST.ConferenceXP
                     return;
             }
         }
-
 
         private void OnParticipantContextClick(object sender, System.EventArgs e)
         {
@@ -2929,7 +2856,6 @@ namespace MSR.LST.ConferenceXP
             LeaveConference();
         }
 
-
         private void listView_ItemActivate(object sender, System.EventArgs e)
         {
             // because there is no locking to prevent the listView.SelectedItems from being cleared
@@ -2958,6 +2884,142 @@ namespace MSR.LST.ConferenceXP
                     JoinVenue((Venue)lvi.Tag, true);
                 }
             }
+        }
+
+        #endregion
+
+        #region ToolTips
+
+        /// <summary>
+        /// Event handler to size the tool tip popup.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolTip_Popup(object sender, PopupEventArgs e)
+        {
+            // Set the size for the popup.
+            string txt = getListViewItemToolTip();
+            e.ToolTipSize = TextRenderer.MeasureText(txt, UIFont.StringFont) + new Size(10, 10);
+        }
+
+        /// <summary>
+        /// Event handler to draw the tool tip.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolTip_Draw(System.Object sender,
+            System.Windows.Forms.DrawToolTipEventArgs e)
+        {
+            // Draw standard background and border.
+            e.DrawBackground();
+            e.DrawBorder();
+            // Draw custom text.
+            using (StringFormat sf = new StringFormat())
+            {
+                sf.Alignment = StringAlignment.Near;
+                sf.LineAlignment = StringAlignment.Center;
+                sf.HotkeyPrefix = System.Drawing.Text.HotkeyPrefix.None;
+                sf.FormatFlags = StringFormatFlags.NoWrap;
+                string txt = getListViewItemToolTip();
+                e.Graphics.DrawString(txt, UIFont.StringFont,
+                    SystemBrushes.ActiveCaptionText, e.Bounds, sf);
+            }
+        }
+
+        /// <summary>
+        /// Get the tool tip string for the list view item at the current mouse position.
+        /// </summary>
+        /// <returns></returns>
+        private string getListViewItemToolTip()
+        {
+            Point clientCoords = listView.PointToClient(Cursor.Position);
+            ListViewItem lvi = listView.GetItemAt(clientCoords.X, clientCoords.Y);
+            string toolTipString = string.Empty;
+
+            if (lvi != null)
+            {
+                if (lvi.Tag is Participant)
+                {
+                    toolTipString = getParticipantToolTip((Participant)lvi.Tag);
+                }
+                if (lvi.Tag is Venue)
+                {
+                    toolTipString = getVenueToolTip((Venue)lvi.Tag);
+                }
+            }
+            return toolTipString;
+        }
+
+        private string getVenueToolTip(Venue v)
+        {
+            string toolTipString = string.Empty;
+            if (v.VenueData.VenueType == VenueType.Invalid)
+            {
+                toolTipString = Strings.VenueNotAvailable;
+            }
+            else
+            {
+                toolTipString = string.Format(CultureInfo.CurrentCulture, Strings.EnterAVenue, v.Name,
+                    v.Identifier, v.EndPoint.Address.ToString(), v.EndPoint.Port);
+
+                // encryption status
+                Venue venue = v as Venue;
+                if (v.PWStatus == PasswordStatus.STRONG_PASSWORD)
+                    toolTipString += "\n" + Strings.UsesEncryption;
+                else if (v.PWStatus == PasswordStatus.WEAK_PASSWORD)
+                    toolTipString += "\n" + Strings.DoesNotUseEncryption;
+            }
+            return toolTipString;
+        }
+
+        private string getParticipantToolTip(Participant p)
+        {
+            string toolTipString = string.Empty;
+            if (p.MissingParticipant)
+            {
+                toolTipString = "Participant " + p.Identifier + " is in the venue, but no streams are received. \n\n";
+                toolTipString += getToolTipThroughputWarnings(p);
+            }
+            else
+            {
+                // rtpParticpant can be null if the participant is leaving
+                if (p.RtpParticipant != null)
+                {
+                    toolTipString = string.Format(CultureInfo.CurrentCulture, Strings.NameIdentifierIPEMail +
+                        "\n", p.Name, p.Identifier, p.RtpParticipant.IPAddress, p.Email);
+
+                    foreach (ICapabilityViewer cv in p.Capabilities)
+                    {
+                        toolTipString += cv.PayloadType + ": " + cv.Name;
+                        if (cv.IsPlaying)
+                        {
+                            toolTipString += Strings.Playing;
+                        }
+                        toolTipString += "\n";
+                    }
+
+                    toolTipString += "\n";
+                    toolTipString += getToolTipThroughputWarnings(p);
+                }
+            }
+            return toolTipString;
+        }
+
+        private string getToolTipThroughputWarnings(Participant p)
+        {
+            string s = string.Empty;
+            foreach (Participant.ThroughputWarning tw in p.ThroughputWarnings)
+            {
+                if (tw.WarningType == Participant.ThroughputWarningType.Inbound)
+                {
+                    s += "Throughput Warning: Inbound to this participant from " + tw.OtherParticipant + "\n";
+                }
+                else if (tw.WarningType == Participant.ThroughputWarningType.Outbound)
+                {
+                    s += "Throughput Warning: Outbound from this participant to " + tw.OtherParticipant + "\n";
+                }
+            }
+            return s;
         }
 
         #endregion
