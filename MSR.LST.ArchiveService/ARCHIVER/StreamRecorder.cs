@@ -257,7 +257,8 @@ namespace MSR.LST.ConferenceXP.ArchiveService
                 if( (DateTime.Now - this.lastOverflow).TotalSeconds > 2*Constants.CommandTimeout )
                 {
                     Trace.WriteLine("OVERFLOW: stream overflowed 2GB of data.  Creating new stream to hold data.");
-
+                    eventLog.WriteEntry(string.Format(CultureInfo.CurrentCulture, Strings.MaximumStreamSizeReached, this.streamID),
+                        EventLogEntryType.Information, ArchiveServiceEventLog.ID.MaximumStreamSizeReached);
                     InitStream();
 
                     foreach( BufferRecorder buf in this.buffers )

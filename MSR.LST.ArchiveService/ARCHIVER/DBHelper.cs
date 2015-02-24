@@ -8,6 +8,7 @@ using System.Globalization;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Collections.Generic;
 
 
 namespace MSR.LST.ConferenceXP.ArchiveService
@@ -45,6 +46,8 @@ namespace MSR.LST.ConferenceXP.ArchiveService
 
         private DBHelper()   {}
         #endregion
+
+        static private Dictionary<int, long> streamSizeDict = new Dictionary<int, long>();
 
         #region Create...
         /// <summary>
@@ -181,7 +184,9 @@ namespace MSR.LST.ConferenceXP.ArchiveService
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
-                return (int)streamID.Value;
+                int sid = (int)streamID.Value;
+                streamSizeDict.Add(sid, 0L);
+                return sid;
             }
             catch( SqlException ex )
             {
@@ -603,6 +608,23 @@ namespace MSR.LST.ConferenceXP.ArchiveService
         }
 
         /// <summary>
+        /// Indicate whether a write operation would overflow the 2GB maximum stream size in the database.
+        /// </summary>
+        /// <param name="streamID"></param>
+        /// <param name="size">Size of proposed write operation.</param>
+        /// <returns></returns>
+        static internal bool WouldOverflowStream(int streamID, int size) {
+            //int maxStream = 17500000; // just over 2 minutes at 1Mbps (for testing)
+            int maxStream = int.MaxValue;
+
+            if (streamSizeDict[streamID] + size > maxStream) {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
         /// Commits data buffered during recording to disk.
         /// </summary>
         /// <param name="streamID">ID of the stream in the database to be written to.</param>
@@ -636,6 +658,8 @@ namespace MSR.LST.ConferenceXP.ArchiveService
                 conn.Close();
 
                 offset = (int)offsetParam.Value;
+
+                streamSizeDict[streamID] += (long)(indices[indicesCount - 1].end + 1);
             }
             catch( SqlException ex )
             {

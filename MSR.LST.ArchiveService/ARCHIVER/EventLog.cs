@@ -57,6 +57,7 @@ namespace MSR.LST.ConferenceXP.ArchiveService
             EmptyBuffersInPlayback,
             ImproperPopulateCall,
             BufferTooSmall,
+            MaximumStreamSizeReached,
         }
 
         public ArchiveServiceEventLog(Source source)

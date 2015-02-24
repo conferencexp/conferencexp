@@ -273,6 +273,10 @@ namespace MSR.LST.ConferenceXP.ArchiveService
 #if TIMING
                             long startTimer = DateTime.Now.Ticks;
 #endif
+                            // Try to detect and fix overflow before it happens to avoid the exception and hopefully improve performance.
+                            if (DBHelper.WouldOverflowStream(this.streamID, this.indices[this.currentIndex - 1].end)) {
+                                this.Overflowed(this, EventArgs.Empty);
+                            }
 
                             // TODO: Find out why this gets called twice on one data set OR find a workaround.
                             Trace.WriteLine(String.Format(CultureInfo.InvariantCulture, 

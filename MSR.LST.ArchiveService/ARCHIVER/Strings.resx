@@ -226,4 +226,7 @@
   <data name="OsqlNotFound" xml:space="preserve">
     <value>Osql.exe was not found.</value>
   </data>
+  <data name="MaximumStreamSizeReached" xml:space="preserve">
+    <value>The maximum stream size was reached for streamID {0}.  Attempting to create a new stream.</value>
+  </data>
 </root>
