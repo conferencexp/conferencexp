@@ -336,7 +336,7 @@ cmd /c xcopy /y "$(TargetDir)$(TargetName).pdb" "$(ProjectDir)..\..\MSR.LST.Capa
       <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
     </Reference>
-    <Reference Include="MSR.LST.Net.Rtp, Version=5.3.0.0, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="MSR.LST.Net.Rtp, Version=5.3.1.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\MSR.LST.ConferenceAPI\Redist\MSR.LST.Net.Rtp.dll</HintPath>
       <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
