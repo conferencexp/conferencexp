@@ -190,7 +190,7 @@ namespace MSR.LST.ConferenceXP.ArchiveService
                         partNode.SelectedImageIndex = partNode.ImageIndex;
 
                         // Add all of the streams for this participant
-                        Stream[] streams = DBHelper.GetStreams(part.ParticipantID);
+                        Stream[] streams = DBHelper.GetStreamsFaster(part.ParticipantID);
                         foreach( Stream str in streams )
                         {
                             TreeNode streamNode = partNode.Nodes.Add(string.Format(CultureInfo.CurrentCulture, 

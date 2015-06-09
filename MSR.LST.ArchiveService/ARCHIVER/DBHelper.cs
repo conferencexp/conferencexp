@@ -312,6 +312,43 @@ namespace MSR.LST.ConferenceXP.ArchiveService
                 throw;
             }
         }
+
+        static public Stream[] GetStreamsFaster(int participantID) {
+            try {
+                SqlConnection conn = new SqlConnection(Constants.SQLConnectionString);
+                SqlCommand cmd = new SqlCommand("GetStreamsFaster", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter sqlParticipantID = cmd.Parameters.Add("@participant_id", SqlDbType.Int);
+                sqlParticipantID.Direction = ParameterDirection.Input;
+                sqlParticipantID.Value = participantID;
+
+                conn.Open();
+                SqlDataReader r = cmd.ExecuteReader(CommandBehavior.SingleResult);
+
+                ArrayList streamList = new ArrayList(10);
+                while (r.Read()) {
+                    Stream stream = new Stream(
+                        r.GetInt32(0),  //stream id
+                        r.GetString(1), // name
+                        r.GetString(2), // payload,
+                        0,  // frames
+                        r.IsDBNull(3) ? 0L : r.GetInt64(3), // seconds
+                        r.GetInt32(4)); // bytes 
+                    streamList.Add(stream);
+                }
+
+                r.Close();
+                conn.Close();
+
+                return (Stream[])streamList.ToArray(typeof(Stream));
+            }
+            catch (SqlException ex) {
+                eventLog.WriteEntry(string.Format(CultureInfo.CurrentCulture, Strings.DatabaseOperationFailedError,
+                    ex.ToString()), EventLogEntryType.Error, ArchiveServiceEventLog.ID.DBOpFailed);
+                throw;
+            }
+        }
         #endregion
 
         #region Get... (Internal)

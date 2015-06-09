@@ -64,6 +64,27 @@ GO
 
 
 ----------------------------------------------------------------------------------------------------
+IF EXISTS ( SELECT * FROM INFORMATION_SCHEMA.ROUTINES WHERE ROUTINE_NAME = 'GetStreamsFaster' )
+	DROP PROCEDURE GetStreamsFaster
+GO
+
+/* Just like GetStreams above, except we leave out the frame count.  This turns out to be by far the
+   most expensive part of the query.  Consequently, this version runs much faster. */
+
+CREATE PROCEDURE GetStreamsFaster
+				@participant_id int 
+AS
+SELECT	s.stream_id, s.name, s.payload_type, 
+		( SELECT (MAX( frame_time ) - MIN(frame_time))/10000000 FROM frame WHERE stream_id = s.stream_id ) as seconds,
+		( SELECT datalength(data) FROM rawStream WHERE stream_id =  s.stream_id) as bytes
+FROM stream as s
+WHERE s.participant_id = @participant_id AND 
+  (SELECT datalength(data) FROM rawStream WHERE stream_id =  s.stream_id) > 1
+ORDER BY [name] ASC
+GO
+
+
+----------------------------------------------------------------------------------------------------
 -- Stored procedures to support conference creation
 ----------------------------------------------------------------------------------------------------
 --create the actual conference entry. called by the web-service
