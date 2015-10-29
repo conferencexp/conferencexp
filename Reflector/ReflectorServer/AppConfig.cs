@@ -6,7 +6,6 @@ namespace MSR.LST.ConferenceXP.ReflectorService
     internal class AppConfig
     {
         private const string reflector = "MSR.LST.Reflector.";
-        public const string JoinPort = reflector + "JoinPort";
         public const string MCLoopbackOff = reflector + "MCLoopbackOff";
         public const string UnicastPort = reflector + "UnicastRTPListenPort";
         public const string MultipleInterfaceSupport = reflector + "MultipleInterfaceSupport";
